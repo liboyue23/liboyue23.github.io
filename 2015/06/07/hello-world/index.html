@@ -31,7 +31,8 @@ Step1.搭建环境
 废话不多说，网上找了很多hexo建站的教程，都不靠谱，最后经过摸爬滚打四处提问之后，总结了一个靠谱的建站流程，分享如下：
 Step1.搭建环境
 安装Node.jshexo是底层是基于node的，不会node没关系我们只需要安装好node就不需要管其它的啦。到Node.js官网下载操作系统对应的">
-<meta property="og:updated_time" content="2015-06-07T07:27:15.000Z">
+<meta property="og:image" content="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-0.jpg">
+<meta property="og:updated_time" content="2015-06-07T08:32:25.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何搭建个人博客">
 <meta name="twitter:description" content="hexo你的博客
@@ -148,7 +149,7 @@ Step1.搭建环境
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/java/" style="font-size: 10px;">java</a> <a href="/tags/分布式/" style="font-size: 10px;">分布式</a> <a href="/tags/建站/" style="font-size: 20px;">建站</a>
+						<a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/分布式/" style="font-size: 10px;">分布式</a> <a href="/tags/建站/" style="font-size: 20px;">建站</a> <a href="/tags/网络/" style="font-size: 10px;">网络</a> <a href="/tags/通讯/" style="font-size: 10px;">通讯</a>
 					</div>
 				</section>
 				
@@ -232,7 +233,7 @@ Step1.搭建环境
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="photo-hello-world" class="article article-type-photo" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2015/06/07/hello-world/" class="article-date">
@@ -294,23 +295,41 @@ Step1.搭建环境
 <p>GitHub账号和GitHub Pages 一般都应该有吧，已有的请自动无视这一部分。</p>
 </blockquote>
 <h2 id="Step3-开始迅速建站">Step3.开始迅速建站</h2><ol>
-<li><p>安装hexo，在terminal里执行如下命令：</p>
+<li><p><strong><em>安装hexo，在terminal里执行如下命令：</em></strong></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>初始化</p>
+<li><p><strong><em>初始化</em></strong></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init blog</span><br></pre></td></tr></table></figure>
 <p> 执行完这条命令后，会在你当前目录下生成一个名叫blog的文件夹，然后<strong>cd blog到你的文件夹里</strong>，以后所有命令都在这个目录下执行</p>
 </li>
-<li><p>安装插件</p>
+<li><p><strong><em>安装插件</em></strong></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>启动服务</p>
+<li><p><strong><em>启动服务</em></strong></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 <p> 浏览器输入<a href="http://localhost:4000就可以看到效果。" target="_blank" rel="external">http://localhost:4000就可以看到效果。</a></p>
-<!-- 以上几个命令一路下来，hexo工程便搭建好了，我们安装的是hexo3
-更多语法请按`Cmd + /` -->
 </li>
 </ol>
+<h2 id="Step4-开写！">Step4.开写！</h2><ol>
+<li><p><strong><em>生成文章</em></strong><br>执行new命令，生成指定名称的文章至hexo\source\_posts\postName.md。</p>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"postName"</span> <span class="comment">#新建文章</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong><em>生成html</em></strong><br> 部署博客之前，还需要生成html静态页面，执行下面代码即可：</p>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong><em>部署到Github pages上</em></strong><br> html生成好了，在上传Github之前还需要修改一下根目录下的_config.yml配置文件</p>
+ <figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">deploy</span>:</span><br><span class="line">    <span class="attribute">type</span>: git</span><br><span class="line">    <span class="attribute">repository</span>: <span class="attribute">https</span>:<span class="comment">//github.com/liboyue23/liboyue23.github.io.git</span></span><br><span class="line">    <span class="attribute">branch</span>: master</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong><em>注意：</em></strong>hexo在更新到3版本之后，type的值就是<code>git</code>而不是github了，千万别写成github否则会报错，还有要注意type:、repository:、branch:后面一定要有空格，否则也会报错！</p>
+</blockquote>
+<p> 安装deploy插件：</p>
+<p> 接下来，让我们执行最后一步把我们的博客上传到Github上吧！</p>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p> 大功告成！</p>
+</li>
+</ol>
+<!-- 以上几个命令一路下来，hexo工程便搭建好了，我们安装的是hexo3
+更多语法请按`Cmd + /` -->
 
       
     </div>
@@ -321,8 +340,8 @@ Step1.搭建环境
 <nav id="article-nav">
   
   
-    <a href="/2015/06/06/分布式技术架构/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">分布式技术架构</div>
+    <a href="/2015/06/07/Java-tcp-ip笔记/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Java tcp/ip笔记</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
