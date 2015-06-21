@@ -3,17 +3,36 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2015/6 | Mr.Lee</title>
+  <title>zookeeper集群 | Mr.Lee</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="这个是本文的描述">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Mr.Lee">
-<meta property="og:url" content="http://leeboyue.com/archives/2015/06/index.html">
+  <meta name="description" content="今天研究了一下zookeeper，对于互联网公司来说，分布式架构是必须的，zookeeper正是针对分布式应用的高性能协调服务，提供包括配置维护、名字服务、分布式同步、组服务等。
+
+下面介绍一下配置zookeeper集群的过程
+
+复制三个zookeeper，比如
+配置每一个zookeeper的zoo.cfg，比如
+1234567891011tickTime=2000    initLimit=10">
+<meta property="og:type" content="article">
+<meta property="og:title" content="zookeeper集群">
+<meta property="og:url" content="http://leeboyue.com/2015/06/17/zookeeper集群/index.html">
 <meta property="og:site_name" content="Mr.Lee">
-<meta property="og:description" content="这个是本文的描述">
+<meta property="og:description" content="今天研究了一下zookeeper，对于互联网公司来说，分布式架构是必须的，zookeeper正是针对分布式应用的高性能协调服务，提供包括配置维护、名字服务、分布式同步、组服务等。
+
+下面介绍一下配置zookeeper集群的过程
+
+复制三个zookeeper，比如
+配置每一个zookeeper的zoo.cfg，比如
+1234567891011tickTime=2000    initLimit=10">
+<meta property="og:updated_time" content="2015-06-17T13:28:37.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Mr.Lee">
-<meta name="twitter:description" content="这个是本文的描述">
+<meta name="twitter:title" content="zookeeper集群">
+<meta name="twitter:description" content="今天研究了一下zookeeper，对于互联网公司来说，分布式架构是必须的，zookeeper正是针对分布式应用的高性能协调服务，提供包括配置维护、名字服务、分布式同步、组服务等。
+
+下面介绍一下配置zookeeper集群的过程
+
+复制三个zookeeper，比如
+配置每一个zookeeper的zoo.cfg，比如
+1234567891011tickTime=2000    initLimit=10">
   
     <link rel="alternative" href="/atom.xml" title="Mr.Lee" type="application/atom+xml">
   
@@ -201,191 +220,124 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-zookeeper集群" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/06/17/zookeeper集群/" class="archive-article-date">
-  	<time datetime="2015-06-17T11:25:56.000Z" itemprop="datePublished">Jun 17</time>
+    <div class="article-meta">
+      <a href="/2015/06/17/zookeeper集群/" class="article-date">
+  	<time datetime="2015-06-17T11:25:56.000Z" itemprop="datePublished">2015-06-17</time>
 </a>
-        </div>
-    	 
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/06/17/zookeeper集群/">zookeeper集群</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      zookeeper集群
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
 	<div class="article-tag tagcloud">
 		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/zookeeper/">zookeeper</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/分布式/">分布式</a></li></ul>
 	</div>
 
-          
+        
 	<div class="article-category tagcloud">
 	<a class="article-category-link" href="/categories/技术/">技术</a>
 	</div>
 
 
-        </div>
         <div class="clearfix"></div>
-    </header>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>今天研究了一下zookeeper，对于互联网公司来说，分布式架构是必须的，zookeeper正是针对分布式应用的高性能协调服务，提供包括配置维护、名字服务、分布式同步、组服务等。</p>
+</blockquote>
+<p>下面介绍一下配置zookeeper集群的过程</p>
+<ol>
+<li>复制三个zookeeper，比如</li>
+<li><p>配置每一个zookeeper的zoo.cfg，比如</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">tickTime=<span class="number">2000</span>    </span><br><span class="line">initLimit=<span class="number">10</span></span><br><span class="line">syncLimit=<span class="number">5</span></span><br><span class="line"><span class="comment">#指定dataDir目录</span></span><br><span class="line">dataDir=/Users/bear_lee/development/zookeeper/data/zookeeper3</span><br><span class="line">dataLogDir=/Users/bear_lee/development/zookeeper/logs/zookeeper3</span><br><span class="line"><span class="comment">#clientPort：zookeeper的端口号，在同一台机器下不同zookeeper端口号不能一样</span></span><br><span class="line">clientPort=<span class="number">2183</span></span><br><span class="line">server.<span class="number">1</span>=<span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">2881</span>:<span class="number">3881</span></span><br><span class="line">server.<span class="number">2</span>=<span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">2882</span>:<span class="number">3882</span></span><br><span class="line">server.<span class="number">3</span>=<span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">2883</span>:<span class="number">3883</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在3个zookeeper的dataDir目录下面分别创建文件，取名myid，分别写入1、2、3。其中1，2，3分别指的是zoo.cfg文件中的server.1 server.2 server.3</p>
+</li>
+<li><p>启动3个zookeeper：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ./zkServer.sh start</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>随便进入一个zookeeper，启动zkCli，然后我们会发现连接了另一个zookeeper，该zookeeper则是整个集群的leader</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ./zkCli.sh</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+
+      
+    </div>
+    
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/06/07/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">如何搭建个人博客</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-photo">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/06/07/hello-world/" class="archive-article-date">
-  	<time datetime="2015-06-07T09:51:25.000Z" itemprop="datePublished">Jun 7</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/06/07/hello-world/">如何搭建个人博客</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/建站/">建站</a></li></ul>
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
 	</div>
-
-          
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/随笔/">随笔</a>
-	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/06/07/Java-tcp-ip笔记/" class="archive-article-date">
-  	<time datetime="2015-06-07T08:33:52.000Z" itemprop="datePublished">Jun 7</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/06/07/Java-tcp-ip笔记/">Java tcp/ip笔记</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/网络/">网络</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/通讯/">通讯</a></li></ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/技术/">技术</a>
-	</div>
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="zookeeper集群" data-title="zookeeper集群" data-url="http://leeboyue.com/2015/06/17/zookeeper集群/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/06/06/分布式技术架构/" class="archive-article-date">
-  	<time datetime="2015-06-06T09:51:25.000Z" itemprop="datePublished">Jun 6</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/06/06/分布式技术架构/">分布式技术架构</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/分布式/">分布式</a></li></ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/技术/">技术</a>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/06/05/我的网站诞生啦/" class="archive-article-date">
-  	<time datetime="2015-06-05T13:25:05.000Z" itemprop="datePublished">Jun 5</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/06/05/我的网站诞生啦/">我的网站诞生啦</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/建站/">建站</a></li></ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
 </div>
       <footer id="footer">
   <div class="outer">
