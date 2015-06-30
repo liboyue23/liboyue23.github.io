@@ -5,16 +5,37 @@
   
   <title>分布式技术架构 | Mr.Lee</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="内容">
+  <meta name="description" content="zookeeper对于zookeeper部署的一些重要提示：
+
+使用监控程序来运行zookeeper是很重要的，因为zookeeper是快速失败的，遇到任何错误情况将会退出
+简历cron来压缩zookeeper的数据和事务日志是很重要的。zookeeper守护进程自己本身并不会这么做，如果不设置cron，zookeeper很快就会耗尽磁盘空间
+
+zookeeper功能介绍
+加强集群稳定性
+加强集群">
 <meta property="og:type" content="article">
 <meta property="og:title" content="分布式技术架构">
-<meta property="og:url" content="http://leeboyue.com/2015/06/06/分布式技术架构/index.html">
+<meta property="og:url" content="http://leeboyue.com/2015/06/28/分布式技术架构/index.html">
 <meta property="og:site_name" content="Mr.Lee">
-<meta property="og:description" content="内容">
-<meta property="og:updated_time" content="2015-06-06T09:54:57.000Z">
+<meta property="og:description" content="zookeeper对于zookeeper部署的一些重要提示：
+
+使用监控程序来运行zookeeper是很重要的，因为zookeeper是快速失败的，遇到任何错误情况将会退出
+简历cron来压缩zookeeper的数据和事务日志是很重要的。zookeeper守护进程自己本身并不会这么做，如果不设置cron，zookeeper很快就会耗尽磁盘空间
+
+zookeeper功能介绍
+加强集群稳定性
+加强集群">
+<meta property="og:updated_time" content="2015-06-30T13:43:05.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="分布式技术架构">
-<meta name="twitter:description" content="内容">
+<meta name="twitter:description" content="zookeeper对于zookeeper部署的一些重要提示：
+
+使用监控程序来运行zookeeper是很重要的，因为zookeeper是快速失败的，遇到任何错误情况将会退出
+简历cron来压缩zookeeper的数据和事务日志是很重要的。zookeeper守护进程自己本身并不会这么做，如果不设置cron，zookeeper很快就会耗尽磁盘空间
+
+zookeeper功能介绍
+加强集群稳定性
+加强集群">
   
     <link rel="alternative" href="/atom.xml" title="Mr.Lee" type="application/atom+xml">
   
@@ -118,7 +139,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/zookeeper/" style="font-size: 10px;">zookeeper</a> <a href="/tags/分布式/" style="font-size: 20px;">分布式</a> <a href="/tags/家常菜/" style="font-size: 10px;">家常菜</a> <a href="/tags/建站/" style="font-size: 20px;">建站</a> <a href="/tags/海鲜/" style="font-size: 10px;">海鲜</a> <a href="/tags/网络/" style="font-size: 10px;">网络</a> <a href="/tags/通讯/" style="font-size: 10px;">通讯</a>
+						<a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/zookeeper/" style="font-size: 10px;">zookeeper</a> <a href="/tags/分布式/" style="font-size: 20px;">分布式</a> <a href="/tags/北漂/" style="font-size: 10px;">北漂</a> <a href="/tags/家常菜/" style="font-size: 10px;">家常菜</a> <a href="/tags/建站/" style="font-size: 20px;">建站</a> <a href="/tags/海鲜/" style="font-size: 10px;">海鲜</a> <a href="/tags/租房/" style="font-size: 10px;">租房</a> <a href="/tags/网络/" style="font-size: 10px;">网络</a> <a href="/tags/通讯/" style="font-size: 10px;">通讯</a>
 					</div>
 				</section>
 				
@@ -205,8 +226,8 @@
       <div class="body-wrap"><article id="post-分布式技术架构" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/06/06/分布式技术架构/" class="article-date">
-  	<time datetime="2015-06-06T09:51:25.000Z" itemprop="datePublished">2015-06-06</time>
+      <a href="/2015/06/28/分布式技术架构/" class="article-date">
+  	<time datetime="2015-06-28T09:51:25.000Z" itemprop="datePublished">2015-06-28</time>
 </a>
     </div>
   
@@ -243,7 +264,31 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>内容</p>
+        <h1 id="zookeeper">zookeeper</h1><p>对于zookeeper部署的一些重要提示：</p>
+<ol>
+<li>使用监控程序来运行zookeeper是很重要的，因为zookeeper是快速失败的，遇到任何错误情况将会退出</li>
+<li>简历cron来压缩zookeeper的数据和事务日志是很重要的。zookeeper守护进程自己本身并不会这么做，如果不设置cron，zookeeper很快就会耗尽磁盘空间</li>
+</ol>
+<h1 id="zookeeper功能介绍">zookeeper功能介绍</h1><ol>
+<li>加强集群稳定性</li>
+<li>加强集群持续性</li>
+<li>保证集群有序性</li>
+<li>保证集群高效</li>
+<li>数据结构和分等级的空间命名（znode）</li>
+</ol>
+<h1 id="zookeeper原理架构">zookeeper原理架构</h1><ol>
+<li>zookeeper的核心是原子广播，这个机制保证了各个Server之间的同步。实现这个机制的协议叫做Zab协议。Zab协议有两种模式，它们分别是恢复模式（选主）和广播模式（同步）</li>
+<li>当服务启动或者在领导者崩溃后，Zab就进入了回复模式，当领导者被选举出来，且大多数Server完成了和leader的状态同步以后，恢复模式就结束了。状态同步保证了leader和Server具有相同的系统状态。</li>
+<li>每个Server工作过程中的三种状态：LOOKING（正在搜寻leader）；LEADING（为leader标记）；FOLLOWING：leader（已经选举出来。当前与之同步）</li>
+</ol>
+<h1 id="zookeeper选举机制">zookeeper选举机制</h1><p>Fastleader选举算法：<br>当leader崩溃或者失去大多数的follower时，这时候zookeeper进入回复模式，回复模式需要重新选举出一个新的leader，让所有的Server都恢复到一个正确的状态。</p>
+<h1 id="zookeeper应用场景">zookeeper应用场景</h1><ol>
+<li>统一命名服务（Name Service）</li>
+<li>配置管理</li>
+<li>集群管理</li>
+<li>共享锁</li>
+<li>队列管理</li>
+</ol>
 
       
     </div>
@@ -253,18 +298,18 @@
     
 <nav id="article-nav">
   
-    <a href="/2015/06/07/Java-tcp-ip笔记/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2015/06/29/北漂租房/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          Java tcp/ip笔记
+          北漂租房
         
       </div>
     </a>
   
   
-    <a href="/2015/06/05/我的网站诞生啦/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">我的网站诞生啦</div>
+    <a href="/2015/06/21/红烧鲈鱼/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">红烧鲈鱼</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -293,7 +338,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="分布式技术架构" data-title="分布式技术架构" data-url="http://leeboyue.com/2015/06/06/分布式技术架构/"></div>
+	<div class="ds-thread" data-thread-key="分布式技术架构" data-title="分布式技术架构" data-url="http://leeboyue.com/2015/06/28/分布式技术架构/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
