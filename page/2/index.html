@@ -117,7 +117,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/zookeeper/" style="font-size: 10px;">zookeeper</a> <a href="/tags/分布式/" style="font-size: 15px;">分布式</a> <a href="/tags/北漂/" style="font-size: 10px;">北漂</a> <a href="/tags/家常菜/" style="font-size: 10px;">家常菜</a> <a href="/tags/建站/" style="font-size: 15px;">建站</a> <a href="/tags/心得/" style="font-size: 10px;">心得</a> <a href="/tags/技术/" style="font-size: 15px;">技术</a> <a href="/tags/技术交流/" style="font-size: 10px;">技术交流</a> <a href="/tags/海鲜/" style="font-size: 10px;">海鲜</a> <a href="/tags/租房/" style="font-size: 10px;">租房</a> <a href="/tags/网络/" style="font-size: 10px;">网络</a> <a href="/tags/通讯/" style="font-size: 10px;">通讯</a> <a href="/tags/遇到的坑/" style="font-size: 10px;">遇到的坑</a>
+						<a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/zookeeper/" style="font-size: 10px;">zookeeper</a> <a href="/tags/分布式/" style="font-size: 15px;">分布式</a> <a href="/tags/北漂/" style="font-size: 10px;">北漂</a> <a href="/tags/家常菜/" style="font-size: 10px;">家常菜</a> <a href="/tags/建站/" style="font-size: 15px;">建站</a> <a href="/tags/心得/" style="font-size: 10px;">心得</a> <a href="/tags/技术/" style="font-size: 20px;">技术</a> <a href="/tags/技术交流/" style="font-size: 10px;">技术交流</a> <a href="/tags/海鲜/" style="font-size: 10px;">海鲜</a> <a href="/tags/租房/" style="font-size: 10px;">租房</a> <a href="/tags/网络/" style="font-size: 10px;">网络</a> <a href="/tags/通讯/" style="font-size: 10px;">通讯</a> <a href="/tags/遇到的坑/" style="font-size: 10px;">遇到的坑</a>
 					</div>
 				</section>
 				
@@ -202,6 +202,82 @@
 	</div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-MySQL5-5升级到5-6，TIMESTAMP的变化" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/07/15/MySQL5-5升级到5-6，TIMESTAMP的变化/" class="article-date">
+  	<time datetime="2015-07-15T03:27:57.000Z" itemprop="datePublished">2015-07-15</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/07/15/MySQL5-5升级到5-6，TIMESTAMP的变化/">MySQL5.5升级到5.6，TIMESTAMP的变化</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>前段时间，系统MySQL从5.5升级到了5.6，系统出现了大量的异常。大部分异常引起原因是由于TIMESTAMP的行为发生了变化。</p>
+</blockquote>
+<h1 id="TIMESTAMP在MySQL5-5中的行为">TIMESTAMP在MySQL5.5中的行为</h1><ol>
+<li>第一个未设置默认值的TIMESTAMP NOT NULL字段隐式默认值：<br>CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP</li>
+<li>后面未设置默认值的TIMESTAMP NOT NULL字段隐式默认值：<br>0000-00-00 00:00:00</li>
+<li>TIMESTAMP NOT NULL字段插入NULL时，会使用隐式默认值：<br>CURRENT_TIMESTAMP</li>
+<li>不支持多个CURRENT_TIMESTAMP 默认值</li>
+</ol>
+<h1 id="TIMESTAMP在MySQL5-6中的行为">TIMESTAMP在MySQL5.6中的行为</h1><ol>
+<li>支持多个CURRENT_TIMESTAMP 默认值</li>
+<li>可以兼容5.5的行为，支持隐性默认值<br>explicit_defaults_for_timestamp=0<br>我测试安装的MySQL5.6默认使用这个参数，启动时，服务器会给出一个警告。<br>[Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use –explicit_defaults_for_timestamp server option (see documentation for more details).</li>
+<li>可以去掉隐性默认值<br>explicit_defaults_for_timestamp=1</li>
+</ol>
+<h1 id="总结">总结</h1><ol>
+<li>MySQL5.5中TIMESTAMP行为是比较诡异的，会造成一些隐含的问题，比如程序中传入了NULL值</li>
+<li>MySQL5.6中可以将TIMESTAMP的行为变得正常，但会存在兼容问题</li>
+<li>explicit_defaults_for_timestamp参数未来会消失</li>
+<li>我们不要过度依赖数据库的特性，这些特性会给应用程序造成掣肘</li>
+</ol>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/">mysql</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/遇到的坑/">遇到的坑</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/遇到的坑/">遇到的坑</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
   
     <article id="post-北漂租房" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -481,118 +557,6 @@
       
 	<div class="article-category tagcloud">
 	<a class="article-category-link" href="/categories/技术/">技术</a>
-	</div>
-
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-  
-    <article id="photo-如何搭建个人博客" class="article article-type-photo" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/06/07/如何搭建个人博客/" class="article-date">
-  	<time datetime="2015-06-07T09:51:25.000Z" itemprop="datePublished">2015-06-07</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/06/07/如何搭建个人博客/">如何搭建个人博客</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="hexo你的博客">hexo你的博客</h1><blockquote>
-<p><strong><em>作为技术人员应该有个自己的博客：</em></strong></p>
-<ul>
-<li>记录学习知识</li>
-<li>总结知识点，做心得体会</li>
-<li>结交朋友</li>
-</ul>
-</blockquote>
-<p>废话不多说，网上找了很多hexo建站的教程，都不靠谱，最后经过摸爬滚打四处提问之后，总结了一个靠谱的建站流程，分享如下：</p>
-<h2 id="Step1-搭建环境">Step1.搭建环境</h2><ol>
-<li><p><strong><em>安装Node.js</em></strong><br>hexo是底层是基于node的，不会node没关系我们只需要安装好node就不需要管其它的啦。到<a href="http://nodejs.org/download" target="_blank" rel="external">Node.js官网下载</a>操作系统对应的版本，安装一路next就好了，我安装的版本是v0.12.4，查看是否按照成功以及node版本，用如下命令：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ node -v</span><br><span class="line">v0<span class="number">.12</span><span class="number">.4</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><strong><em>安装Git</em></strong><br>我用的是mac pro，系统自带git，因此用Mac的同学不需要看啦！安装git的目的就是为了将本地代码上传到Github上。Git的客户端有很多，这里推荐<a href="http://code.google.com/p/msysgit" target="_blank" rel="external">msysgit</a></p>
-</li>
-<li><strong><em>安装Sublime</em></strong><br>环境搭建完了，下面我们当然要开始写文章啦！这里推荐用<a href="http://www.sublimetext.com/3" target="_blank" rel="external">Sublime</a>编辑器编写自己的文章，赶紧下载一个，然后我们可以开始我们的极客之旅了。</li>
-</ol>
-<h2 id="Step2-绑定Github账号">Step2.绑定Github账号</h2><blockquote>
-<p>GitHub账号和GitHub Pages 一般都应该有吧，已有的请自动无视这一部分。</p>
-</blockquote>
-<h2 id="Step3-开始迅速建站">Step3.开始迅速建站</h2><ol>
-<li><p><strong><em>安装hexo，在terminal里执行如下命令：</em></strong></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><strong><em>初始化</em></strong></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init blog</span><br></pre></td></tr></table></figure>
-<p> 执行完这条命令后，会在你当前目录下生成一个名叫blog的文件夹，然后<strong>cd blog到你的文件夹里</strong>，以后所有命令都在这个目录下执行</p>
-</li>
-<li><p><strong><em>安装插件</em></strong></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><strong><em>启动服务</em></strong></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p> 浏览器输入<a href="http://localhost:4000就可以看到效果。" target="_blank" rel="external">http://localhost:4000就可以看到效果。</a></p>
-</li>
-</ol>
-<h2 id="Step4-开写！">Step4.开写！</h2><ol>
-<li><p><strong><em>生成文章</em></strong><br>执行new命令，生成指定名称的文章至hexo\source\_posts\postName.md。</p>
- <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"postName"</span> <span class="comment">#新建文章</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><strong><em>生成html</em></strong><br> 部署博客之前，还需要生成html静态页面，执行下面代码即可：</p>
- <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><strong><em>部署到Github pages上</em></strong><br> html生成好了，在上传Github之前还需要修改一下根目录下的_config.yml配置文件</p>
- <figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">deploy</span>:</span><br><span class="line">    <span class="attribute">type</span>: git</span><br><span class="line">    <span class="attribute">repository</span>: <span class="attribute">https</span>:<span class="comment">//github.com/liboyue23/liboyue23.github.io.git</span></span><br><span class="line">    <span class="attribute">branch</span>: master</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p><strong><em>注意：</em></strong>hexo在更新到3版本之后，type的值就是<code>git</code>而不是github了，千万别写成github否则会报错，还有要注意type:、repository:、branch:后面一定要有空格，否则也会报错！</p>
-</blockquote>
-<p> 安装deploy插件：</p>
-<p> 接下来，让我们执行最后一步把我们的博客上传到Github上吧！</p>
- <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p> 大功告成！</p>
-</li>
-</ol>
-<!-- 以上几个命令一路下来，hexo工程便搭建好了，我们安装的是hexo3
-更多语法请按`Cmd + /` -->
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/建站/">建站</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/随笔/">随笔</a>
 	</div>
 
 
