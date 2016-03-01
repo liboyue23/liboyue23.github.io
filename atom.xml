@@ -64,7 +64,7 @@
     <link href="http://leeboyue.com/2016/03/01/%E8%A6%81%E5%81%9A%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BA%8B%E6%83%85/"/>
     <id>http://leeboyue.com/2016/03/01/要做的一些事情/</id>
     <published>2016-03-01T07:40:08.000Z</published>
-    <updated>2016-03-01T09:46:21.000Z</updated>
+    <updated>2016-03-01T09:49:40.000Z</updated>
     
     <content type="html">&lt;p&gt;&amp;#x5B58;&amp;#x50A8;&amp;#x77E5;&amp;#x8BC6;&amp;#x5B66;&amp;#x4E60;&lt;/p&gt;
 &lt;p&gt;&amp;#x4ECA;&amp;#x5E74;3&amp;#x6708;&amp;#x4EFD;&amp;#x53C8;&amp;#x6362;&amp;#x4E86;&amp;#x5DE5;&amp;#x4F5C;&amp;#xFF0C;&amp;#x8FD8;&amp;#x662F;&amp;#x575A;&amp;#x6301;&amp;#x6280;&amp;#x672F;&amp;#x4E3A;&amp;#x4E3B;&amp;#xFF0C;&amp;#x6280;&amp;#x672F;&amp;#x548C;&amp;#x4E1A;&amp;#x52A1;&amp;#x76F8;&amp;#x7ED3;&amp;#x5408;&amp;#x5E76;&amp;#x884C;&amp;#x63D0;&amp;#x5347;&lt;/p&gt;
@@ -219,80 +219,6 @@
   </entry>
   
   <entry>
-    <title>MySQL5.5升级到5.6，TIMESTAMP的变化</title>
-    <link href="http://leeboyue.com/2015/07/15/MySQL5-5%E5%8D%87%E7%BA%A7%E5%88%B05-6%EF%BC%8CTIMESTAMP%E7%9A%84%E5%8F%98%E5%8C%96/"/>
-    <id>http://leeboyue.com/2015/07/15/MySQL5-5升级到5-6，TIMESTAMP的变化/</id>
-    <published>2015-07-15T03:27:57.000Z</published>
-    <updated>2015-07-15T03:31:41.000Z</updated>
-    
-    <content type="html">&lt;blockquote&gt;
-&lt;p&gt;&amp;#x524D;&amp;#x6BB5;&amp;#x65F6;&amp;#x95F4;&amp;#xFF0C;&amp;#x7CFB;&amp;#x7EDF;MySQL&amp;#x4ECE;5.5&amp;#x5347;&amp;#x7EA7;&amp;#x5230;&amp;#x4E86;5.6&amp;#xFF0C;&amp;#x7CFB;&amp;#x7EDF;&amp;#x51FA;&amp;#x73B0;&amp;#x4E86;&amp;#x5927;&amp;#x91CF;&amp;#x7684;&amp;#x5F02;&amp;#x5E38;&amp;#x3002;&amp;#x5927;&amp;#x90E8;&amp;#x5206;&amp;#x5F02;&amp;#x5E38;&amp;#x5F15;&amp;#x8D77;&amp;#x539F;&amp;#x56E0;&amp;#x662F;&amp;#x7531;&amp;#x4E8E;TIMESTAMP&amp;#x7684;&amp;#x884C;&amp;#x4E3A;&amp;#x53D1;&amp;#x751F;&amp;#x4E86;&amp;#x53D8;&amp;#x5316;&amp;#x3002;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;TIMESTAMP&amp;#x5728;MySQL5-5&amp;#x4E2D;&amp;#x7684;&amp;#x884C;&amp;#x4E3A;&quot;&gt;TIMESTAMP&amp;#x5728;MySQL5.5&amp;#x4E2D;&amp;#x7684;&amp;#x884C;&amp;#x4E3A;&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;&amp;#x7B2C;&amp;#x4E00;&amp;#x4E2A;&amp;#x672A;&amp;#x8BBE;&amp;#x7F6E;&amp;#x9ED8;&amp;#x8BA4;&amp;#x503C;&amp;#x7684;TIMESTAMP NOT NULL&amp;#x5B57;&amp;#x6BB5;&amp;#x9690;&amp;#x5F0F;&amp;#x9ED8;&amp;#x8BA4;&amp;#x503C;&amp;#xFF1A;&lt;br&gt;CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP&lt;/li&gt;
-&lt;li&gt;&amp;#x540E;&amp;#x9762;&amp;#x672A;&amp;#x8BBE;&amp;#x7F6E;&amp;#x9ED8;&amp;#x8BA4;&amp;#x503C;&amp;#x7684;TIMESTAMP NOT NULL&amp;#x5B57;&amp;#x6BB5;&amp;#x9690;&amp;#x5F0F;&amp;#x9ED8;&amp;#x8BA4;&amp;#x503C;&amp;#xFF1A;&lt;br&gt;0000-00-00 00:00:00&lt;/li&gt;
-&lt;li&gt;TIMESTAMP NOT NULL&amp;#x5B57;&amp;#x6BB5;&amp;#x63D2;&amp;#x5165;NULL&amp;#x65F6;&amp;#xFF0C;&amp;#x4F1A;&amp;#x4F7F;&amp;#x7528;&amp;#x9690;&amp;#x5F0F;&amp;#x9ED8;&amp;#x8BA4;&amp;#x503C;&amp;#xFF1A;&lt;br&gt;CURRENT_TIMESTAMP&lt;/li&gt;
-&lt;li&gt;&amp;#x4E0D;&amp;#x652F;&amp;#x6301;&amp;#x591A;&amp;#x4E2A;CURRENT_TIMESTAMP &amp;#x9ED8;&amp;#x8BA4;&amp;#x503C;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&quot;TIMESTAMP&amp;#x5728;MySQL5-6&amp;#x4E2D;&amp;#x7684;&amp;#x884C;&amp;#x4E3A;&quot;&gt;TIMESTAMP&amp;#x5728;MySQL5.6&amp;#x4E2D;&amp;#x7684;&amp;#x884C;&amp;#x4E3A;&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;&amp;#x652F;&amp;#x6301;&amp;#x591A;&amp;#x4E2A;CURRENT_TIMESTAMP &amp;#x9ED8;&amp;#x8BA4;&amp;#x503C;&lt;/li&gt;
-&lt;li&gt;&amp;#x53EF;&amp;#x4EE5;&amp;#x517C;&amp;#x5BB9;5.5&amp;#x7684;&amp;#x884C;&amp;#x4E3A;&amp;#xFF0C;&amp;#x652F;&amp;#x6301;&amp;#x9690;&amp;#x6027;&amp;#x9ED8;&amp;#x8BA4;&amp;#x503C;&lt;br&gt;explicit_defaults_for_timestamp=0&lt;br&gt;&amp;#x6211;&amp;#x6D4B;&amp;#x8BD5;&amp;#x5B89;&amp;#x88C5;&amp;#x7684;MySQL5.6&amp;#x9ED8;&amp;#x8BA4;&amp;#x4F7F;&amp;#x7528;&amp;#x8FD9;&amp;#x4E2A;&amp;#x53C2;&amp;#x6570;&amp;#xFF0C;&amp;#x542F;&amp;#x52A8;&amp;#x65F6;&amp;#xFF0C;&amp;#x670D;&amp;#x52A1;&amp;#x5668;&amp;#x4F1A;&amp;#x7ED9;&amp;#x51FA;&amp;#x4E00;&amp;#x4E2A;&amp;#x8B66;&amp;#x544A;&amp;#x3002;&lt;br&gt;[Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use &amp;#x2013;explicit_defaults_for_timestamp server option (see documentation for more details).&lt;/li&gt;
-&lt;li&gt;&amp;#x53EF;&amp;#x4EE5;&amp;#x53BB;&amp;#x6389;&amp;#x9690;&amp;#x6027;&amp;#x9ED8;&amp;#x8BA4;&amp;#x503C;&lt;br&gt;explicit_defaults_for_timestamp=1&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&quot;&amp;#x603B;&amp;#x7ED3;&quot;&gt;&amp;#x603B;&amp;#x7ED3;&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;MySQL5.5&amp;#x4E2D;TIMESTAMP&amp;#x884C;&amp;#x4E3A;&amp;#x662F;&amp;#x6BD4;&amp;#x8F83;&amp;#x8BE1;&amp;#x5F02;&amp;#x7684;&amp;#xFF0C;&amp;#x4F1A;&amp;#x9020;&amp;#x6210;&amp;#x4E00;&amp;#x4E9B;&amp;#x9690;&amp;#x542B;&amp;#x7684;&amp;#x95EE;&amp;#x9898;&amp;#xFF0C;&amp;#x6BD4;&amp;#x5982;&amp;#x7A0B;&amp;#x5E8F;&amp;#x4E2D;&amp;#x4F20;&amp;#x5165;&amp;#x4E86;NULL&amp;#x503C;&lt;/li&gt;
-&lt;li&gt;MySQL5.6&amp;#x4E2D;&amp;#x53EF;&amp;#x4EE5;&amp;#x5C06;TIMESTAMP&amp;#x7684;&amp;#x884C;&amp;#x4E3A;&amp;#x53D8;&amp;#x5F97;&amp;#x6B63;&amp;#x5E38;&amp;#xFF0C;&amp;#x4F46;&amp;#x4F1A;&amp;#x5B58;&amp;#x5728;&amp;#x517C;&amp;#x5BB9;&amp;#x95EE;&amp;#x9898;&lt;/li&gt;
-&lt;li&gt;explicit_defaults_for_timestamp&amp;#x53C2;&amp;#x6570;&amp;#x672A;&amp;#x6765;&amp;#x4F1A;&amp;#x6D88;&amp;#x5931;&lt;/li&gt;
-&lt;li&gt;&amp;#x6211;&amp;#x4EEC;&amp;#x4E0D;&amp;#x8981;&amp;#x8FC7;&amp;#x5EA6;&amp;#x4F9D;&amp;#x8D56;&amp;#x6570;&amp;#x636E;&amp;#x5E93;&amp;#x7684;&amp;#x7279;&amp;#x6027;&amp;#xFF0C;&amp;#x8FD9;&amp;#x4E9B;&amp;#x7279;&amp;#x6027;&amp;#x4F1A;&amp;#x7ED9;&amp;#x5E94;&amp;#x7528;&amp;#x7A0B;&amp;#x5E8F;&amp;#x9020;&amp;#x6210;&amp;#x63A3;&amp;#x8098;&lt;/li&gt;
-&lt;/ol&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;&amp;#x524D;&amp;#x6BB5;&amp;#x65F6;&amp;#x95F4;&amp;#xFF0C;&amp;#x7CFB;&amp;#x7EDF;MySQL&amp;#x4ECE;5.5&amp;#x5347;&amp;#x7EA7;&amp;#x5230;&amp;#x4E86;5.6&amp;#xFF0C;&amp;#x7CFB;&amp;
-    
-    </summary>
-    
-      <category term="遇到的坑" scheme="http://leeboyue.com/categories/%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/"/>
-    
-    
-      <category term="mysql" scheme="http://leeboyue.com/tags/mysql/"/>
-    
-      <category term="遇到的坑" scheme="http://leeboyue.com/tags/%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>北漂租房</title>
-    <link href="http://leeboyue.com/2015/06/29/%E5%8C%97%E6%BC%82%E7%A7%9F%E6%88%BF/"/>
-    <id>http://leeboyue.com/2015/06/29/北漂租房/</id>
-    <published>2015-06-29T06:35:22.000Z</published>
-    <updated>2015-06-29T06:41:21.000Z</updated>
-    
-    <content type="html">&lt;blockquote&gt;
-&lt;p&gt;&amp;#x8FD9;&amp;#x662F;&amp;#x6211;&amp;#x7B2C;&amp;#x4E00;&amp;#x6B21;&amp;#x611F;&amp;#x5230;&amp;#x79DF;&amp;#x623F;&amp;#x662F;&amp;#x90A3;&amp;#x4E48;&amp;#x7684;&amp;#x56F0;&amp;#x96BE;&amp;#x2026;&amp;#x2026;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&amp;#x8DD1;&amp;#x4E86;&amp;#x4E00;&amp;#x6574;&amp;#x5929;&amp;#xFF0C;&amp;#x623F;&amp;#x5B50;&amp;#x4F9D;&amp;#x7136;&amp;#x6CA1;&amp;#x5B9A;&amp;#x4E0B;&amp;#x6765;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;&amp;#x8FD9;&amp;#x662F;&amp;#x6211;&amp;#x7B2C;&amp;#x4E00;&amp;#x6B21;&amp;#x611F;&amp;#x5230;&amp;#x79DF;&amp;#x623F;&amp;#x662F;&amp;#x90A3;&amp;#x4E48;&amp;#x7684;&amp;#x56F0;&amp;#x9
-    
-    </summary>
-    
-      <category term="生活" scheme="http://leeboyue.com/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-    
-      <category term="北漂" scheme="http://leeboyue.com/tags/%E5%8C%97%E6%BC%82/"/>
-    
-      <category term="租房" scheme="http://leeboyue.com/tags/%E7%A7%9F%E6%88%BF/"/>
-    
-  </entry>
-  
-  <entry>
     <title>分布式技术架构</title>
     <link href="http://leeboyue.com/2015/06/26/%E5%88%86%E5%B8%83%E5%BC%8F%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84/"/>
     <id>http://leeboyue.com/2015/06/26/分布式技术架构/</id>
@@ -392,11 +318,11 @@
   </entry>
   
   <entry>
-    <title>zookeeper集群</title>
-    <link href="http://leeboyue.com/2015/06/17/zookeeper%E9%9B%86%E7%BE%A4/"/>
-    <id>http://leeboyue.com/2015/06/17/zookeeper集群/</id>
+    <title>zookeeper集群初识</title>
+    <link href="http://leeboyue.com/2015/06/17/zookeeper%E9%9B%86%E7%BE%A4%E5%88%9D%E8%AF%86/"/>
+    <id>http://leeboyue.com/2015/06/17/zookeeper集群初识/</id>
     <published>2015-06-17T11:25:56.000Z</published>
-    <updated>2015-06-17T13:28:37.000Z</updated>
+    <updated>2016-03-01T09:48:11.000Z</updated>
     
     <content type="html">&lt;blockquote&gt;
 &lt;p&gt;&amp;#x4ECA;&amp;#x5929;&amp;#x7814;&amp;#x7A76;&amp;#x4E86;&amp;#x4E00;&amp;#x4E0B;zookeeper&amp;#xFF0C;&amp;#x5BF9;&amp;#x4E8E;&amp;#x4E92;&amp;#x8054;&amp;#x7F51;&amp;#x516C;&amp;#x53F8;&amp;#x6765;&amp;#x8BF4;&amp;#xFF0C;&amp;#x5206;&amp;#x5E03;&amp;#x5F0F;&amp;#x67B6;&amp;#x6784;&amp;#x662F;&amp;#x5FC5;&amp;#x987B;&amp;#x7684;&amp;#xFF0C;zookeeper&amp;#x6B63;&amp;#x662F;&amp;#x9488;&amp;#x5BF9;&amp;#x5206;&amp;#x5E03;&amp;#x5F0F;&amp;#x5E94;&amp;#x7528;&amp;#x7684;&amp;#x9AD8;&amp;#x6027;&amp;#x80FD;&amp;#x534F;&amp;#x8C03;&amp;#x670D;&amp;#x52A1;&amp;#xFF0C;&amp;#x63D0;&amp;#x4F9B;&amp;#x5305;&amp;#x62EC;&amp;#x914D;&amp;#x7F6E;&amp;#x7EF4;&amp;#x62A4;&amp;#x3001;&amp;#x540D;&amp;#x5B57;&amp;#x670D;&amp;#x52A1;&amp;#x3001;&amp;#x5206;&amp;#x5E03;&amp;#x5F0F;&amp;#x540C;&amp;#x6B65;&amp;#x3001;&amp;#x7EC4;&amp;#x670D;&amp;#x52A1;&amp;#x7B49;&amp;#x3002;&lt;/p&gt;
@@ -507,72 +433,6 @@
     </summary>
     
       <category term="随笔" scheme="http://leeboyue.com/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-      <category term="hexo" scheme="http://leeboyue.com/tags/hexo/"/>
-    
-      <category term="建站" scheme="http://leeboyue.com/tags/%E5%BB%BA%E7%AB%99/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java tcp/ip笔记</title>
-    <link href="http://leeboyue.com/2015/06/07/Java-tcp-ip%E7%AC%94%E8%AE%B0/"/>
-    <id>http://leeboyue.com/2015/06/07/Java-tcp-ip笔记/</id>
-    <published>2015-06-07T08:33:52.000Z</published>
-    <updated>2015-08-02T01:31:33.000Z</updated>
-    
-    <content type="html">&lt;h1 id=&quot;&amp;#x4E00;&amp;#x3001;&amp;#x7F51;&amp;#x7EDC;&amp;#x7F16;&amp;#x7A0B;&amp;#x4E2D;&amp;#x4E24;&amp;#x4E2A;&amp;#x4E3B;&amp;#x8981;&amp;#x7684;&amp;#x95EE;&amp;#x9898;&quot;&gt;&amp;#x4E00;&amp;#x3001;&amp;#x7F51;&amp;#x7EDC;&amp;#x7F16;&amp;#x7A0B;&amp;#x4E2D;&amp;#x4E24;&amp;#x4E2A;&amp;#x4E3B;&amp;#x8981;&amp;#x7684;&amp;#x95EE;&amp;#x9898;&lt;/h1&gt;&lt;p&gt;&amp;#x4E00;&amp;#x4E2A;&amp;#x662F;&amp;#x5982;&amp;#x4F55;&amp;#x51C6;&amp;#x786E;&amp;#x7684;&amp;#x5B9A;&amp;#x4F4D;&amp;#x7F51;&amp;#x7EDC;&amp;#x4E0A;&amp;#x4E00;&amp;#x53F0;&amp;#x6216;&amp;#x591A;&amp;#x53F0;&amp;#x4E3B;&amp;#x673A;&amp;#xFF0C;&amp;#x53E6;&amp;#x4E00;&amp;#x4E2A;&amp;#x5C31;&amp;#x662F;&amp;#x627E;&amp;#x5230;&amp;#x4E3B;&amp;#x673A;&amp;#x540E;&amp;#x5982;&amp;#x4F55;&amp;#x53EF;&amp;#x9760;&amp;#x9AD8;&amp;#x6548;&amp;#x7684;&amp;#x8FDB;&amp;#x884C;&amp;#x6570;&amp;#x636E;&amp;#x4F20;&amp;#x8F93;&amp;#x3002;&lt;/p&gt;
-&lt;p&gt;&amp;#x5728;TCP/IP&amp;#x534F;&amp;#x8BAE;&amp;#x4E2D;IP&amp;#x5C42;&amp;#x4E3B;&amp;#x8981;&amp;#x8D1F;&amp;#x8D23;&amp;#x7F51;&amp;#x7EDC;&amp;#x4E3B;&amp;#x673A;&amp;#x7684;&amp;#x5B9A;&amp;#x4F4D;&amp;#xFF0C;&amp;#x6570;&amp;#x636E;&amp;#x4F20;&amp;#x8F93;&amp;#x7684;&amp;#x8DEF;&amp;#x7531;&amp;#xFF0C;&amp;#x7531;IP&amp;#x5730;&amp;#x5740;&amp;#x53EF;&amp;#x4EE5;&amp;#x552F;&amp;#x4E00;&amp;#x5730;&amp;#x786E;&amp;#x5B9A;Internet&amp;#x4E0A;&amp;#x7684;&amp;#x4E00;&amp;#x53F0;&amp;#x4E3B;&amp;#x673A;&amp;#x3002;&lt;/p&gt;
-&lt;p&gt;&amp;#x800C;TCP&amp;#x5C42;&amp;#x5219;&amp;#x63D0;&amp;#x4F9B;&amp;#x9762;&amp;#x5411;&amp;#x5E94;&amp;#x7528;&amp;#x7684;&amp;#x53EF;&amp;#x9760;&amp;#xFF08;tcp&amp;#xFF09;&amp;#x7684;&amp;#x6216;&amp;#x975E;&amp;#x53EF;&amp;#x9760;&amp;#xFF08;UDP&amp;#xFF09;&amp;#x7684;&amp;#x6570;&amp;#x636E;&amp;#x4F20;&amp;#x8F93;&amp;#x673A;&amp;#x5236;&amp;#xFF0C;&amp;#x8FD9;&amp;#x662F;&amp;#x7F51;&amp;#x7EDC;&amp;#x7F16;&amp;#x7A0B;&amp;#x7684;&amp;#x4E3B;&amp;#x8981;&amp;#x5BF9;&amp;#x8C61;&amp;#xFF0C;&amp;#x4E00;&amp;#x822C;&amp;#x4E0D;&amp;#x9700;&amp;#x8981;&amp;#x5173;&amp;#x5FC3;IP&amp;#x5C42;&amp;#x662F;&amp;#x5982;&amp;#x4F55;&amp;#x5904;&amp;#x7406;&amp;#x6570;&amp;#x636E;&amp;#x7684;&amp;#x3002;&lt;/p&gt;
-&lt;p&gt;&amp;#x76EE;&amp;#x524D;&amp;#x8F83;&amp;#x4E3A;&amp;#x6D41;&amp;#x884C;&amp;#x7684;&amp;#x7F51;&amp;#x7EDC;&amp;#x7F16;&amp;#x7A0B;&amp;#x6A21;&amp;#x578B;&amp;#x662F;&amp;#x5BA2;&amp;#x6237;&amp;#x673A;/&amp;#x670D;&amp;#x52A1;&amp;#x5668;&amp;#xFF08;C/S&amp;#xFF09;&amp;#x7ED3;&amp;#x6784;&amp;#x3002;&amp;#x5373;&amp;#x901A;&amp;#x4FE1;&amp;#x53CC;&amp;#x65B9;&amp;#x4E00;&amp;#x65B9;&amp;#x4F5C;&amp;#x4E3A;&amp;#x670D;&amp;#x52A1;&amp;#x5668;&amp;#x7B49;&amp;#x5F85;&amp;#x5BA2;&amp;#x6237;&amp;#x63D0;&amp;#x51FA;&amp;#x8BF7;&amp;#x6C42;&amp;#x5E76;&amp;#x4E88;&amp;#x4EE5;&amp;#x54CD;&amp;#x5E94;&amp;#x3002;&amp;#x5BA2;&amp;#x6237;&amp;#x5219;&amp;#x5728;&amp;#x9700;&amp;#x8981;&amp;#x670D;&amp;#x52A1;&amp;#x65F6;&amp;#x5411;&amp;#x670D;&amp;#x52A1;&amp;#x5668;&amp;#x63D0; &amp;#x51FA;&amp;#x7533;&amp;#x8BF7;&amp;#x3002;&amp;#x670D;&amp;#x52A1;&amp;#x5668;&amp;#x4E00;&amp;#x822C;&amp;#x4F5C;&amp;#x4E3A;&amp;#x5B88;&amp;#x62A4;&amp;#x8FDB;&amp;#x7A0B;&amp;#x59CB;&amp;#x7EC8;&amp;#x8FD0;&amp;#x884C;&amp;#xFF0C;&amp;#x76D1;&amp;#x542C;&amp;#x7F51;&amp;#x7EDC;&amp;#x7AEF;&amp;#x53E3;&amp;#xFF0C;&amp;#x4E00;&amp;#x65E6;&amp;#x6709;&amp;#x5BA2;&amp;#x6237;&amp;#x8BF7;&amp;#x6C42;&amp;#xFF0C;&amp;#x5C31;&amp;#x4F1A;&amp;#x542F;&amp;#x52A8;&amp;#x4E00;&amp;#x4E2A;&amp;#x670D;&amp;#x52A1;&amp;#x8FDB;&amp;#x7A0B;&amp;#x6765;&amp;#x54CD;&amp;#x5E94;&amp;#x8BE5;&amp;#x5BA2;&amp;#x6237;&amp;#xFF0C;&amp;#x540C;&amp;#x65F6;&amp;#x81EA;&amp;#x5DF1;&amp;#x7EE7;&amp;#x7EED;&amp;#x76D1;&amp;#x542C;&amp;#x670D;&amp;#x52A1;&amp;#x7AEF;&amp;#x53E3;&amp;#xFF0C;&amp;#x4F7F;&amp;#x540E;&amp;#x6765;&amp;#x7684;&amp;#x5BA2;&amp;#x6237;&amp;#x4E5F; &amp;#x80FD;&amp;#x53CA;&amp;#x65F6;&amp;#x5F97;&amp;#x5230;&amp;#x670D;&amp;#x52A1;&amp;#x3002;&lt;/p&gt;
-&lt;h1 id=&quot;&amp;#x4E8C;&amp;#x3001;&amp;#x4E24;&amp;#x7C7B;&amp;#x4F20;&amp;#x8F93;&amp;#x534F;&amp;#x8BAE;&amp;#xFF1A;TCP&amp;#xFF1B;UDP&quot;&gt;&amp;#x4E8C;&amp;#x3001;&amp;#x4E24;&amp;#x7C7B;&amp;#x4F20;&amp;#x8F93;&amp;#x534F;&amp;#x8BAE;&amp;#xFF1A;TCP&amp;#xFF1B;UDP&lt;/h1&gt;&lt;p&gt;TCP&amp;#x662F;Tranfer Control Protocol&amp;#x7684; &amp;#x7B80;&amp;#x79F0;&amp;#xFF0C;&amp;#x662F;&amp;#x4E00;&amp;#x79CD;&amp;#x9762;&amp;#x5411;&amp;#x8FDE;&amp;#x63A5;&amp;#x7684;&amp;#x4FDD;&amp;#x8BC1;&amp;#x53EF;&amp;#x9760;&amp;#x4F20;&amp;#x8F93;&amp;#x7684;&amp;#x534F;&amp;#x8BAE;&amp;#x3002;&amp;#x901A;&amp;#x8FC7;TCP&amp;#x534F;&amp;#x8BAE;&amp;#x4F20;&amp;#x8F93;&amp;#xFF0C;&amp;#x5F97;&amp;#x5230;&amp;#x7684;&amp;#x662F;&amp;#x4E00;&amp;#x4E2A;&amp;#x987A;&amp;#x5E8F;&amp;#x7684;&amp;#x65E0;&amp;#x5DEE;&amp;#x9519;&amp;#x7684;&amp;#x6570;&amp;#x636E;&amp;#x6D41;&amp;#x3002;&amp;#x53D1;&amp;#x9001;&amp;#x65B9;&amp;#x548C;&amp;#x63A5;&amp;#x6536;&amp;#x65B9;&amp;#x7684;&amp;#x6210;&amp;#x5BF9;&amp;#x7684;&amp;#x4E24;&amp;#x4E2A;socket&amp;#x4E4B;&amp;#x95F4;&amp;#x5FC5;&amp;#x987B;&amp;#x5EFA; &amp;#x7ACB;&amp;#x8FDE;&amp;#x63A5;&amp;#xFF0C;&amp;#x4EE5;&amp;#x4FBF;&amp;#x5728;TCP&amp;#x534F;&amp;#x8BAE;&amp;#x7684;&amp;#x57FA;&amp;#x7840;&amp;#x4E0A;&amp;#x8FDB;&amp;#x884C;&amp;#x901A;&amp;#x4FE1;&amp;#xFF0C;&amp;#x5F53;&amp;#x4E00;&amp;#x4E2A;socket&amp;#xFF08;&amp;#x901A;&amp;#x5E38;&amp;#x90FD;&amp;#x662F;server socket&amp;#xFF09;&amp;#x7B49;&amp;#x5F85;&amp;#x5EFA;&amp;#x7ACB;&amp;#x8FDE;&amp;#x63A5;&amp;#x65F6;&amp;#xFF0C;&amp;#x53E6;&amp;#x4E00;&amp;#x4E2A;socket&amp;#x53EF;&amp;#x4EE5;&amp;#x8981;&amp;#x6C42;&amp;#x8FDB;&amp;#x884C;&amp;#x8FDE;&amp;#x63A5;&amp;#xFF0C;&amp;#x4E00;&amp;#x65E6;&amp;#x8FD9;&amp;#x4E24;&amp;#x4E2A;socket&amp;#x8FDE;&amp;#x63A5;&amp;#x8D77;&amp;#x6765;&amp;#xFF0C;&amp;#x5B83;&amp;#x4EEC;&amp;#x5C31;&amp;#x53EF;&amp;#x4EE5;&amp;#x8FDB;&amp;#x884C;&amp;#x53CC;&amp;#x5411;&amp;#x6570;&amp;#x636E;&amp;#x4F20;&amp;#x8F93;&amp;#xFF0C;&amp;#x53CC;&amp;#x65B9;&amp;#x90FD;&amp;#x53EF;&amp;#x4EE5;&amp;#x8FDB;&amp;#x884C;&amp;#x53D1;&amp;#x9001; &amp;#x6216;&amp;#x63A5;&amp;#x6536;&amp;#x64CD;&amp;#x4F5C;&amp;#x3002;&lt;/p&gt;
-&lt;p&gt;UDP&amp;#x662F;User Datagram Protocol&amp;#x7684;&amp;#x7B80;&amp;#x79F0;&amp;#xFF0C;&amp;#x662F;&amp;#x4E00;&amp;#x79CD;&amp;#x65E0;&amp;#x8FDE;&amp;#x63A5;&amp;#x7684;&amp;#x534F;&amp;#x8BAE;&amp;#xFF0C;&amp;#x6BCF;&amp;#x4E2A;&amp;#x6570;&amp;#x636E;&amp;#x62A5;&amp;#x90FD;&amp;#x662F;&amp;#x4E00;&amp;#x4E2A;&amp;#x72EC;&amp;#x7ACB;&amp;#x7684;&amp;#x4FE1;&amp;#x606F;&amp;#xFF0C;&amp;#x5305;&amp;#x62EC;&amp;#x5B8C;&amp;#x6574;&amp;#x7684;&amp;#x6E90;&amp;#x5730;&amp;#x5740;&amp;#x6216;&amp;#x76EE;&amp;#x7684;&amp;#x5730;&amp;#x5740;&amp;#xFF0C;&amp;#x5B83;&amp;#x5728;&amp;#x7F51;&amp;#x7EDC;&amp;#x4E0A;&amp;#x4EE5;&amp;#x4EFB;&amp;#x4F55;&amp;#x53EF;&amp;#x80FD;&amp;#x7684;&amp;#x8DEF;&amp;#x5F84;&amp;#x4F20;&amp;#x5F80;&amp;#x76EE;&amp;#x7684;&amp;#x5730;&amp;#xFF0C;&amp;#x56E0;&amp;#x6B64;&amp;#x80FD;&amp;#x5426;&amp;#x5230;&amp;#x8FBE;&amp;#x76EE;&amp;#x7684;&amp;#x5730;&amp;#xFF0C;&amp;#x5230;&amp;#x8FBE;&amp;#x76EE;&amp;#x7684;&amp;#x5730;&amp;#x7684;&amp;#x65F6;&amp;#x95F4;&amp;#x4EE5;&amp;#x53CA;&amp;#x5185;&amp;#x5BB9;&amp;#x7684;&amp;#x6B63;&amp;#x786E;&amp;#x6027;&amp;#x90FD;&amp;#x662F;&amp;#x4E0D;&amp;#x80FD;&amp;#x88AB;&amp;#x4FDD;&amp;#x8BC1;&amp;#x7684;&amp;#x3002;&lt;/p&gt;
-&lt;p&gt;&amp;#x6BD4;&amp;#x8F83;&amp;#xFF1A;&lt;/p&gt;
-&lt;h2 id=&quot;UDP:&quot;&gt;UDP:&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&amp;#x6BCF;&amp;#x4E2A;&amp;#x6570;&amp;#x636E;&amp;#x62A5;&amp;#x4E2D;&amp;#x90FD;&amp;#x7ED9;&amp;#x51FA;&amp;#x4E86;&amp;#x5B8C;&amp;#x6574;&amp;#x7684;&amp;#x5730;&amp;#x5740;&amp;#x4FE1;&amp;#x606F;&amp;#xFF0C;&amp;#x56E0;&amp;#x6B64;&amp;#x65E0;&amp;#x9700;&amp;#x8981;&amp;#x5EFA;&amp;#x7ACB;&amp;#x53D1;&amp;#x9001;&amp;#x65B9;&amp;#x548C;&amp;#x63A5;&amp;#x6536;&amp;#x65B9;&amp;#x7684;&amp;#x8FDE;&amp;#x63A5;&amp;#x3002;&lt;/li&gt;
-&lt;li&gt;UDP&amp;#x4F20;&amp;#x8F93;&amp;#x6570;&amp;#x636E;&amp;#x65F6;&amp;#x662F;&amp;#x6709;&amp;#x5927;&amp;#x5C0F;&amp;#x9650;&amp;#x5236;&amp;#x7684;&amp;#xFF0C;&amp;#x6BCF;&amp;#x4E2A;&amp;#x88AB;&amp;#x4F20;&amp;#x8F93;&amp;#x7684;&amp;#x6570;&amp;#x636E;&amp;#x62A5;&amp;#x5FC5;&amp;#x987B;&amp;#x9650;&amp;#x5B9A;&amp;#x5728;64KB&amp;#x4E4B;&amp;#x5185;&amp;#x3002;&lt;/li&gt;
-&lt;li&gt;UDP&amp;#x662F;&amp;#x4E00;&amp;#x4E2A;&amp;#x4E0D;&amp;#x53EF;&amp;#x9760;&amp;#x7684;&amp;#x534F;&amp;#x8BAE;&amp;#xFF0C;&amp;#x53D1;&amp;#x9001;&amp;#x65B9;&amp;#x6240;&amp;#x53D1;&amp;#x9001;&amp;#x7684;&amp;#x6570;&amp;#x636E;&amp;#x62A5;&amp;#x5E76;&amp;#x4E0D;&amp;#x4E00;&amp;#x5B9A;&amp;#x4EE5;&amp;#x76F8;&amp;#x540C;&amp;#x7684;&amp;#x6B21;&amp;#x5E8F;&amp;#x5230;&amp;#x8FBE;&amp;#x63A5;&amp;#x6536;&amp;#x65B9;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;TCP:&quot;&gt;TCP:&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&amp;#x9762;&amp;#x5411;&amp;#x8FDE;&amp;#x63A5;&amp;#x7684;&amp;#x534F;&amp;#x8BAE;&amp;#xFF0C;&amp;#x5728;socket&amp;#x4E4B;&amp;#x95F4;&amp;#x8FDB;&amp;#x884C;&amp;#x6570;&amp;#x636E;&amp;#x4F20;&amp;#x8F93;&amp;#x4E4B;&amp;#x524D;&amp;#x5FC5;&amp;#x7136;&amp;#x8981;&amp;#x5EFA;&amp;#x7ACB;&amp;#x8FDE;&amp;#x63A5;&amp;#xFF0C;&amp;#x6240;&amp;#x4EE5;&amp;#x5728;TCP&amp;#x4E2D;&amp;#x9700;&amp;#x8981;&amp;#x8FDE;&amp;#x63A5;&amp;#x65F6;&amp;#x95F4;&amp;#x3002;&lt;/li&gt;
-&lt;li&gt;TCP&amp;#x4F20;&amp;#x8F93;&amp;#x6570;&amp;#x636E;&amp;#x5927;&amp;#x5C0F;&amp;#x9650;&amp;#x5236;&amp;#xFF0C;&amp;#x4E00;&amp;#x65E6;&amp;#x8FDE;&amp;#x63A5;&amp;#x5EFA;&amp;#x7ACB;&amp;#x8D77;&amp;#x6765;&amp;#xFF0C;&amp;#x53CC;&amp;#x65B9;&amp;#x7684;socket&amp;#x5C31;&amp;#x53EF;&amp;#x4EE5;&amp;#x6309;&amp;#x7EDF;&amp;#x4E00;&amp;#x7684;&amp;#x683C;&amp;#x5F0F;&amp;#x4F20;&amp;#x8F93;&amp;#x5927;&amp;#x7684;&amp;#x6570;&amp;#x636E;&amp;#x3002;&lt;/li&gt;
-&lt;li&gt;TCP&amp;#x662F;&amp;#x4E00;&amp;#x4E2A;&amp;#x53EF;&amp;#x9760;&amp;#x7684;&amp;#x534F;&amp;#x8BAE;&amp;#xFF0C;&amp;#x5B83;&amp;#x786E;&amp;#x4FDD;&amp;#x63A5;&amp;#x6536;&amp;#x65B9;&amp;#x5B8C;&amp;#x5168;&amp;#x6B63;&amp;#x786E;&amp;#x5730;&amp;#x83B7;&amp;#x53D6;&amp;#x53D1;&amp;#x9001;&amp;#x65B9;&amp;#x6240;&amp;#x53D1;&amp;#x9001;&amp;#x7684;&amp;#x5168;&amp;#x90E8;&amp;#x6570;&amp;#x636E;&amp;#x3002;&lt;/li&gt;
-&lt;/ol&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;&amp;#x4E00;&amp;#x3001;&amp;#x7F51;&amp;#x7EDC;&amp;#x7F16;&amp;#x7A0B;&amp;#x4E2D;&amp;#x4E24;&amp;#x4E2A;&amp;#x4E3B;&amp;#x8981;&amp;#x7684;&amp;#x95EE;&amp;#x9898;&quot;&gt;&amp;#x4E00;&amp;#x3001;&amp;#
-    
-    </summary>
-    
-      <category term="技术" scheme="http://leeboyue.com/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="java" scheme="http://leeboyue.com/tags/java/"/>
-    
-      <category term="网络" scheme="http://leeboyue.com/tags/%E7%BD%91%E7%BB%9C/"/>
-    
-      <category term="通讯" scheme="http://leeboyue.com/tags/%E9%80%9A%E8%AE%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>我的网站诞生啦</title>
-    <link href="http://leeboyue.com/2015/06/05/%E6%88%91%E7%9A%84%E7%BD%91%E7%AB%99%E8%AF%9E%E7%94%9F%E5%95%A6/"/>
-    <id>http://leeboyue.com/2015/06/05/我的网站诞生啦/</id>
-    <published>2015-06-05T13:25:05.000Z</published>
-    <updated>2015-06-05T13:36:28.000Z</updated>
-    
-    <content type="html">&lt;p&gt;&amp;#x6587;&amp;#x7AE0;&amp;#x5185;&amp;#x5BB9;&amp;#xFF5E;&amp;#xFF5E;&amp;#xFF5E;&lt;br&gt;    &amp;#x8D39;&amp;#x4E86;&amp;#x4E5D;&amp;#x725B;&amp;#x4E8C;&amp;#x864E;&amp;#x4E4B;&amp;#x529B;&amp;#xFF0C;&amp;#x7EC8;&amp;#x4E8E;&amp;#x5728;&amp;#x4ECA;&amp;#x5929;&amp;#x628A;&amp;#x81EA;&amp;#x5DF1;&amp;#x7684;&amp;#x4E2A;&amp;#x4EBA;&amp;#x7AD9;&amp;#x642D;&amp;#x5EFA;&amp;#x8D77;&amp;#x6765;&amp;#x4E86;&amp;#xFF0C;&amp;#x6B22;&amp;#x8FCE;&amp;#x8BBF;&amp;#x95EE;&lt;a href=&quot;http://www.leeboyue.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&amp;#x5C0F;&amp;#x674E;&amp;#x541B;&lt;/a&gt;&amp;#x7684;&amp;#x4E2A;&amp;#x4EBA;&amp;#x7F51;&amp;#x7AD9;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&amp;#x6587;&amp;#x7AE0;&amp;#x5185;&amp;#x5BB9;&amp;#xFF5E;&amp;#xFF5E;&amp;#xFF5E;&lt;br&gt;    &amp;#x8D39;&amp;#x4E86;&amp;#x4E5D;&amp;#x725B;&amp;#x4E8C;&amp;#x864E;&amp;#x4E4B;&amp;#x529B;&amp;#xFF0C;&amp;
-    
-    </summary>
     
     
       <category term="hexo" scheme="http://leeboyue.com/tags/hexo/"/>
