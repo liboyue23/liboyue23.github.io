@@ -5,25 +5,16 @@
   
   <title>Java tcp/ip笔记 | Mr.Lee</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一、网络编程中两个主要的问题一个是如何准确的定位网络上一台或多台主机，另一个就是找到主机后如何可靠高效的进行数据传输。
-在TCP/IP协议中IP层主要负责网络主机的定位，数据传输的路由，由IP地址可以唯一地确定Internet上的一台主机。
-而TCP层则提供面向应用的可靠（tcp）的或非可靠（UDP）的数据传输机制，这是网络编程的主要对象，一般不需要关心IP层是如何处理数据的。
-目前较为流行的网络">
+  <meta name="description" content="&amp;#x4E00;&amp;#x3001;&amp;#x7F51;&amp;#x7EDC;&amp;#x7F16;&amp;#x7A0B;&amp;#x4E2D;&amp;#x4E24;&amp;#x4E2A;&amp;#x4E3B;&amp;#x8981;&amp;#x7684;&amp;#x95EE;&amp;#x9898;&amp;#x4E00;&amp;#x4E2A;&amp;#x662F;&amp;#x5982;&amp;#x4F55;&amp;#x51C6;&amp;#x786E;&amp;#x7684;&amp;#x5B9A;&amp;#x4F4D;&amp;#x7F51;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java tcp/ip笔记">
 <meta property="og:url" content="http://leeboyue.com/2015/06/07/Java-tcp-ip笔记/index.html">
 <meta property="og:site_name" content="Mr.Lee">
-<meta property="og:description" content="一、网络编程中两个主要的问题一个是如何准确的定位网络上一台或多台主机，另一个就是找到主机后如何可靠高效的进行数据传输。
-在TCP/IP协议中IP层主要负责网络主机的定位，数据传输的路由，由IP地址可以唯一地确定Internet上的一台主机。
-而TCP层则提供面向应用的可靠（tcp）的或非可靠（UDP）的数据传输机制，这是网络编程的主要对象，一般不需要关心IP层是如何处理数据的。
-目前较为流行的网络">
+<meta property="og:description" content="&amp;#x4E00;&amp;#x3001;&amp;#x7F51;&amp;#x7EDC;&amp;#x7F16;&amp;#x7A0B;&amp;#x4E2D;&amp;#x4E24;&amp;#x4E2A;&amp;#x4E3B;&amp;#x8981;&amp;#x7684;&amp;#x95EE;&amp;#x9898;&amp;#x4E00;&amp;#x4E2A;&amp;#x662F;&amp;#x5982;&amp;#x4F55;&amp;#x51C6;&amp;#x786E;&amp;#x7684;&amp;#x5B9A;&amp;#x4F4D;&amp;#x7F51;">
 <meta property="og:updated_time" content="2015-08-02T01:31:33.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java tcp/ip笔记">
-<meta name="twitter:description" content="一、网络编程中两个主要的问题一个是如何准确的定位网络上一台或多台主机，另一个就是找到主机后如何可靠高效的进行数据传输。
-在TCP/IP协议中IP层主要负责网络主机的定位，数据传输的路由，由IP地址可以唯一地确定Internet上的一台主机。
-而TCP层则提供面向应用的可靠（tcp）的或非可靠（UDP）的数据传输机制，这是网络编程的主要对象，一般不需要关心IP层是如何处理数据的。
-目前较为流行的网络">
+<meta name="twitter:description" content="&amp;#x4E00;&amp;#x3001;&amp;#x7F51;&amp;#x7EDC;&amp;#x7F16;&amp;#x7A0B;&amp;#x4E2D;&amp;#x4E24;&amp;#x4E2A;&amp;#x4E3B;&amp;#x8981;&amp;#x7684;&amp;#x95EE;&amp;#x9898;&amp;#x4E00;&amp;#x4E2A;&amp;#x662F;&amp;#x5982;&amp;#x4F55;&amp;#x51C6;&amp;#x786E;&amp;#x7684;&amp;#x5B9A;&amp;#x4F4D;&amp;#x7F51;">
   
     <link rel="alternative" href="/atom.xml" title="Mr.Lee" type="application/atom+xml">
   
@@ -40,7 +31,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img lazy-src="/avatar_photo.jpg" class="js-avatar">
+			<img lazy-src="/me.jpg" class="js-avatar">
 		</a>
 
 		<hgroup>
@@ -127,7 +118,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/zookeeper/" style="font-size: 10px;">zookeeper</a> <a href="/tags/分布式/" style="font-size: 15px;">分布式</a> <a href="/tags/北漂/" style="font-size: 10px;">北漂</a> <a href="/tags/家常菜/" style="font-size: 10px;">家常菜</a> <a href="/tags/建站/" style="font-size: 15px;">建站</a> <a href="/tags/心得/" style="font-size: 10px;">心得</a> <a href="/tags/技术/" style="font-size: 20px;">技术</a> <a href="/tags/技术交流/" style="font-size: 10px;">技术交流</a> <a href="/tags/海鲜/" style="font-size: 10px;">海鲜</a> <a href="/tags/租房/" style="font-size: 10px;">租房</a> <a href="/tags/网络/" style="font-size: 10px;">网络</a> <a href="/tags/通讯/" style="font-size: 10px;">通讯</a> <a href="/tags/遇到的坑/" style="font-size: 10px;">遇到的坑</a>
+						<a href="/tags/hexo/" style="font-size: 13.33px;">hexo</a> <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/zookeeper/" style="font-size: 10px;">zookeeper</a> <a href="/tags/分布式/" style="font-size: 13.33px;">分布式</a> <a href="/tags/北漂/" style="font-size: 10px;">北漂</a> <a href="/tags/家常菜/" style="font-size: 10px;">家常菜</a> <a href="/tags/建站/" style="font-size: 13.33px;">建站</a> <a href="/tags/心得/" style="font-size: 10px;">心得</a> <a href="/tags/技术/" style="font-size: 16.67px;">技术</a> <a href="/tags/技术交流/" style="font-size: 10px;">技术交流</a> <a href="/tags/海鲜/" style="font-size: 10px;">海鲜</a> <a href="/tags/租房/" style="font-size: 10px;">租房</a> <a href="/tags/网络/" style="font-size: 13.33px;">网络</a> <a href="/tags/通讯/" style="font-size: 13.33px;">通讯</a> <a href="/tags/遇到的坑/" style="font-size: 10px;">遇到的坑</a>
 					</div>
 				</section>
 				
@@ -173,7 +164,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img lazy-src="/avatar_photo.jpg" class="js-avatar">
+				<img lazy-src="/me.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author">Bear Lee</h1>
@@ -252,22 +243,22 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="一、网络编程中两个主要的问题">一、网络编程中两个主要的问题</h1><p>一个是如何准确的定位网络上一台或多台主机，另一个就是找到主机后如何可靠高效的进行数据传输。</p>
-<p>在TCP/IP协议中IP层主要负责网络主机的定位，数据传输的路由，由IP地址可以唯一地确定Internet上的一台主机。</p>
-<p>而TCP层则提供面向应用的可靠（tcp）的或非可靠（UDP）的数据传输机制，这是网络编程的主要对象，一般不需要关心IP层是如何处理数据的。</p>
-<p>目前较为流行的网络编程模型是客户机/服务器（C/S）结构。即通信双方一方作为服务器等待客户提出请求并予以响应。客户则在需要服务时向服务器提 出申请。服务器一般作为守护进程始终运行，监听网络端口，一旦有客户请求，就会启动一个服务进程来响应该客户，同时自己继续监听服务端口，使后来的客户也 能及时得到服务。</p>
-<h1 id="二、两类传输协议：TCP；UDP">二、两类传输协议：TCP；UDP</h1><p>TCP是Tranfer Control Protocol的 简称，是一种面向连接的保证可靠传输的协议。通过TCP协议传输，得到的是一个顺序的无差错的数据流。发送方和接收方的成对的两个socket之间必须建 立连接，以便在TCP协议的基础上进行通信，当一个socket（通常都是server socket）等待建立连接时，另一个socket可以要求进行连接，一旦这两个socket连接起来，它们就可以进行双向数据传输，双方都可以进行发送 或接收操作。</p>
-<p>UDP是User Datagram Protocol的简称，是一种无连接的协议，每个数据报都是一个独立的信息，包括完整的源地址或目的地址，它在网络上以任何可能的路径传往目的地，因此能否到达目的地，到达目的地的时间以及内容的正确性都是不能被保证的。</p>
-<p>比较：</p>
+        <h1 id="&#x4E00;&#x3001;&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;&#x4E2D;&#x4E24;&#x4E2A;&#x4E3B;&#x8981;&#x7684;&#x95EE;&#x9898;">&#x4E00;&#x3001;&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;&#x4E2D;&#x4E24;&#x4E2A;&#x4E3B;&#x8981;&#x7684;&#x95EE;&#x9898;</h1><p>&#x4E00;&#x4E2A;&#x662F;&#x5982;&#x4F55;&#x51C6;&#x786E;&#x7684;&#x5B9A;&#x4F4D;&#x7F51;&#x7EDC;&#x4E0A;&#x4E00;&#x53F0;&#x6216;&#x591A;&#x53F0;&#x4E3B;&#x673A;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x5C31;&#x662F;&#x627E;&#x5230;&#x4E3B;&#x673A;&#x540E;&#x5982;&#x4F55;&#x53EF;&#x9760;&#x9AD8;&#x6548;&#x7684;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x4F20;&#x8F93;&#x3002;</p>
+<p>&#x5728;TCP/IP&#x534F;&#x8BAE;&#x4E2D;IP&#x5C42;&#x4E3B;&#x8981;&#x8D1F;&#x8D23;&#x7F51;&#x7EDC;&#x4E3B;&#x673A;&#x7684;&#x5B9A;&#x4F4D;&#xFF0C;&#x6570;&#x636E;&#x4F20;&#x8F93;&#x7684;&#x8DEF;&#x7531;&#xFF0C;&#x7531;IP&#x5730;&#x5740;&#x53EF;&#x4EE5;&#x552F;&#x4E00;&#x5730;&#x786E;&#x5B9A;Internet&#x4E0A;&#x7684;&#x4E00;&#x53F0;&#x4E3B;&#x673A;&#x3002;</p>
+<p>&#x800C;TCP&#x5C42;&#x5219;&#x63D0;&#x4F9B;&#x9762;&#x5411;&#x5E94;&#x7528;&#x7684;&#x53EF;&#x9760;&#xFF08;tcp&#xFF09;&#x7684;&#x6216;&#x975E;&#x53EF;&#x9760;&#xFF08;UDP&#xFF09;&#x7684;&#x6570;&#x636E;&#x4F20;&#x8F93;&#x673A;&#x5236;&#xFF0C;&#x8FD9;&#x662F;&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;&#x7684;&#x4E3B;&#x8981;&#x5BF9;&#x8C61;&#xFF0C;&#x4E00;&#x822C;&#x4E0D;&#x9700;&#x8981;&#x5173;&#x5FC3;IP&#x5C42;&#x662F;&#x5982;&#x4F55;&#x5904;&#x7406;&#x6570;&#x636E;&#x7684;&#x3002;</p>
+<p>&#x76EE;&#x524D;&#x8F83;&#x4E3A;&#x6D41;&#x884C;&#x7684;&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;&#x6A21;&#x578B;&#x662F;&#x5BA2;&#x6237;&#x673A;/&#x670D;&#x52A1;&#x5668;&#xFF08;C/S&#xFF09;&#x7ED3;&#x6784;&#x3002;&#x5373;&#x901A;&#x4FE1;&#x53CC;&#x65B9;&#x4E00;&#x65B9;&#x4F5C;&#x4E3A;&#x670D;&#x52A1;&#x5668;&#x7B49;&#x5F85;&#x5BA2;&#x6237;&#x63D0;&#x51FA;&#x8BF7;&#x6C42;&#x5E76;&#x4E88;&#x4EE5;&#x54CD;&#x5E94;&#x3002;&#x5BA2;&#x6237;&#x5219;&#x5728;&#x9700;&#x8981;&#x670D;&#x52A1;&#x65F6;&#x5411;&#x670D;&#x52A1;&#x5668;&#x63D0; &#x51FA;&#x7533;&#x8BF7;&#x3002;&#x670D;&#x52A1;&#x5668;&#x4E00;&#x822C;&#x4F5C;&#x4E3A;&#x5B88;&#x62A4;&#x8FDB;&#x7A0B;&#x59CB;&#x7EC8;&#x8FD0;&#x884C;&#xFF0C;&#x76D1;&#x542C;&#x7F51;&#x7EDC;&#x7AEF;&#x53E3;&#xFF0C;&#x4E00;&#x65E6;&#x6709;&#x5BA2;&#x6237;&#x8BF7;&#x6C42;&#xFF0C;&#x5C31;&#x4F1A;&#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#x8FDB;&#x7A0B;&#x6765;&#x54CD;&#x5E94;&#x8BE5;&#x5BA2;&#x6237;&#xFF0C;&#x540C;&#x65F6;&#x81EA;&#x5DF1;&#x7EE7;&#x7EED;&#x76D1;&#x542C;&#x670D;&#x52A1;&#x7AEF;&#x53E3;&#xFF0C;&#x4F7F;&#x540E;&#x6765;&#x7684;&#x5BA2;&#x6237;&#x4E5F; &#x80FD;&#x53CA;&#x65F6;&#x5F97;&#x5230;&#x670D;&#x52A1;&#x3002;</p>
+<h1 id="&#x4E8C;&#x3001;&#x4E24;&#x7C7B;&#x4F20;&#x8F93;&#x534F;&#x8BAE;&#xFF1A;TCP&#xFF1B;UDP">&#x4E8C;&#x3001;&#x4E24;&#x7C7B;&#x4F20;&#x8F93;&#x534F;&#x8BAE;&#xFF1A;TCP&#xFF1B;UDP</h1><p>TCP&#x662F;Tranfer Control Protocol&#x7684; &#x7B80;&#x79F0;&#xFF0C;&#x662F;&#x4E00;&#x79CD;&#x9762;&#x5411;&#x8FDE;&#x63A5;&#x7684;&#x4FDD;&#x8BC1;&#x53EF;&#x9760;&#x4F20;&#x8F93;&#x7684;&#x534F;&#x8BAE;&#x3002;&#x901A;&#x8FC7;TCP&#x534F;&#x8BAE;&#x4F20;&#x8F93;&#xFF0C;&#x5F97;&#x5230;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x987A;&#x5E8F;&#x7684;&#x65E0;&#x5DEE;&#x9519;&#x7684;&#x6570;&#x636E;&#x6D41;&#x3002;&#x53D1;&#x9001;&#x65B9;&#x548C;&#x63A5;&#x6536;&#x65B9;&#x7684;&#x6210;&#x5BF9;&#x7684;&#x4E24;&#x4E2A;socket&#x4E4B;&#x95F4;&#x5FC5;&#x987B;&#x5EFA; &#x7ACB;&#x8FDE;&#x63A5;&#xFF0C;&#x4EE5;&#x4FBF;&#x5728;TCP&#x534F;&#x8BAE;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#x8FDB;&#x884C;&#x901A;&#x4FE1;&#xFF0C;&#x5F53;&#x4E00;&#x4E2A;socket&#xFF08;&#x901A;&#x5E38;&#x90FD;&#x662F;server socket&#xFF09;&#x7B49;&#x5F85;&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;&#x65F6;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;socket&#x53EF;&#x4EE5;&#x8981;&#x6C42;&#x8FDB;&#x884C;&#x8FDE;&#x63A5;&#xFF0C;&#x4E00;&#x65E6;&#x8FD9;&#x4E24;&#x4E2A;socket&#x8FDE;&#x63A5;&#x8D77;&#x6765;&#xFF0C;&#x5B83;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x53CC;&#x5411;&#x6570;&#x636E;&#x4F20;&#x8F93;&#xFF0C;&#x53CC;&#x65B9;&#x90FD;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x53D1;&#x9001; &#x6216;&#x63A5;&#x6536;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>UDP&#x662F;User Datagram Protocol&#x7684;&#x7B80;&#x79F0;&#xFF0C;&#x662F;&#x4E00;&#x79CD;&#x65E0;&#x8FDE;&#x63A5;&#x7684;&#x534F;&#x8BAE;&#xFF0C;&#x6BCF;&#x4E2A;&#x6570;&#x636E;&#x62A5;&#x90FD;&#x662F;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x5305;&#x62EC;&#x5B8C;&#x6574;&#x7684;&#x6E90;&#x5730;&#x5740;&#x6216;&#x76EE;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x5B83;&#x5728;&#x7F51;&#x7EDC;&#x4E0A;&#x4EE5;&#x4EFB;&#x4F55;&#x53EF;&#x80FD;&#x7684;&#x8DEF;&#x5F84;&#x4F20;&#x5F80;&#x76EE;&#x7684;&#x5730;&#xFF0C;&#x56E0;&#x6B64;&#x80FD;&#x5426;&#x5230;&#x8FBE;&#x76EE;&#x7684;&#x5730;&#xFF0C;&#x5230;&#x8FBE;&#x76EE;&#x7684;&#x5730;&#x7684;&#x65F6;&#x95F4;&#x4EE5;&#x53CA;&#x5185;&#x5BB9;&#x7684;&#x6B63;&#x786E;&#x6027;&#x90FD;&#x662F;&#x4E0D;&#x80FD;&#x88AB;&#x4FDD;&#x8BC1;&#x7684;&#x3002;</p>
+<p>&#x6BD4;&#x8F83;&#xFF1A;</p>
 <h2 id="UDP:">UDP:</h2><ol>
-<li>每个数据报中都给出了完整的地址信息，因此无需要建立发送方和接收方的连接。</li>
-<li>UDP传输数据时是有大小限制的，每个被传输的数据报必须限定在64KB之内。</li>
-<li>UDP是一个不可靠的协议，发送方所发送的数据报并不一定以相同的次序到达接收方</li>
+<li>&#x6BCF;&#x4E2A;&#x6570;&#x636E;&#x62A5;&#x4E2D;&#x90FD;&#x7ED9;&#x51FA;&#x4E86;&#x5B8C;&#x6574;&#x7684;&#x5730;&#x5740;&#x4FE1;&#x606F;&#xFF0C;&#x56E0;&#x6B64;&#x65E0;&#x9700;&#x8981;&#x5EFA;&#x7ACB;&#x53D1;&#x9001;&#x65B9;&#x548C;&#x63A5;&#x6536;&#x65B9;&#x7684;&#x8FDE;&#x63A5;&#x3002;</li>
+<li>UDP&#x4F20;&#x8F93;&#x6570;&#x636E;&#x65F6;&#x662F;&#x6709;&#x5927;&#x5C0F;&#x9650;&#x5236;&#x7684;&#xFF0C;&#x6BCF;&#x4E2A;&#x88AB;&#x4F20;&#x8F93;&#x7684;&#x6570;&#x636E;&#x62A5;&#x5FC5;&#x987B;&#x9650;&#x5B9A;&#x5728;64KB&#x4E4B;&#x5185;&#x3002;</li>
+<li>UDP&#x662F;&#x4E00;&#x4E2A;&#x4E0D;&#x53EF;&#x9760;&#x7684;&#x534F;&#x8BAE;&#xFF0C;&#x53D1;&#x9001;&#x65B9;&#x6240;&#x53D1;&#x9001;&#x7684;&#x6570;&#x636E;&#x62A5;&#x5E76;&#x4E0D;&#x4E00;&#x5B9A;&#x4EE5;&#x76F8;&#x540C;&#x7684;&#x6B21;&#x5E8F;&#x5230;&#x8FBE;&#x63A5;&#x6536;&#x65B9;</li>
 </ol>
 <h2 id="TCP:">TCP:</h2><ol>
-<li>面向连接的协议，在socket之间进行数据传输之前必然要建立连接，所以在TCP中需要连接时间。</li>
-<li>TCP传输数据大小限制，一旦连接建立起来，双方的socket就可以按统一的格式传输大的数据。</li>
-<li>TCP是一个可靠的协议，它确保接收方完全正确地获取发送方所发送的全部数据。</li>
+<li>&#x9762;&#x5411;&#x8FDE;&#x63A5;&#x7684;&#x534F;&#x8BAE;&#xFF0C;&#x5728;socket&#x4E4B;&#x95F4;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x4F20;&#x8F93;&#x4E4B;&#x524D;&#x5FC5;&#x7136;&#x8981;&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;&#xFF0C;&#x6240;&#x4EE5;&#x5728;TCP&#x4E2D;&#x9700;&#x8981;&#x8FDE;&#x63A5;&#x65F6;&#x95F4;&#x3002;</li>
+<li>TCP&#x4F20;&#x8F93;&#x6570;&#x636E;&#x5927;&#x5C0F;&#x9650;&#x5236;&#xFF0C;&#x4E00;&#x65E6;&#x8FDE;&#x63A5;&#x5EFA;&#x7ACB;&#x8D77;&#x6765;&#xFF0C;&#x53CC;&#x65B9;&#x7684;socket&#x5C31;&#x53EF;&#x4EE5;&#x6309;&#x7EDF;&#x4E00;&#x7684;&#x683C;&#x5F0F;&#x4F20;&#x8F93;&#x5927;&#x7684;&#x6570;&#x636E;&#x3002;</li>
+<li>TCP&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x9760;&#x7684;&#x534F;&#x8BAE;&#xFF0C;&#x5B83;&#x786E;&#x4FDD;&#x63A5;&#x6536;&#x65B9;&#x5B8C;&#x5168;&#x6B63;&#x786E;&#x5730;&#x83B7;&#x53D6;&#x53D1;&#x9001;&#x65B9;&#x6240;&#x53D1;&#x9001;&#x7684;&#x5168;&#x90E8;&#x6570;&#x636E;&#x3002;</li>
 </ol>
 
       

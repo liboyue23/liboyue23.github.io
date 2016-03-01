@@ -5,28 +5,16 @@
   
   <title>MySQL5.5升级到5.6，TIMESTAMP的变化 | Mr.Lee</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前段时间，系统MySQL从5.5升级到了5.6，系统出现了大量的异常。大部分异常引起原因是由于TIMESTAMP的行为发生了变化。
-
-TIMESTAMP在MySQL5.5中的行为
-第一个未设置默认值的TIMESTAMP NOT NULL字段隐式默认值：CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-后面未设置默认值的TIMESTAMP NOT NULL字">
+  <meta name="description" content="&amp;#x524D;&amp;#x6BB5;&amp;#x65F6;&amp;#x95F4;&amp;#xFF0C;&amp;#x7CFB;&amp;#x7EDF;MySQL&amp;#x4ECE;5.5&amp;#x5347;&amp;#x7EA7;&amp;#x5230;&amp;#x4E86;5.6&amp;#xFF0C;&amp;#x7CFB;&amp;#x7EDF;&amp;#x51FA;&amp;#x73B0;&amp;#x4E86;&amp;#x5927;&amp;#x91CF;&amp;#x7684;&amp;#x5F02;&amp;#x5E38;&amp;#x30">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MySQL5.5升级到5.6，TIMESTAMP的变化">
 <meta property="og:url" content="http://leeboyue.com/2015/07/15/MySQL5-5升级到5-6，TIMESTAMP的变化/index.html">
 <meta property="og:site_name" content="Mr.Lee">
-<meta property="og:description" content="前段时间，系统MySQL从5.5升级到了5.6，系统出现了大量的异常。大部分异常引起原因是由于TIMESTAMP的行为发生了变化。
-
-TIMESTAMP在MySQL5.5中的行为
-第一个未设置默认值的TIMESTAMP NOT NULL字段隐式默认值：CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-后面未设置默认值的TIMESTAMP NOT NULL字">
+<meta property="og:description" content="&amp;#x524D;&amp;#x6BB5;&amp;#x65F6;&amp;#x95F4;&amp;#xFF0C;&amp;#x7CFB;&amp;#x7EDF;MySQL&amp;#x4ECE;5.5&amp;#x5347;&amp;#x7EA7;&amp;#x5230;&amp;#x4E86;5.6&amp;#xFF0C;&amp;#x7CFB;&amp;#x7EDF;&amp;#x51FA;&amp;#x73B0;&amp;#x4E86;&amp;#x5927;&amp;#x91CF;&amp;#x7684;&amp;#x5F02;&amp;#x5E38;&amp;#x30">
 <meta property="og:updated_time" content="2015-07-15T03:31:41.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MySQL5.5升级到5.6，TIMESTAMP的变化">
-<meta name="twitter:description" content="前段时间，系统MySQL从5.5升级到了5.6，系统出现了大量的异常。大部分异常引起原因是由于TIMESTAMP的行为发生了变化。
-
-TIMESTAMP在MySQL5.5中的行为
-第一个未设置默认值的TIMESTAMP NOT NULL字段隐式默认值：CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-后面未设置默认值的TIMESTAMP NOT NULL字">
+<meta name="twitter:description" content="&amp;#x524D;&amp;#x6BB5;&amp;#x65F6;&amp;#x95F4;&amp;#xFF0C;&amp;#x7CFB;&amp;#x7EDF;MySQL&amp;#x4ECE;5.5&amp;#x5347;&amp;#x7EA7;&amp;#x5230;&amp;#x4E86;5.6&amp;#xFF0C;&amp;#x7CFB;&amp;#x7EDF;&amp;#x51FA;&amp;#x73B0;&amp;#x4E86;&amp;#x5927;&amp;#x91CF;&amp;#x7684;&amp;#x5F02;&amp;#x5E38;&amp;#x30">
   
     <link rel="alternative" href="/atom.xml" title="Mr.Lee" type="application/atom+xml">
   
@@ -43,7 +31,7 @@ TIMESTAMP在MySQL5.5中的行为
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img lazy-src="/avatar_photo.jpg" class="js-avatar">
+			<img lazy-src="/me.jpg" class="js-avatar">
 		</a>
 
 		<hgroup>
@@ -130,7 +118,7 @@ TIMESTAMP在MySQL5.5中的行为
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/zookeeper/" style="font-size: 10px;">zookeeper</a> <a href="/tags/分布式/" style="font-size: 15px;">分布式</a> <a href="/tags/北漂/" style="font-size: 10px;">北漂</a> <a href="/tags/家常菜/" style="font-size: 10px;">家常菜</a> <a href="/tags/建站/" style="font-size: 15px;">建站</a> <a href="/tags/心得/" style="font-size: 10px;">心得</a> <a href="/tags/技术/" style="font-size: 20px;">技术</a> <a href="/tags/技术交流/" style="font-size: 10px;">技术交流</a> <a href="/tags/海鲜/" style="font-size: 10px;">海鲜</a> <a href="/tags/租房/" style="font-size: 10px;">租房</a> <a href="/tags/网络/" style="font-size: 10px;">网络</a> <a href="/tags/通讯/" style="font-size: 10px;">通讯</a> <a href="/tags/遇到的坑/" style="font-size: 10px;">遇到的坑</a>
+						<a href="/tags/hexo/" style="font-size: 13.33px;">hexo</a> <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/zookeeper/" style="font-size: 10px;">zookeeper</a> <a href="/tags/分布式/" style="font-size: 13.33px;">分布式</a> <a href="/tags/北漂/" style="font-size: 10px;">北漂</a> <a href="/tags/家常菜/" style="font-size: 10px;">家常菜</a> <a href="/tags/建站/" style="font-size: 13.33px;">建站</a> <a href="/tags/心得/" style="font-size: 10px;">心得</a> <a href="/tags/技术/" style="font-size: 16.67px;">技术</a> <a href="/tags/技术交流/" style="font-size: 10px;">技术交流</a> <a href="/tags/海鲜/" style="font-size: 10px;">海鲜</a> <a href="/tags/租房/" style="font-size: 10px;">租房</a> <a href="/tags/网络/" style="font-size: 13.33px;">网络</a> <a href="/tags/通讯/" style="font-size: 13.33px;">通讯</a> <a href="/tags/遇到的坑/" style="font-size: 10px;">遇到的坑</a>
 					</div>
 				</section>
 				
@@ -176,7 +164,7 @@ TIMESTAMP在MySQL5.5中的行为
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img lazy-src="/avatar_photo.jpg" class="js-avatar">
+				<img lazy-src="/me.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author">Bear Lee</h1>
@@ -256,24 +244,24 @@ TIMESTAMP在MySQL5.5中的行为
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-<p>前段时间，系统MySQL从5.5升级到了5.6，系统出现了大量的异常。大部分异常引起原因是由于TIMESTAMP的行为发生了变化。</p>
+<p>&#x524D;&#x6BB5;&#x65F6;&#x95F4;&#xFF0C;&#x7CFB;&#x7EDF;MySQL&#x4ECE;5.5&#x5347;&#x7EA7;&#x5230;&#x4E86;5.6&#xFF0C;&#x7CFB;&#x7EDF;&#x51FA;&#x73B0;&#x4E86;&#x5927;&#x91CF;&#x7684;&#x5F02;&#x5E38;&#x3002;&#x5927;&#x90E8;&#x5206;&#x5F02;&#x5E38;&#x5F15;&#x8D77;&#x539F;&#x56E0;&#x662F;&#x7531;&#x4E8E;TIMESTAMP&#x7684;&#x884C;&#x4E3A;&#x53D1;&#x751F;&#x4E86;&#x53D8;&#x5316;&#x3002;</p>
 </blockquote>
-<h1 id="TIMESTAMP在MySQL5-5中的行为">TIMESTAMP在MySQL5.5中的行为</h1><ol>
-<li>第一个未设置默认值的TIMESTAMP NOT NULL字段隐式默认值：<br>CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP</li>
-<li>后面未设置默认值的TIMESTAMP NOT NULL字段隐式默认值：<br>0000-00-00 00:00:00</li>
-<li>TIMESTAMP NOT NULL字段插入NULL时，会使用隐式默认值：<br>CURRENT_TIMESTAMP</li>
-<li>不支持多个CURRENT_TIMESTAMP 默认值</li>
+<h1 id="TIMESTAMP&#x5728;MySQL5-5&#x4E2D;&#x7684;&#x884C;&#x4E3A;">TIMESTAMP&#x5728;MySQL5.5&#x4E2D;&#x7684;&#x884C;&#x4E3A;</h1><ol>
+<li>&#x7B2C;&#x4E00;&#x4E2A;&#x672A;&#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x503C;&#x7684;TIMESTAMP NOT NULL&#x5B57;&#x6BB5;&#x9690;&#x5F0F;&#x9ED8;&#x8BA4;&#x503C;&#xFF1A;<br>CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP</li>
+<li>&#x540E;&#x9762;&#x672A;&#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x503C;&#x7684;TIMESTAMP NOT NULL&#x5B57;&#x6BB5;&#x9690;&#x5F0F;&#x9ED8;&#x8BA4;&#x503C;&#xFF1A;<br>0000-00-00 00:00:00</li>
+<li>TIMESTAMP NOT NULL&#x5B57;&#x6BB5;&#x63D2;&#x5165;NULL&#x65F6;&#xFF0C;&#x4F1A;&#x4F7F;&#x7528;&#x9690;&#x5F0F;&#x9ED8;&#x8BA4;&#x503C;&#xFF1A;<br>CURRENT_TIMESTAMP</li>
+<li>&#x4E0D;&#x652F;&#x6301;&#x591A;&#x4E2A;CURRENT_TIMESTAMP &#x9ED8;&#x8BA4;&#x503C;</li>
 </ol>
-<h1 id="TIMESTAMP在MySQL5-6中的行为">TIMESTAMP在MySQL5.6中的行为</h1><ol>
-<li>支持多个CURRENT_TIMESTAMP 默认值</li>
-<li>可以兼容5.5的行为，支持隐性默认值<br>explicit_defaults_for_timestamp=0<br>我测试安装的MySQL5.6默认使用这个参数，启动时，服务器会给出一个警告。<br>[Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use –explicit_defaults_for_timestamp server option (see documentation for more details).</li>
-<li>可以去掉隐性默认值<br>explicit_defaults_for_timestamp=1</li>
+<h1 id="TIMESTAMP&#x5728;MySQL5-6&#x4E2D;&#x7684;&#x884C;&#x4E3A;">TIMESTAMP&#x5728;MySQL5.6&#x4E2D;&#x7684;&#x884C;&#x4E3A;</h1><ol>
+<li>&#x652F;&#x6301;&#x591A;&#x4E2A;CURRENT_TIMESTAMP &#x9ED8;&#x8BA4;&#x503C;</li>
+<li>&#x53EF;&#x4EE5;&#x517C;&#x5BB9;5.5&#x7684;&#x884C;&#x4E3A;&#xFF0C;&#x652F;&#x6301;&#x9690;&#x6027;&#x9ED8;&#x8BA4;&#x503C;<br>explicit_defaults_for_timestamp=0<br>&#x6211;&#x6D4B;&#x8BD5;&#x5B89;&#x88C5;&#x7684;MySQL5.6&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x542F;&#x52A8;&#x65F6;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x4F1A;&#x7ED9;&#x51FA;&#x4E00;&#x4E2A;&#x8B66;&#x544A;&#x3002;<br>[Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use &#x2013;explicit_defaults_for_timestamp server option (see documentation for more details).</li>
+<li>&#x53EF;&#x4EE5;&#x53BB;&#x6389;&#x9690;&#x6027;&#x9ED8;&#x8BA4;&#x503C;<br>explicit_defaults_for_timestamp=1</li>
 </ol>
-<h1 id="总结">总结</h1><ol>
-<li>MySQL5.5中TIMESTAMP行为是比较诡异的，会造成一些隐含的问题，比如程序中传入了NULL值</li>
-<li>MySQL5.6中可以将TIMESTAMP的行为变得正常，但会存在兼容问题</li>
-<li>explicit_defaults_for_timestamp参数未来会消失</li>
-<li>我们不要过度依赖数据库的特性，这些特性会给应用程序造成掣肘</li>
+<h1 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h1><ol>
+<li>MySQL5.5&#x4E2D;TIMESTAMP&#x884C;&#x4E3A;&#x662F;&#x6BD4;&#x8F83;&#x8BE1;&#x5F02;&#x7684;&#xFF0C;&#x4F1A;&#x9020;&#x6210;&#x4E00;&#x4E9B;&#x9690;&#x542B;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x6BD4;&#x5982;&#x7A0B;&#x5E8F;&#x4E2D;&#x4F20;&#x5165;&#x4E86;NULL&#x503C;</li>
+<li>MySQL5.6&#x4E2D;&#x53EF;&#x4EE5;&#x5C06;TIMESTAMP&#x7684;&#x884C;&#x4E3A;&#x53D8;&#x5F97;&#x6B63;&#x5E38;&#xFF0C;&#x4F46;&#x4F1A;&#x5B58;&#x5728;&#x517C;&#x5BB9;&#x95EE;&#x9898;</li>
+<li>explicit_defaults_for_timestamp&#x53C2;&#x6570;&#x672A;&#x6765;&#x4F1A;&#x6D88;&#x5931;</li>
+<li>&#x6211;&#x4EEC;&#x4E0D;&#x8981;&#x8FC7;&#x5EA6;&#x4F9D;&#x8D56;&#x6570;&#x636E;&#x5E93;&#x7684;&#x7279;&#x6027;&#xFF0C;&#x8FD9;&#x4E9B;&#x7279;&#x6027;&#x4F1A;&#x7ED9;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x9020;&#x6210;&#x63A3;&#x8098;</li>
 </ol>
 
       
@@ -284,7 +272,7 @@ TIMESTAMP在MySQL5.5中的行为
     
 <nav id="article-nav">
   
-    <a href="/2015/09/12/个人觉得学习一个东西的步骤/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2015/09/12/如何读源码/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         

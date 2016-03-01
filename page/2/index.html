@@ -30,7 +30,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img lazy-src="/avatar_photo.jpg" class="js-avatar">
+			<img lazy-src="/me.jpg" class="js-avatar">
 		</a>
 
 		<hgroup>
@@ -117,7 +117,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/zookeeper/" style="font-size: 10px;">zookeeper</a> <a href="/tags/分布式/" style="font-size: 15px;">分布式</a> <a href="/tags/北漂/" style="font-size: 10px;">北漂</a> <a href="/tags/家常菜/" style="font-size: 10px;">家常菜</a> <a href="/tags/建站/" style="font-size: 15px;">建站</a> <a href="/tags/心得/" style="font-size: 10px;">心得</a> <a href="/tags/技术/" style="font-size: 20px;">技术</a> <a href="/tags/技术交流/" style="font-size: 10px;">技术交流</a> <a href="/tags/海鲜/" style="font-size: 10px;">海鲜</a> <a href="/tags/租房/" style="font-size: 10px;">租房</a> <a href="/tags/网络/" style="font-size: 10px;">网络</a> <a href="/tags/通讯/" style="font-size: 10px;">通讯</a> <a href="/tags/遇到的坑/" style="font-size: 10px;">遇到的坑</a>
+						<a href="/tags/hexo/" style="font-size: 13.33px;">hexo</a> <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/zookeeper/" style="font-size: 10px;">zookeeper</a> <a href="/tags/分布式/" style="font-size: 13.33px;">分布式</a> <a href="/tags/北漂/" style="font-size: 10px;">北漂</a> <a href="/tags/家常菜/" style="font-size: 10px;">家常菜</a> <a href="/tags/建站/" style="font-size: 13.33px;">建站</a> <a href="/tags/心得/" style="font-size: 10px;">心得</a> <a href="/tags/技术/" style="font-size: 16.67px;">技术</a> <a href="/tags/技术交流/" style="font-size: 10px;">技术交流</a> <a href="/tags/海鲜/" style="font-size: 10px;">海鲜</a> <a href="/tags/租房/" style="font-size: 10px;">租房</a> <a href="/tags/网络/" style="font-size: 13.33px;">网络</a> <a href="/tags/通讯/" style="font-size: 13.33px;">通讯</a> <a href="/tags/遇到的坑/" style="font-size: 10px;">遇到的坑</a>
 					</div>
 				</section>
 				
@@ -163,7 +163,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img lazy-src="/avatar_photo.jpg" class="js-avatar">
+				<img lazy-src="/me.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author">Bear Lee</h1>
@@ -203,6 +203,78 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-如何读源码" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/09/12/如何读源码/" class="article-date">
+  	<time datetime="2015-09-12T15:51:25.000Z" itemprop="datePublished">2015-09-12</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/09/12/如何读源码/">如何读源码</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="&#x4E2A;&#x4EBA;&#x89C9;&#x5F97;&#x5B66;&#x4E60;&#x4E00;&#x4E2A;&#x4E1C;&#x897F;&#x7684;&#x6B65;&#x9AA4;">&#x4E2A;&#x4EBA;&#x89C9;&#x5F97;&#x5B66;&#x4E60;&#x4E00;&#x4E2A;&#x4E1C;&#x897F;&#x7684;&#x6B65;&#x9AA4;</h1><ol>
+<li>&#x770B;&#x4ECB;&#x7ECD;</li>
+<li>&#x770B;demo</li>
+<li>&#x770B;&#x5165;&#x95E8;</li>
+<li>&#x81EA;&#x5DF1;&#x505A;demo</li>
+<li>&#x770B;&#x5B98;&#x65B9;&#x6280;&#x672F;&#x6587;&#x6863;</li>
+<li>&#x5E94;&#x7528;</li>
+<li>&#x770B;&#x603B;&#x7ED3;</li>
+<li>&#x770B;&#x5FC3;&#x5F97;</li>
+<li>&#x601D;&#x8003;</li>
+<li>&#x770B;&#x6E90;&#x7801;</li>
+<li>debug&#x8C03;&#x8BD5;&#x6E90;&#x7801;</li>
+<li>&#x4FEE;&#x6539;&#x6E90;&#x7801;</li>
+<li>&#x81EA;&#x5DF1;&#x505A;&#x89C1;&#x5F97;&#x5B9E;&#x73B0;</li>
+<li>&#x4E0D;&#x65AD;&#x5B8C;&#x5584;</li>
+</ol>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/心得/">心得</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/技术/">技术</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+  
     <article id="post-MySQL5-5升级到5-6，TIMESTAMP的变化" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -230,24 +302,24 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-<p>前段时间，系统MySQL从5.5升级到了5.6，系统出现了大量的异常。大部分异常引起原因是由于TIMESTAMP的行为发生了变化。</p>
+<p>&#x524D;&#x6BB5;&#x65F6;&#x95F4;&#xFF0C;&#x7CFB;&#x7EDF;MySQL&#x4ECE;5.5&#x5347;&#x7EA7;&#x5230;&#x4E86;5.6&#xFF0C;&#x7CFB;&#x7EDF;&#x51FA;&#x73B0;&#x4E86;&#x5927;&#x91CF;&#x7684;&#x5F02;&#x5E38;&#x3002;&#x5927;&#x90E8;&#x5206;&#x5F02;&#x5E38;&#x5F15;&#x8D77;&#x539F;&#x56E0;&#x662F;&#x7531;&#x4E8E;TIMESTAMP&#x7684;&#x884C;&#x4E3A;&#x53D1;&#x751F;&#x4E86;&#x53D8;&#x5316;&#x3002;</p>
 </blockquote>
-<h1 id="TIMESTAMP在MySQL5-5中的行为">TIMESTAMP在MySQL5.5中的行为</h1><ol>
-<li>第一个未设置默认值的TIMESTAMP NOT NULL字段隐式默认值：<br>CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP</li>
-<li>后面未设置默认值的TIMESTAMP NOT NULL字段隐式默认值：<br>0000-00-00 00:00:00</li>
-<li>TIMESTAMP NOT NULL字段插入NULL时，会使用隐式默认值：<br>CURRENT_TIMESTAMP</li>
-<li>不支持多个CURRENT_TIMESTAMP 默认值</li>
+<h1 id="TIMESTAMP&#x5728;MySQL5-5&#x4E2D;&#x7684;&#x884C;&#x4E3A;">TIMESTAMP&#x5728;MySQL5.5&#x4E2D;&#x7684;&#x884C;&#x4E3A;</h1><ol>
+<li>&#x7B2C;&#x4E00;&#x4E2A;&#x672A;&#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x503C;&#x7684;TIMESTAMP NOT NULL&#x5B57;&#x6BB5;&#x9690;&#x5F0F;&#x9ED8;&#x8BA4;&#x503C;&#xFF1A;<br>CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP</li>
+<li>&#x540E;&#x9762;&#x672A;&#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x503C;&#x7684;TIMESTAMP NOT NULL&#x5B57;&#x6BB5;&#x9690;&#x5F0F;&#x9ED8;&#x8BA4;&#x503C;&#xFF1A;<br>0000-00-00 00:00:00</li>
+<li>TIMESTAMP NOT NULL&#x5B57;&#x6BB5;&#x63D2;&#x5165;NULL&#x65F6;&#xFF0C;&#x4F1A;&#x4F7F;&#x7528;&#x9690;&#x5F0F;&#x9ED8;&#x8BA4;&#x503C;&#xFF1A;<br>CURRENT_TIMESTAMP</li>
+<li>&#x4E0D;&#x652F;&#x6301;&#x591A;&#x4E2A;CURRENT_TIMESTAMP &#x9ED8;&#x8BA4;&#x503C;</li>
 </ol>
-<h1 id="TIMESTAMP在MySQL5-6中的行为">TIMESTAMP在MySQL5.6中的行为</h1><ol>
-<li>支持多个CURRENT_TIMESTAMP 默认值</li>
-<li>可以兼容5.5的行为，支持隐性默认值<br>explicit_defaults_for_timestamp=0<br>我测试安装的MySQL5.6默认使用这个参数，启动时，服务器会给出一个警告。<br>[Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use –explicit_defaults_for_timestamp server option (see documentation for more details).</li>
-<li>可以去掉隐性默认值<br>explicit_defaults_for_timestamp=1</li>
+<h1 id="TIMESTAMP&#x5728;MySQL5-6&#x4E2D;&#x7684;&#x884C;&#x4E3A;">TIMESTAMP&#x5728;MySQL5.6&#x4E2D;&#x7684;&#x884C;&#x4E3A;</h1><ol>
+<li>&#x652F;&#x6301;&#x591A;&#x4E2A;CURRENT_TIMESTAMP &#x9ED8;&#x8BA4;&#x503C;</li>
+<li>&#x53EF;&#x4EE5;&#x517C;&#x5BB9;5.5&#x7684;&#x884C;&#x4E3A;&#xFF0C;&#x652F;&#x6301;&#x9690;&#x6027;&#x9ED8;&#x8BA4;&#x503C;<br>explicit_defaults_for_timestamp=0<br>&#x6211;&#x6D4B;&#x8BD5;&#x5B89;&#x88C5;&#x7684;MySQL5.6&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x542F;&#x52A8;&#x65F6;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x4F1A;&#x7ED9;&#x51FA;&#x4E00;&#x4E2A;&#x8B66;&#x544A;&#x3002;<br>[Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use &#x2013;explicit_defaults_for_timestamp server option (see documentation for more details).</li>
+<li>&#x53EF;&#x4EE5;&#x53BB;&#x6389;&#x9690;&#x6027;&#x9ED8;&#x8BA4;&#x503C;<br>explicit_defaults_for_timestamp=1</li>
 </ol>
-<h1 id="总结">总结</h1><ol>
-<li>MySQL5.5中TIMESTAMP行为是比较诡异的，会造成一些隐含的问题，比如程序中传入了NULL值</li>
-<li>MySQL5.6中可以将TIMESTAMP的行为变得正常，但会存在兼容问题</li>
-<li>explicit_defaults_for_timestamp参数未来会消失</li>
-<li>我们不要过度依赖数据库的特性，这些特性会给应用程序造成掣肘</li>
+<h1 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h1><ol>
+<li>MySQL5.5&#x4E2D;TIMESTAMP&#x884C;&#x4E3A;&#x662F;&#x6BD4;&#x8F83;&#x8BE1;&#x5F02;&#x7684;&#xFF0C;&#x4F1A;&#x9020;&#x6210;&#x4E00;&#x4E9B;&#x9690;&#x542B;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x6BD4;&#x5982;&#x7A0B;&#x5E8F;&#x4E2D;&#x4F20;&#x5165;&#x4E86;NULL&#x503C;</li>
+<li>MySQL5.6&#x4E2D;&#x53EF;&#x4EE5;&#x5C06;TIMESTAMP&#x7684;&#x884C;&#x4E3A;&#x53D8;&#x5F97;&#x6B63;&#x5E38;&#xFF0C;&#x4F46;&#x4F1A;&#x5B58;&#x5728;&#x517C;&#x5BB9;&#x95EE;&#x9898;</li>
+<li>explicit_defaults_for_timestamp&#x53C2;&#x6570;&#x672A;&#x6765;&#x4F1A;&#x6D88;&#x5931;</li>
+<li>&#x6211;&#x4EEC;&#x4E0D;&#x8981;&#x8FC7;&#x5EA6;&#x4F9D;&#x8D56;&#x6570;&#x636E;&#x5E93;&#x7684;&#x7279;&#x6027;&#xFF0C;&#x8FD9;&#x4E9B;&#x7279;&#x6027;&#x4F1A;&#x7ED9;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x9020;&#x6210;&#x63A3;&#x8098;</li>
 </ol>
 
       
@@ -306,9 +378,9 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-<p>这是我第一次感到租房是那么的困难……</p>
+<p>&#x8FD9;&#x662F;&#x6211;&#x7B2C;&#x4E00;&#x6B21;&#x611F;&#x5230;&#x79DF;&#x623F;&#x662F;&#x90A3;&#x4E48;&#x7684;&#x56F0;&#x96BE;&#x2026;&#x2026;</p>
 </blockquote>
-<p>跑了一整天，房子依然没定下来</p>
+<p>&#x8DD1;&#x4E86;&#x4E00;&#x6574;&#x5929;&#xFF0C;&#x623F;&#x5B50;&#x4F9D;&#x7136;&#x6CA1;&#x5B9A;&#x4E0B;&#x6765;</p>
 
       
     </div>
@@ -365,30 +437,30 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="zookeeper">zookeeper</h1><p>对于zookeeper部署的一些重要提示：</p>
+        <h1 id="zookeeper">zookeeper</h1><p>&#x5BF9;&#x4E8E;zookeeper&#x90E8;&#x7F72;&#x7684;&#x4E00;&#x4E9B;&#x91CD;&#x8981;&#x63D0;&#x793A;&#xFF1A;</p>
 <ol>
-<li>使用监控程序来运行zookeeper是很重要的，因为zookeeper是快速失败的，遇到任何错误情况将会退出</li>
-<li>简历cron来压缩zookeeper的数据和事务日志是很重要的。zookeeper守护进程自己本身并不会这么做，如果不设置cron，zookeeper很快就会耗尽磁盘空间</li>
+<li>&#x4F7F;&#x7528;&#x76D1;&#x63A7;&#x7A0B;&#x5E8F;&#x6765;&#x8FD0;&#x884C;zookeeper&#x662F;&#x5F88;&#x91CD;&#x8981;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;zookeeper&#x662F;&#x5FEB;&#x901F;&#x5931;&#x8D25;&#x7684;&#xFF0C;&#x9047;&#x5230;&#x4EFB;&#x4F55;&#x9519;&#x8BEF;&#x60C5;&#x51B5;&#x5C06;&#x4F1A;&#x9000;&#x51FA;</li>
+<li>&#x7B80;&#x5386;cron&#x6765;&#x538B;&#x7F29;zookeeper&#x7684;&#x6570;&#x636E;&#x548C;&#x4E8B;&#x52A1;&#x65E5;&#x5FD7;&#x662F;&#x5F88;&#x91CD;&#x8981;&#x7684;&#x3002;zookeeper&#x5B88;&#x62A4;&#x8FDB;&#x7A0B;&#x81EA;&#x5DF1;&#x672C;&#x8EAB;&#x5E76;&#x4E0D;&#x4F1A;&#x8FD9;&#x4E48;&#x505A;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x8BBE;&#x7F6E;cron&#xFF0C;zookeeper&#x5F88;&#x5FEB;&#x5C31;&#x4F1A;&#x8017;&#x5C3D;&#x78C1;&#x76D8;&#x7A7A;&#x95F4;</li>
 </ol>
-<h1 id="zookeeper功能介绍">zookeeper功能介绍</h1><ol>
-<li>加强集群稳定性</li>
-<li>加强集群持续性</li>
-<li>保证集群有序性</li>
-<li>保证集群高效</li>
-<li>数据结构和分等级的空间命名（znode）</li>
+<h1 id="zookeeper&#x529F;&#x80FD;&#x4ECB;&#x7ECD;">zookeeper&#x529F;&#x80FD;&#x4ECB;&#x7ECD;</h1><ol>
+<li>&#x52A0;&#x5F3A;&#x96C6;&#x7FA4;&#x7A33;&#x5B9A;&#x6027;</li>
+<li>&#x52A0;&#x5F3A;&#x96C6;&#x7FA4;&#x6301;&#x7EED;&#x6027;</li>
+<li>&#x4FDD;&#x8BC1;&#x96C6;&#x7FA4;&#x6709;&#x5E8F;&#x6027;</li>
+<li>&#x4FDD;&#x8BC1;&#x96C6;&#x7FA4;&#x9AD8;&#x6548;</li>
+<li>&#x6570;&#x636E;&#x7ED3;&#x6784;&#x548C;&#x5206;&#x7B49;&#x7EA7;&#x7684;&#x7A7A;&#x95F4;&#x547D;&#x540D;&#xFF08;znode&#xFF09;</li>
 </ol>
-<h1 id="zookeeper原理架构">zookeeper原理架构</h1><ol>
-<li>zookeeper的核心是原子广播，这个机制保证了各个Server之间的同步。实现这个机制的协议叫做Zab协议。Zab协议有两种模式，它们分别是恢复模式（选主）和广播模式（同步）</li>
-<li>当服务启动或者在领导者崩溃后，Zab就进入了回复模式，当领导者被选举出来，且大多数Server完成了和leader的状态同步以后，恢复模式就结束了。状态同步保证了leader和Server具有相同的系统状态。</li>
-<li>每个Server工作过程中的三种状态：LOOKING（正在搜寻leader）；LEADING（为leader标记）；FOLLOWING：leader（已经选举出来。当前与之同步）</li>
+<h1 id="zookeeper&#x539F;&#x7406;&#x67B6;&#x6784;">zookeeper&#x539F;&#x7406;&#x67B6;&#x6784;</h1><ol>
+<li>zookeeper&#x7684;&#x6838;&#x5FC3;&#x662F;&#x539F;&#x5B50;&#x5E7F;&#x64AD;&#xFF0C;&#x8FD9;&#x4E2A;&#x673A;&#x5236;&#x4FDD;&#x8BC1;&#x4E86;&#x5404;&#x4E2A;Server&#x4E4B;&#x95F4;&#x7684;&#x540C;&#x6B65;&#x3002;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x673A;&#x5236;&#x7684;&#x534F;&#x8BAE;&#x53EB;&#x505A;Zab&#x534F;&#x8BAE;&#x3002;Zab&#x534F;&#x8BAE;&#x6709;&#x4E24;&#x79CD;&#x6A21;&#x5F0F;&#xFF0C;&#x5B83;&#x4EEC;&#x5206;&#x522B;&#x662F;&#x6062;&#x590D;&#x6A21;&#x5F0F;&#xFF08;&#x9009;&#x4E3B;&#xFF09;&#x548C;&#x5E7F;&#x64AD;&#x6A21;&#x5F0F;&#xFF08;&#x540C;&#x6B65;&#xFF09;</li>
+<li>&#x5F53;&#x670D;&#x52A1;&#x542F;&#x52A8;&#x6216;&#x8005;&#x5728;&#x9886;&#x5BFC;&#x8005;&#x5D29;&#x6E83;&#x540E;&#xFF0C;Zab&#x5C31;&#x8FDB;&#x5165;&#x4E86;&#x56DE;&#x590D;&#x6A21;&#x5F0F;&#xFF0C;&#x5F53;&#x9886;&#x5BFC;&#x8005;&#x88AB;&#x9009;&#x4E3E;&#x51FA;&#x6765;&#xFF0C;&#x4E14;&#x5927;&#x591A;&#x6570;Server&#x5B8C;&#x6210;&#x4E86;&#x548C;leader&#x7684;&#x72B6;&#x6001;&#x540C;&#x6B65;&#x4EE5;&#x540E;&#xFF0C;&#x6062;&#x590D;&#x6A21;&#x5F0F;&#x5C31;&#x7ED3;&#x675F;&#x4E86;&#x3002;&#x72B6;&#x6001;&#x540C;&#x6B65;&#x4FDD;&#x8BC1;&#x4E86;leader&#x548C;Server&#x5177;&#x6709;&#x76F8;&#x540C;&#x7684;&#x7CFB;&#x7EDF;&#x72B6;&#x6001;&#x3002;</li>
+<li>&#x6BCF;&#x4E2A;Server&#x5DE5;&#x4F5C;&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;&#x4E09;&#x79CD;&#x72B6;&#x6001;&#xFF1A;LOOKING&#xFF08;&#x6B63;&#x5728;&#x641C;&#x5BFB;leader&#xFF09;&#xFF1B;LEADING&#xFF08;&#x4E3A;leader&#x6807;&#x8BB0;&#xFF09;&#xFF1B;FOLLOWING&#xFF1A;leader&#xFF08;&#x5DF2;&#x7ECF;&#x9009;&#x4E3E;&#x51FA;&#x6765;&#x3002;&#x5F53;&#x524D;&#x4E0E;&#x4E4B;&#x540C;&#x6B65;&#xFF09;</li>
 </ol>
-<h1 id="zookeeper选举机制">zookeeper选举机制</h1><p>Fastleader选举算法：<br>当leader崩溃或者失去大多数的follower时，这时候zookeeper进入回复模式，回复模式需要重新选举出一个新的leader，让所有的Server都恢复到一个正确的状态。</p>
-<h1 id="zookeeper应用场景">zookeeper应用场景</h1><ol>
-<li>统一命名服务（Name Service）</li>
-<li>配置管理</li>
-<li>集群管理</li>
-<li>共享锁</li>
-<li>队列管理</li>
+<h1 id="zookeeper&#x9009;&#x4E3E;&#x673A;&#x5236;">zookeeper&#x9009;&#x4E3E;&#x673A;&#x5236;</h1><p>Fastleader&#x9009;&#x4E3E;&#x7B97;&#x6CD5;&#xFF1A;<br>&#x5F53;leader&#x5D29;&#x6E83;&#x6216;&#x8005;&#x5931;&#x53BB;&#x5927;&#x591A;&#x6570;&#x7684;follower&#x65F6;&#xFF0C;&#x8FD9;&#x65F6;&#x5019;zookeeper&#x8FDB;&#x5165;&#x56DE;&#x590D;&#x6A21;&#x5F0F;&#xFF0C;&#x56DE;&#x590D;&#x6A21;&#x5F0F;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x9009;&#x4E3E;&#x51FA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;leader&#xFF0C;&#x8BA9;&#x6240;&#x6709;&#x7684;Server&#x90FD;&#x6062;&#x590D;&#x5230;&#x4E00;&#x4E2A;&#x6B63;&#x786E;&#x7684;&#x72B6;&#x6001;&#x3002;</p>
+<h1 id="zookeeper&#x5E94;&#x7528;&#x573A;&#x666F;">zookeeper&#x5E94;&#x7528;&#x573A;&#x666F;</h1><ol>
+<li>&#x7EDF;&#x4E00;&#x547D;&#x540D;&#x670D;&#x52A1;&#xFF08;Name Service&#xFF09;</li>
+<li>&#x914D;&#x7F6E;&#x7BA1;&#x7406;</li>
+<li>&#x96C6;&#x7FA4;&#x7BA1;&#x7406;</li>
+<li>&#x5171;&#x4EAB;&#x9501;</li>
+<li>&#x961F;&#x5217;&#x7BA1;&#x7406;</li>
 </ol>
 
       
@@ -446,30 +518,30 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="http://7xjigu.com1.z0.glb.clouddn.com/IMG_3452_副本.jpg" alt="红烧鲈鱼"></p>
+        <p><img src="/2015/06/21/&#x7EA2;&#x70E7;&#x9C88;&#x9C7C;/yu.jpg" alt="&#x7EA2;&#x70E7;&#x9C88;&#x9C7C;"></p>
 <blockquote>
-<p>连续两天过节，趁着回家的机会要好好学习学习厨艺。自从出道以来，一直没做过鱼，今天在家小试牛刀，老娘手把手教我，于是乎定要把内功心法记录下来</p>
+<p>&#x8FDE;&#x7EED;&#x4E24;&#x5929;&#x8FC7;&#x8282;&#xFF0C;&#x8D81;&#x7740;&#x56DE;&#x5BB6;&#x7684;&#x673A;&#x4F1A;&#x8981;&#x597D;&#x597D;&#x5B66;&#x4E60;&#x5B66;&#x4E60;&#x53A8;&#x827A;&#x3002;&#x81EA;&#x4ECE;&#x51FA;&#x9053;&#x4EE5;&#x6765;&#xFF0C;&#x4E00;&#x76F4;&#x6CA1;&#x505A;&#x8FC7;&#x9C7C;&#xFF0C;&#x4ECA;&#x5929;&#x5728;&#x5BB6;&#x5C0F;&#x8BD5;&#x725B;&#x5200;&#xFF0C;&#x8001;&#x5A18;&#x624B;&#x628A;&#x624B;&#x6559;&#x6211;&#xFF0C;&#x4E8E;&#x662F;&#x4E4E;&#x5B9A;&#x8981;&#x628A;&#x5185;&#x529F;&#x5FC3;&#x6CD5;&#x8BB0;&#x5F55;&#x4E0B;&#x6765;</p>
 </blockquote>
-<h2 id="Step1-基本食材">Step1.基本食材</h2><ol>
-<li>鲈鱼</li>
-<li>葱、姜、蒜、大料、花椒</li>
-<li>糖、醋、耗油、酱油、料酒、面或者淀粉</li>
+<h2 id="Step1-&#x57FA;&#x672C;&#x98DF;&#x6750;">Step1.&#x57FA;&#x672C;&#x98DF;&#x6750;</h2><ol>
+<li>&#x9C88;&#x9C7C;</li>
+<li>&#x8471;&#x3001;&#x59DC;&#x3001;&#x849C;&#x3001;&#x5927;&#x6599;&#x3001;&#x82B1;&#x6912;</li>
+<li>&#x7CD6;&#x3001;&#x918B;&#x3001;&#x8017;&#x6CB9;&#x3001;&#x9171;&#x6CB9;&#x3001;&#x6599;&#x9152;&#x3001;&#x9762;&#x6216;&#x8005;&#x6DC0;&#x7C89;</li>
 </ol>
-<h2 id="Step2-开始做菜吧">Step2.开始做菜吧</h2><ol>
-<li>把鱼洗干净，切好，然后准备好葱姜大蒜少许，放在碗里（调料一）</li>
-<li>再准备一个碗用来调料：放少许糖，醋和均匀，然后稍微多倒一些酱油和耗油（调料二）</li>
-<li>拿一个碟子，倒上面粉或者淀粉，然后把处理好的鱼放在里面，让其表面粘上面粉即可</li>
-<li>开火炝锅，倒些花椒，可以去腥，然后把鱼放在锅里</li>
-<li>最好不要频繁的用铲子搅和鱼，容易把鱼皮弄烂</li>
-<li>晃悠锅里的油，差不多了就把刚刚准备好的葱姜大蒜（调料一）倒进去</li>
-<li>快速用料酒撒锅一圈，然后闷上盖子，料酒可以去腥</li>
-<li>轻轻地将鱼翻个身，让两面受热均匀</li>
-<li>把刚刚准备好的调料二加一些自来水，倒入锅中，直到锅中的水覆盖过鱼</li>
-<li>开大火，盖上盖子，等待收汁吧！</li>
-<li>别忘了，时不时的晃悠一下锅，别让锅底的鱼糊了，铲的时候小心一些</li>
-<li>如果觉得不够咸，可以放一些盐，不过之前调料二已经很有咸蛋味了</li>
+<h2 id="Step2-&#x5F00;&#x59CB;&#x505A;&#x83DC;&#x5427;">Step2.&#x5F00;&#x59CB;&#x505A;&#x83DC;&#x5427;</h2><ol>
+<li>&#x628A;&#x9C7C;&#x6D17;&#x5E72;&#x51C0;&#xFF0C;&#x5207;&#x597D;&#xFF0C;&#x7136;&#x540E;&#x51C6;&#x5907;&#x597D;&#x8471;&#x59DC;&#x5927;&#x849C;&#x5C11;&#x8BB8;&#xFF0C;&#x653E;&#x5728;&#x7897;&#x91CC;&#xFF08;&#x8C03;&#x6599;&#x4E00;&#xFF09;</li>
+<li>&#x518D;&#x51C6;&#x5907;&#x4E00;&#x4E2A;&#x7897;&#x7528;&#x6765;&#x8C03;&#x6599;&#xFF1A;&#x653E;&#x5C11;&#x8BB8;&#x7CD6;&#xFF0C;&#x918B;&#x548C;&#x5747;&#x5300;&#xFF0C;&#x7136;&#x540E;&#x7A0D;&#x5FAE;&#x591A;&#x5012;&#x4E00;&#x4E9B;&#x9171;&#x6CB9;&#x548C;&#x8017;&#x6CB9;&#xFF08;&#x8C03;&#x6599;&#x4E8C;&#xFF09;</li>
+<li>&#x62FF;&#x4E00;&#x4E2A;&#x789F;&#x5B50;&#xFF0C;&#x5012;&#x4E0A;&#x9762;&#x7C89;&#x6216;&#x8005;&#x6DC0;&#x7C89;&#xFF0C;&#x7136;&#x540E;&#x628A;&#x5904;&#x7406;&#x597D;&#x7684;&#x9C7C;&#x653E;&#x5728;&#x91CC;&#x9762;&#xFF0C;&#x8BA9;&#x5176;&#x8868;&#x9762;&#x7C98;&#x4E0A;&#x9762;&#x7C89;&#x5373;&#x53EF;</li>
+<li>&#x5F00;&#x706B;&#x709D;&#x9505;&#xFF0C;&#x5012;&#x4E9B;&#x82B1;&#x6912;&#xFF0C;&#x53EF;&#x4EE5;&#x53BB;&#x8165;&#xFF0C;&#x7136;&#x540E;&#x628A;&#x9C7C;&#x653E;&#x5728;&#x9505;&#x91CC;</li>
+<li>&#x6700;&#x597D;&#x4E0D;&#x8981;&#x9891;&#x7E41;&#x7684;&#x7528;&#x94F2;&#x5B50;&#x6405;&#x548C;&#x9C7C;&#xFF0C;&#x5BB9;&#x6613;&#x628A;&#x9C7C;&#x76AE;&#x5F04;&#x70C2;</li>
+<li>&#x6643;&#x60A0;&#x9505;&#x91CC;&#x7684;&#x6CB9;&#xFF0C;&#x5DEE;&#x4E0D;&#x591A;&#x4E86;&#x5C31;&#x628A;&#x521A;&#x521A;&#x51C6;&#x5907;&#x597D;&#x7684;&#x8471;&#x59DC;&#x5927;&#x849C;&#xFF08;&#x8C03;&#x6599;&#x4E00;&#xFF09;&#x5012;&#x8FDB;&#x53BB;</li>
+<li>&#x5FEB;&#x901F;&#x7528;&#x6599;&#x9152;&#x6492;&#x9505;&#x4E00;&#x5708;&#xFF0C;&#x7136;&#x540E;&#x95F7;&#x4E0A;&#x76D6;&#x5B50;&#xFF0C;&#x6599;&#x9152;&#x53EF;&#x4EE5;&#x53BB;&#x8165;</li>
+<li>&#x8F7B;&#x8F7B;&#x5730;&#x5C06;&#x9C7C;&#x7FFB;&#x4E2A;&#x8EAB;&#xFF0C;&#x8BA9;&#x4E24;&#x9762;&#x53D7;&#x70ED;&#x5747;&#x5300;</li>
+<li>&#x628A;&#x521A;&#x521A;&#x51C6;&#x5907;&#x597D;&#x7684;&#x8C03;&#x6599;&#x4E8C;&#x52A0;&#x4E00;&#x4E9B;&#x81EA;&#x6765;&#x6C34;&#xFF0C;&#x5012;&#x5165;&#x9505;&#x4E2D;&#xFF0C;&#x76F4;&#x5230;&#x9505;&#x4E2D;&#x7684;&#x6C34;&#x8986;&#x76D6;&#x8FC7;&#x9C7C;</li>
+<li>&#x5F00;&#x5927;&#x706B;&#xFF0C;&#x76D6;&#x4E0A;&#x76D6;&#x5B50;&#xFF0C;&#x7B49;&#x5F85;&#x6536;&#x6C41;&#x5427;&#xFF01;</li>
+<li>&#x522B;&#x5FD8;&#x4E86;&#xFF0C;&#x65F6;&#x4E0D;&#x65F6;&#x7684;&#x6643;&#x60A0;&#x4E00;&#x4E0B;&#x9505;&#xFF0C;&#x522B;&#x8BA9;&#x9505;&#x5E95;&#x7684;&#x9C7C;&#x7CCA;&#x4E86;&#xFF0C;&#x94F2;&#x7684;&#x65F6;&#x5019;&#x5C0F;&#x5FC3;&#x4E00;&#x4E9B;</li>
+<li>&#x5982;&#x679C;&#x89C9;&#x5F97;&#x4E0D;&#x591F;&#x54B8;&#xFF0C;&#x53EF;&#x4EE5;&#x653E;&#x4E00;&#x4E9B;&#x76D0;&#xFF0C;&#x4E0D;&#x8FC7;&#x4E4B;&#x524D;&#x8C03;&#x6599;&#x4E8C;&#x5DF2;&#x7ECF;&#x5F88;&#x6709;&#x54B8;&#x86CB;&#x5473;&#x4E86;</li>
 </ol>
-<p>好了，就这么多，期待下一期美食，see you again~</p>
+<p>&#x597D;&#x4E86;&#xFF0C;&#x5C31;&#x8FD9;&#x4E48;&#x591A;&#xFF0C;&#x671F;&#x5F85;&#x4E0B;&#x4E00;&#x671F;&#x7F8E;&#x98DF;&#xFF0C;see you again~</p>
 
       
     </div>
@@ -483,80 +555,6 @@
       
 	<div class="article-category tagcloud">
 	<a class="article-category-link" href="/categories/菜谱/">菜谱</a>
-	</div>
-
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-  
-    <article id="post-zookeeper集群" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/06/17/zookeeper集群/" class="article-date">
-  	<time datetime="2015-06-17T11:25:56.000Z" itemprop="datePublished">2015-06-17</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/06/17/zookeeper集群/">zookeeper集群</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>今天研究了一下zookeeper，对于互联网公司来说，分布式架构是必须的，zookeeper正是针对分布式应用的高性能协调服务，提供包括配置维护、名字服务、分布式同步、组服务等。</p>
-</blockquote>
-<p>下面介绍一下配置zookeeper集群的过程</p>
-<ol>
-<li>复制三个zookeeper，比如</li>
-<li><p>配置每一个zookeeper的zoo.cfg，比如</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">tickTime=<span class="number">2000</span>    </span><br><span class="line">initLimit=<span class="number">10</span></span><br><span class="line">syncLimit=<span class="number">5</span></span><br><span class="line"><span class="comment">#指定dataDir目录</span></span><br><span class="line">dataDir=/Users/bear_lee/development/zookeeper/data/zookeeper3</span><br><span class="line">dataLogDir=/Users/bear_lee/development/zookeeper/logs/zookeeper3</span><br><span class="line"><span class="comment">#clientPort：zookeeper的端口号，在同一台机器下不同zookeeper端口号不能一样</span></span><br><span class="line">clientPort=<span class="number">2183</span></span><br><span class="line">server.<span class="number">1</span>=<span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">2881</span>:<span class="number">3881</span></span><br><span class="line">server.<span class="number">2</span>=<span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">2882</span>:<span class="number">3882</span></span><br><span class="line">server.<span class="number">3</span>=<span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">2883</span>:<span class="number">3883</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在3个zookeeper的dataDir目录下面分别创建文件，取名myid，分别写入1、2、3。其中1，2，3分别指的是zoo.cfg文件中的server.1 server.2 server.3</p>
-</li>
-<li><p>启动3个zookeeper：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ./zkServer.sh start</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>随便进入一个zookeeper，启动zkCli，然后我们会发现连接了另一个zookeeper，该zookeeper则是整个集群的leader</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ./zkCli.sh</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/zookeeper/">zookeeper</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/分布式/">分布式</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/技术/">技术</a>
 	</div>
 
 
