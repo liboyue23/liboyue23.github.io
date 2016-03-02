@@ -132,7 +132,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/zookeeper/" style="font-size: 10px;">zookeeper</a> <a href="/tags/分布式/" style="font-size: 15px;">分布式</a> <a href="/tags/家常菜/" style="font-size: 10px;">家常菜</a> <a href="/tags/建站/" style="font-size: 10px;">建站</a> <a href="/tags/心得/" style="font-size: 10px;">心得</a> <a href="/tags/技术/" style="font-size: 20px;">技术</a> <a href="/tags/技术交流/" style="font-size: 10px;">技术交流</a> <a href="/tags/海鲜/" style="font-size: 10px;">海鲜</a> <a href="/tags/网络/" style="font-size: 10px;">网络</a> <a href="/tags/通讯/" style="font-size: 10px;">通讯</a>
+						<a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/zookeeper/" style="font-size: 10px;">zookeeper</a> <a href="/tags/分布式/" style="font-size: 15px;">分布式</a> <a href="/tags/家常菜/" style="font-size: 10px;">家常菜</a> <a href="/tags/建站/" style="font-size: 10px;">建站</a> <a href="/tags/心得/" style="font-size: 15px;">心得</a> <a href="/tags/技术/" style="font-size: 20px;">技术</a> <a href="/tags/技术交流/" style="font-size: 10px;">技术交流</a> <a href="/tags/海鲜/" style="font-size: 10px;">海鲜</a> <a href="/tags/网络/" style="font-size: 10px;">网络</a> <a href="/tags/通讯/" style="font-size: 10px;">通讯</a>
 					</div>
 				</section>
 				
@@ -221,6 +221,85 @@
 </nav>
 
       <div class="body-wrap">
+  
+    <article id="post-zookeeper集群初识" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/06/17/zookeeper集群初识/" class="article-date">
+  	<time datetime="2015-06-17T11:25:56.000Z" itemprop="datePublished">2015-06-17</time>
+</a>
+    </div>
+  
+
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/06/17/zookeeper集群初识/">zookeeper集群初识</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>&#x4ECA;&#x5929;&#x7814;&#x7A76;&#x4E86;&#x4E00;&#x4E0B;zookeeper&#xFF0C;&#x5BF9;&#x4E8E;&#x4E92;&#x8054;&#x7F51;&#x516C;&#x53F8;&#x6765;&#x8BF4;&#xFF0C;&#x5206;&#x5E03;&#x5F0F;&#x67B6;&#x6784;&#x662F;&#x5FC5;&#x987B;&#x7684;&#xFF0C;zookeeper&#x6B63;&#x662F;&#x9488;&#x5BF9;&#x5206;&#x5E03;&#x5F0F;&#x5E94;&#x7528;&#x7684;&#x9AD8;&#x6027;&#x80FD;&#x534F;&#x8C03;&#x670D;&#x52A1;&#xFF0C;&#x63D0;&#x4F9B;&#x5305;&#x62EC;&#x914D;&#x7F6E;&#x7EF4;&#x62A4;&#x3001;&#x540D;&#x5B57;&#x670D;&#x52A1;&#x3001;&#x5206;&#x5E03;&#x5F0F;&#x540C;&#x6B65;&#x3001;&#x7EC4;&#x670D;&#x52A1;&#x7B49;&#x3002;</p>
+</blockquote>
+<p>&#x4E0B;&#x9762;&#x4ECB;&#x7ECD;&#x4E00;&#x4E0B;&#x914D;&#x7F6E;zookeeper&#x96C6;&#x7FA4;&#x7684;&#x8FC7;&#x7A0B;</p>
+<ol>
+<li>&#x590D;&#x5236;&#x4E09;&#x4E2A;zookeeper&#xFF0C;&#x6BD4;&#x5982;</li>
+<li><p>&#x914D;&#x7F6E;&#x6BCF;&#x4E00;&#x4E2A;zookeeper&#x7684;zoo.cfg&#xFF0C;&#x6BD4;&#x5982;</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">tickTime=<span class="number">2000</span>    </span><br><span class="line">initLimit=<span class="number">10</span></span><br><span class="line">syncLimit=<span class="number">5</span></span><br><span class="line"><span class="comment">#&#x6307;&#x5B9A;dataDir&#x76EE;&#x5F55;</span></span><br><span class="line">dataDir=/Users/bear_lee/development/zookeeper/data/zookeeper3</span><br><span class="line">dataLogDir=/Users/bear_lee/development/zookeeper/logs/zookeeper3</span><br><span class="line"><span class="comment">#clientPort&#xFF1A;zookeeper&#x7684;&#x7AEF;&#x53E3;&#x53F7;&#xFF0C;&#x5728;&#x540C;&#x4E00;&#x53F0;&#x673A;&#x5668;&#x4E0B;&#x4E0D;&#x540C;zookeeper&#x7AEF;&#x53E3;&#x53F7;&#x4E0D;&#x80FD;&#x4E00;&#x6837;</span></span><br><span class="line">clientPort=<span class="number">2183</span></span><br><span class="line">server.<span class="number">1</span>=<span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">2881</span>:<span class="number">3881</span></span><br><span class="line">server.<span class="number">2</span>=<span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">2882</span>:<span class="number">3882</span></span><br><span class="line">server.<span class="number">3</span>=<span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">2883</span>:<span class="number">3883</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>&#x5728;3&#x4E2A;zookeeper&#x7684;dataDir&#x76EE;&#x5F55;&#x4E0B;&#x9762;&#x5206;&#x522B;&#x521B;&#x5EFA;&#x6587;&#x4EF6;&#xFF0C;&#x53D6;&#x540D;myid&#xFF0C;&#x5206;&#x522B;&#x5199;&#x5165;1&#x3001;2&#x3001;3&#x3002;&#x5176;&#x4E2D;1&#xFF0C;2&#xFF0C;3&#x5206;&#x522B;&#x6307;&#x7684;&#x662F;zoo.cfg&#x6587;&#x4EF6;&#x4E2D;&#x7684;server.1 server.2 server.3</p>
+</li>
+<li><p>&#x542F;&#x52A8;3&#x4E2A;zookeeper&#xFF1A;</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ./zkServer.sh start</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>&#x968F;&#x4FBF;&#x8FDB;&#x5165;&#x4E00;&#x4E2A;zookeeper&#xFF0C;&#x542F;&#x52A8;zkCli&#xFF0C;&#x7136;&#x540E;&#x6211;&#x4EEC;&#x4F1A;&#x53D1;&#x73B0;&#x8FDE;&#x63A5;&#x4E86;&#x53E6;&#x4E00;&#x4E2A;zookeeper&#xFF0C;&#x8BE5;zookeeper&#x5219;&#x662F;&#x6574;&#x4E2A;&#x96C6;&#x7FA4;&#x7684;leader</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ./zkCli.sh</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/zookeeper/">zookeeper</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/分布式/">分布式</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/技术/">技术</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="photo-如何搭建个人博客" class="article article-type-photo" itemscope itemprop="blogPost">
   
