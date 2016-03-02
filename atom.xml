@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://leeboyue.com/"/>
-  <updated>2016-03-02T07:42:25.000Z</updated>
+  <updated>2016-03-02T09:43:03.000Z</updated>
   <id>http://leeboyue.com/</id>
   
   <author>
@@ -14,24 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>About</title>
-    <link href="http://leeboyue.com/2016/03/01/About/"/>
-    <id>http://leeboyue.com/2016/03/01/About/</id>
-    <published>2016-03-01T12:09:10.000Z</published>
-    <updated>2016-03-02T07:42:25.000Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="About" scheme="http://leeboyue.com/categories/About/"/>
-    
-    
-  </entry>
   
   <entry>
     <title>网络通讯</title>
