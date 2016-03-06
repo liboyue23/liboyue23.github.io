@@ -108,7 +108,7 @@
     <link href="http://leeboyue.com/2016/03/01/%E8%A6%81%E5%81%9A%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BA%8B%E6%83%85/"/>
     <id>http://leeboyue.com/2016/03/01/要做的一些事情/</id>
     <published>2016-03-01T07:40:08.000Z</published>
-    <updated>2016-03-02T07:42:01.000Z</updated>
+    <updated>2016-03-06T10:22:18.000Z</updated>
     
     <content type="html">&lt;p&gt;&amp;#x5B58;&amp;#x50A8;&amp;#x77E5;&amp;#x8BC6;&amp;#x5B66;&amp;#x4E60;&lt;/p&gt;
 &lt;p&gt;&amp;#x4ECA;&amp;#x5E74;3&amp;#x6708;&amp;#x4EFD;&amp;#x53C8;&amp;#x6362;&amp;#x4E86;&amp;#x5DE5;&amp;#x4F5C;&amp;#xFF0C;&amp;#x8FD8;&amp;#x662F;&amp;#x575A;&amp;#x6301;&amp;#x6280;&amp;#x672F;&amp;#x4E3A;&amp;#x4E3B;&amp;#xFF0C;&amp;#x6280;&amp;#x672F;&amp;#x548C;&amp;#x4E1A;&amp;#x52A1;&amp;#x76F8;&amp;#x7ED3;&amp;#x5408;&amp;#x5E76;&amp;#x884C;&amp;#x63D0;&amp;#x5347;&lt;/p&gt;
@@ -129,6 +129,8 @@
     
     
       <category term="技术" scheme="http://leeboyue.com/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="随笔" scheme="http://leeboyue.com/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
@@ -258,7 +260,7 @@
     <link href="http://leeboyue.com/2015/09/12/%E5%A6%82%E4%BD%95%E8%AF%BB%E6%BA%90%E7%A0%81/"/>
     <id>http://leeboyue.com/2015/09/12/如何读源码/</id>
     <published>2015-09-12T15:51:25.000Z</published>
-    <updated>2016-03-02T07:41:43.000Z</updated>
+    <updated>2016-03-06T10:22:29.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;&amp;#x4E2A;&amp;#x4EBA;&amp;#x89C9;&amp;#x5F97;&amp;#x5B66;&amp;#x4E60;&amp;#x4E00;&amp;#x4E2A;&amp;#x4E1C;&amp;#x897F;&amp;#x7684;&amp;#x6B65;&amp;#x9AA4;&quot;&gt;&amp;#x4E2A;&amp;#x4EBA;&amp;#x89C9;&amp;#x5F97;&amp;#x5B66;&amp;#x4E60;&amp;#x4E00;&amp;#x4E2A;&amp;#x4E1C;&amp;#x897F;&amp;#x7684;&amp;#x6B65;&amp;#x9AA4;&lt;/h1&gt;&lt;ol&gt;
 &lt;li&gt;&amp;#x770B;&amp;#x4ECB;&amp;#x7ECD;&lt;/li&gt;
@@ -289,7 +291,7 @@
     
       <category term="java" scheme="http://leeboyue.com/tags/java/"/>
     
-      <category term="心得" scheme="http://leeboyue.com/tags/%E5%BF%83%E5%BE%97/"/>
+      <category term="随笔" scheme="http://leeboyue.com/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
@@ -440,7 +442,7 @@
     <link href="http://leeboyue.com/2015/06/07/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://leeboyue.com/2015/06/07/如何搭建个人博客/</id>
     <published>2015-06-07T09:51:25.000Z</published>
-    <updated>2016-03-04T03:17:31.000Z</updated>
+    <updated>2016-03-06T10:22:52.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;hexo&amp;#x4F60;&amp;#x7684;&amp;#x535A;&amp;#x5BA2;&quot;&gt;hexo&amp;#x4F60;&amp;#x7684;&amp;#x535A;&amp;#x5BA2;&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;&amp;#x4F5C;&amp;#x4E3A;&amp;#x6280;&amp;#x672F;&amp;#x4EBA;&amp;#x5458;&amp;#x5E94;&amp;#x8BE5;&amp;#x6709;&amp;#x4E2A;&amp;#x81EA;&amp;#x5DF1;&amp;#x7684;&amp;#x535A;&amp;#x5BA2;&amp;#xFF1A;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -521,12 +523,12 @@
     
     </summary>
     
-      <category term="随笔" scheme="http://leeboyue.com/categories/%E9%9A%8F%E7%AC%94/"/>
+      <category term="技术" scheme="http://leeboyue.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
       <category term="hexo" scheme="http://leeboyue.com/tags/hexo/"/>
     
-      <category term="建站" scheme="http://leeboyue.com/tags/%E5%BB%BA%E7%AB%99/"/>
+      <category term="随笔" scheme="http://leeboyue.com/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
