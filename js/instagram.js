@@ -51,6 +51,7 @@ var Instagram = (function(){
 	}
 
 	var ctrler = function(data){
+		alert(data);
 		var imgObj = {};
 		for(var i=0,len=data.length;i<len;i++){
 			var d = new Date(data[i].created_time*1000);
@@ -78,6 +79,7 @@ var Instagram = (function(){
 	}
 
 	var getList = function(url){
+		alert("123");
 		$(".open-ins").html("图片来自instagram，正在加载中…");
 		$.ajax({
 			url: url,
