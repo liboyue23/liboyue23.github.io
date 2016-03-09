@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://leeboyue.com/"/>
-  <updated>2016-03-09T06:46:24.000Z</updated>
+  <updated>2016-03-09T07:48:33.000Z</updated>
   <id>http://leeboyue.com/</id>
   
   <author>
@@ -17,10 +17,10 @@
   
   <entry>
     <title>索引结构以及加锁理解</title>
-    <link href="http://leeboyue.com/2016/03/08/%E7%B4%A2%E5%BC%95%E7%BB%93%E6%9E%84%E4%BB%A5%E5%8F%8A%E5%8A%A0%E9%94%81%E7%90%86%E8%A7%A3/"/>
-    <id>http://leeboyue.com/2016/03/08/索引结构以及加锁理解/</id>
-    <published>2016-03-08T03:14:59.000Z</published>
-    <updated>2016-03-09T06:46:24.000Z</updated>
+    <link href="http://leeboyue.com/2016/03/09/%E7%B4%A2%E5%BC%95%E7%BB%93%E6%9E%84%E4%BB%A5%E5%8F%8A%E5%8A%A0%E9%94%81%E7%90%86%E8%A7%A3/"/>
+    <id>http://leeboyue.com/2016/03/09/索引结构以及加锁理解/</id>
+    <published>2016-03-09T03:14:59.000Z</published>
+    <updated>2016-03-09T07:48:33.000Z</updated>
     
     <content type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h1 id=&quot;&amp;#x78C1;&amp;#x76D8;&amp;#x7ED3;&amp;#x6784;&quot;&gt;&amp;#x78C1;&amp;#x76D8;&amp;#x7ED3;&amp;#x6784;&lt;/h1&gt;&lt;p&gt;&amp;#x8BA1;&amp;#x7B97;&amp;#x673A;&amp;#x5B58;&amp;#x50A8;&amp;#x8BBE;&amp;#x5907;&amp;#x4E00;&amp;#x822C;&amp;#x5206;&amp;#x4E3A;&amp;#x4E24;&amp;#x79CD;&amp;#xFF1A;&amp;#x5185;&amp;#x5B58;&amp;#x50A8;&amp;#x5668;(main memory)&amp;#x548C;&amp;#x5916;&amp;#x5B58;&amp;#x50A8;&amp;#x5668;(external memory)&amp;#x3002; &amp;#x5185;&amp;#x5B58;&amp;#x5B58;&amp;#x53D6;&amp;#x901F;&amp;#x5EA6;&amp;#x5FEB;&amp;#xFF0C;&amp;#x4F46;&amp;#x5BB9;&amp;#x91CF;&amp;#x5C0F;&amp;#xFF0C;&amp;#x4EF7;&amp;#x683C;&amp;#x6602;&amp;#x8D35;&amp;#xFF0C;&amp;#x800C;&amp;#x4E14;&amp;#x4E0D;&amp;#x80FD;&amp;#x957F;&amp;#x671F;&amp;#x4FDD;&amp;#x5B58;&amp;#x6570;&amp;#x636E;(&amp;#x5728;&amp;#x4E0D;&amp;#x901A;&amp;#x7535;&amp;#x60C5;&amp;#x51B5;&amp;#x4E0B;&amp;#x6570;&amp;#x636E;&amp;#x4F1A;&amp;#x6D88;&amp;#x5931;)&amp;#x3002;&lt;br&gt;&amp;#x78C1;&amp;#x76D8;&amp;#x7684;&amp;#x6784;&amp;#x9020;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/11264082/13591471/e4a5e2ac-e523-11e5-8d1b-ac72fdaede4a.png&quot; alt=&quot;image&quot;&gt;&lt;br&gt;&amp;#x78C1;&amp;#x76D8;&amp;#x8BFB;&amp;#x5199;&amp;#x539F;&amp;#x7406;&lt;/p&gt;
@@ -272,6 +272,16 @@
     
     </summary>
     
+      <category term="技术" scheme="http://leeboyue.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="MySQL" scheme="http://leeboyue.com/tags/MySQL/"/>
+    
+      <category term="性能优化" scheme="http://leeboyue.com/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
+    
+      <category term="树" scheme="http://leeboyue.com/tags/%E6%A0%91/"/>
+    
+      <category term="索引" scheme="http://leeboyue.com/tags/%E7%B4%A2%E5%BC%95/"/>
     
   </entry>
   
@@ -280,12 +290,12 @@
     <link href="http://leeboyue.com/2016/03/07/%E4%B8%80%E4%BA%9B%E6%8F%92%E4%BB%B6/"/>
     <id>http://leeboyue.com/2016/03/07/一些插件/</id>
     <published>2016-03-07T07:24:06.000Z</published>
-    <updated>2016-03-09T07:36:44.000Z</updated>
+    <updated>2016-03-09T07:38:11.000Z</updated>
     
-    <content type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h1 id=&quot;echart&quot;&gt;echart&lt;/h1&gt;&lt;div id=&quot;echarts8767&quot; style=&quot;width: 81%;height: 400px;margin: 0 auto&quot;&gt;&lt;/div&gt;
+    <content type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h1 id=&quot;echart&quot;&gt;echart&lt;/h1&gt;&lt;div id=&quot;echarts7195&quot; style=&quot;width: 81%;height: 400px;margin: 0 auto&quot;&gt;&lt;/div&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
         // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById(&#39;echarts8767&#39;));
+        var myChart = echarts.init(document.getElementById(&#39;echarts7195&#39;));
 
         // 指定图表的配置项和数据
         var option = {
@@ -353,18 +363,18 @@
         // 使用刚指定的配置项和数据显示图表。
         myChart.setOption(option);
 &lt;/script&gt;
-&lt;h1 id=&quot;&amp;#x79D1;&amp;#x5B66;&amp;#x8BA1;&amp;#x7B97;&quot;&gt;&amp;#x79D1;&amp;#x5B66;&amp;#x8BA1;&amp;#x7B97;&lt;/h1&gt;&lt;div id=&quot;badge-container-liboyue23-liboyue23.github.io
+&lt;h1 id=&quot;&amp;#x79D1;&amp;#x5B66;&amp;#x8BA1;&amp;#x7B97;&quot;&gt;&amp;#x79D1;&amp;#x5B66;&amp;#x8BA1;&amp;#x7B97;&lt;/h1&gt;&lt;!-- &lt;div id=&quot;badge-container-akfish-liboyue23.github.io
 -b82e65&quot; class=&quot;hexo-github&quot; style=&quot;width: 100%&quot;&gt;&lt;/div&gt;
 &lt;script src=&quot;/hexo-github/badge.js&quot;&gt;&lt;/script&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
   loadStyle(&quot;/hexo-github/style.css&quot;);
   loadStyle(&quot;/hexo-github/octicons/octicons.css&quot;);
-  new Badge(&quot;#badge-container-liboyue23-liboyue23.github.io
--b82e65&quot;, &quot;liboyue23&quot;, &quot;liboyue23.github.io
+  new Badge(&quot;#badge-container-akfish-liboyue23.github.io
+-b82e65&quot;, &quot;akfish&quot;, &quot;liboyue23.github.io
 &quot;, &quot;b82e65&quot;, false);
 &lt;/script&gt;
-
-&lt;h1 id=&quot;&amp;#x5D4C;&amp;#x5165;pdf&quot;&gt;&amp;#x5D4C;&amp;#x5165;pdf&lt;/h1&gt;
+ —&amp;gt;
+&lt;h1 id=&quot;嵌入pdf&quot;&gt;嵌入pdf&lt;/h1&gt;
 
 	&lt;div class=&quot;row&quot;&gt;
 	  &lt;iframe src=&quot;http://nagland.github.io/viewer/web/viewer.html?val=http://7xov2f.com1.z0.glb.clouddn.com/bash_freshman.pdf&quot; style=&quot;width:100%; height:550px&quot;&gt;&lt;/iframe&gt;
@@ -372,11 +382,11 @@
 
 
 
-&lt;h1 id=&quot;&amp;#x5D4C;&amp;#x5165;&amp;#x4F18;&amp;#x9177;&amp;#x89C6;&amp;#x9891;&quot;&gt;&amp;#x5D4C;&amp;#x5165;&amp;#x4F18;&amp;#x9177;&amp;#x89C6;&amp;#x9891;&lt;/h1&gt;&lt;iframe height=&quot;480&quot; width=&quot;400&quot; src=&quot;http://player.youku.com/embed/XMTQ2MjU2NTU2OA&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;h1 id=&quot;&amp;#x8F6C;&amp;#x4E49;&amp;#x5B57;&amp;#x7B26;&quot;&gt;&amp;#x8F6C;&amp;#x4E49;&amp;#x5B57;&amp;#x7B26;&lt;/h1&gt;&lt;ruby&gt;Base&lt;rp&gt; (&lt;/rp&gt;&lt;rt&gt;top&lt;/rt&gt;&lt;rp&gt;) &lt;/rp&gt;&lt;/ruby&gt;
-&lt;ruby&gt;&amp;#x4F50;&amp;#x5929;&amp;#x6CEA;&amp;#x5B50;&lt;rp&gt; (&lt;/rp&gt;&lt;rt&gt;xi&amp;#x101;n q&amp;#xFA;n ku&amp;#xE1;ng m&amp;#xF3;&lt;/rt&gt;&lt;rp&gt;) &lt;/rp&gt;&lt;/ruby&gt;
-&lt;ruby&gt;&amp;#x8D85;&amp;#x96FB;&amp;#x78C1;&amp;#x7832;&lt;rp&gt; (&lt;/rp&gt;&lt;rt&gt;&amp;#x30EC;&amp;#x30FC;&amp;#x30EB;&amp;#x30AC;&amp;#x30F3;&lt;/rt&gt;&lt;rp&gt;) &lt;/rp&gt;&lt;/ruby&gt;
-</content>
+&lt;h1 id=&quot;嵌入优酷视频&quot;&gt;嵌入优酷视频&lt;/h1&gt;&lt;iframe height=480 width=400 src=&quot;http://player.youku.com/embed/XMTQ2MjU2NTU2OA&quot; frameborder=0 allowfullscreen&gt;&lt;/iframe&gt;
+&lt;h1 id=&quot;转义字符&quot;&gt;转义字符&lt;/h1&gt;&lt;ruby&gt;Base&lt;rp&gt; (&lt;/rp&gt;&lt;rt&gt;top&lt;/rt&gt;&lt;rp&gt;) &lt;/rp&gt;&lt;/ruby&gt;
+&lt;ruby&gt;佐天泪子&lt;rp&gt; (&lt;/rp&gt;&lt;rt&gt;xiān qún kuáng mó&lt;/rt&gt;&lt;rp&gt;) &lt;/rp&gt;&lt;/ruby&gt;
+&lt;ruby&gt;超電磁砲&lt;rp&gt; (&lt;/rp&gt;&lt;rt&gt;レールガン&lt;/rt&gt;&lt;rp&gt;) &lt;/rp&gt;&lt;/ruby&gt;
+--&gt;</content>
     
     <summary type="html">
     
@@ -396,7 +406,7 @@
     <link href="http://leeboyue.com/2016/03/04/%E6%9C%9F%E7%9B%BC%E5%B7%B2%E4%B9%85%E7%9A%84offer/"/>
     <id>http://leeboyue.com/2016/03/04/期盼已久的offer/</id>
     <published>2016-03-04T15:35:04.000Z</published>
-    <updated>2016-03-07T07:26:49.000Z</updated>
+    <updated>2016-03-09T07:53:23.000Z</updated>
     
     <content type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&amp;#x7EC8;&amp;#x4E8E;&amp;#xFF01;&amp;#x7EC8;&amp;#x4E8E;&amp;#x7B49;&amp;#x5230;&amp;#x4E86;&amp;#x963F;&amp;#x91CC;offer&amp;#xFF0C;&amp;#x771F;&amp;#x7684;&amp;#x662F;&amp;#x5F88;&amp;#x5174;&amp;#x594B;&amp;#xFF0C;&amp;#x6709;&amp;#x79CD;&amp;#x68A6;&amp;#x60F3;&amp;#x6210;&amp;#x771F;&amp;#x7684;&amp;#x611F;&amp;#x89C9;&amp;#xFF01;&amp;#x6EE1;&amp;#x6EE1;&amp;#x7684;&amp;#x52A8;&amp;#x529B;&amp;#xFF0C;&amp;#x4E0D;&amp;#x5FD8;&amp;#x521D;&amp;#x5FC3;&amp;#xFF0C;&amp;#x52AA;&amp;#x529B;&amp;#x5411;&amp;#x524D;&amp;#xFF01;&lt;/p&gt;
 </content>
@@ -407,7 +417,7 @@
     
     </summary>
     
-      <category term="随笔" scheme="http://leeboyue.com/categories/%E9%9A%8F%E7%AC%94/"/>
+      <category term="职业" scheme="http://leeboyue.com/categories/%E8%81%8C%E4%B8%9A/"/>
     
     
       <category term="阿里巴巴" scheme="http://leeboyue.com/tags/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4/"/>
@@ -419,7 +429,7 @@
     <link href="http://leeboyue.com/2016/03/02/%E4%BA%92%E8%81%94%E7%BD%91%E9%87%91%E8%9E%8D%E4%BD%93%E7%B3%BB/"/>
     <id>http://leeboyue.com/2016/03/02/互联网金融体系/</id>
     <published>2016-03-02T11:44:49.000Z</published>
-    <updated>2016-03-07T07:26:13.000Z</updated>
+    <updated>2016-03-09T07:51:43.000Z</updated>
     
     <content type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h1 id=&quot;&amp;#x6982;&amp;#x8981;&quot;&gt;&amp;#x6982;&amp;#x8981;&lt;/h1&gt;&lt;h2 id=&quot;&amp;#x5BF9;&amp;#x4E92;&amp;#x8054;&amp;#x7F51;&amp;#x91D1;&amp;#x878D;&amp;#x7684;&amp;#x7406;&amp;#x89E3;&quot;&gt;&amp;#x5BF9;&amp;#x4E92;&amp;#x8054;&amp;#x7F51;&amp;#x91D1;&amp;#x878D;&amp;#x7684;&amp;#x7406;&amp;#x89E3;&lt;/h2&gt;&lt;p&gt;&amp;#x672A;&amp;#x5B8C;&amp;#x5F85;&amp;#x7EED;~&lt;br&gt;&lt;img src=&quot;/2016/03/02/&amp;#x4E92;&amp;#x8054;&amp;#x7F51;&amp;#x91D1;&amp;#x878D;&amp;#x4F53;&amp;#x7CFB;/&amp;#x4E92;&amp;#x8054;&amp;#x7F51;&amp;#x91D1;&amp;#x878D;.jpg&quot; alt=&quot;&amp;#x4E92;&amp;#x8054;&amp;#x7F51;&amp;#x91D1;&amp;#x878D;&amp;#x4F53;&amp;#x7CFB;&quot;&gt;&lt;/p&gt;
 </content>
@@ -430,8 +440,12 @@
     
     </summary>
     
+      <category term="职业" scheme="http://leeboyue.com/categories/%E8%81%8C%E4%B8%9A/"/>
     
-      <category term="心得" scheme="http://leeboyue.com/tags/%E5%BF%83%E5%BE%97/"/>
+    
+      <category term="互联网金融" scheme="http://leeboyue.com/tags/%E4%BA%92%E8%81%94%E7%BD%91%E9%87%91%E8%9E%8D/"/>
+    
+      <category term="脑图" scheme="http://leeboyue.com/tags/%E8%84%91%E5%9B%BE/"/>
     
   </entry>
   
@@ -484,7 +498,7 @@
     <link href="http://leeboyue.com/2016/03/01/%E8%A6%81%E5%81%9A%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BA%8B%E6%83%85/"/>
     <id>http://leeboyue.com/2016/03/01/要做的一些事情/</id>
     <published>2016-03-01T07:40:08.000Z</published>
-    <updated>2016-03-09T03:42:35.000Z</updated>
+    <updated>2016-03-09T07:53:48.000Z</updated>
     
     <content type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&amp;#x5B58;&amp;#x50A8;&amp;#x77E5;&amp;#x8BC6;&amp;#x5B66;&amp;#x4E60;&lt;/p&gt;
 &lt;p&gt;&amp;#x4ECA;&amp;#x5E74;3&amp;#x6708;&amp;#x4EFD;&amp;#x53C8;&amp;#x6362;&amp;#x4E86;&amp;#x5DE5;&amp;#x4F5C;&amp;#xFF0C;&amp;#x8FD8;&amp;#x662F;&amp;#x575A;&amp;#x6301;&amp;#x6280;&amp;#x672F;&amp;#x4E3A;&amp;#x4E3B;&amp;#xFF0C;&amp;#x6280;&amp;#x672F;&amp;#x548C;&amp;#x4E1A;&amp;#x52A1;&amp;#x76F8;&amp;#x7ED3;&amp;#x5408;&amp;#x5E76;&amp;#x884C;&amp;#x63D0;&amp;#x5347;&lt;/p&gt;
@@ -500,10 +514,8 @@
     
     </summary>
     
-      <category term="学习" scheme="http://leeboyue.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="技术" scheme="http://leeboyue.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
-    
-      <category term="技术" scheme="http://leeboyue.com/tags/%E6%8A%80%E6%9C%AF/"/>
     
       <category term="随笔" scheme="http://leeboyue.com/tags/%E9%9A%8F%E7%AC%94/"/>
     
@@ -514,7 +526,7 @@
     <link href="http://leeboyue.com/2016/03/01/%E5%AD%98%E5%82%A8%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0/"/>
     <id>http://leeboyue.com/2016/03/01/存储知识学习/</id>
     <published>2016-03-01T07:24:38.000Z</published>
-    <updated>2016-03-09T06:15:07.000Z</updated>
+    <updated>2016-03-09T07:52:54.000Z</updated>
     
     <content type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;1&amp;#x78C1;&amp;#x76D8;&amp;#x57FA;&amp;#x672C;&amp;#x77E5;&amp;#x8BC6;&quot;&gt;1.&amp;#x78C1;&amp;#x76D8;&amp;#x57FA;&amp;#x672C;&amp;#x77E5;&amp;#x8BC6;&lt;/h2&gt;&lt;p&gt;&amp;#x78C1;&amp;#x76D8;&amp;#x5927;&amp;#x81F4;&amp;#x7531;&amp;#x76D8;&amp;#x7247;&amp;#x3001;&amp;#x78C1;&amp;#x5934;&amp;#x3001;&amp;#x6B65;&amp;#x8FDB;&amp;#x7535;&amp;#x673A;&amp;#x7B49;&amp;#x51E0;&amp;#x90E8;&amp;#x5206;&amp;#x7EC4;&amp;#x6210;&amp;#x7EC4;&amp;#x6210;&amp;#x3002;&lt;br&gt;&amp;#x76D8;&amp;#x9762;&amp;#xFF1A;&amp;#x786C;&amp;#x76D8;&amp;#x4E00;&amp;#x822C;&amp;#x542B;&amp;#x6709;&amp;#x4E00;&amp;#x4E2A;&amp;#x6216;&amp;#x591A;&amp;#x4E2A;&amp;#x76D8;&amp;#x7247;&amp;#xFF0C;&amp;#x4E00;&amp;#x4E2A;&amp;#x76D8;&amp;#x7247;&amp;#x5305;&amp;#x542B;&amp;#x4E24;&amp;#x4E2A;&amp;#x76D8;&amp;#x9762;&amp;#x3002;&lt;br&gt;&amp;#x78C1;&amp;#x9053;&amp;#xFF1A;&amp;#x6BCF;&amp;#x4E2A;&amp;#x76D8;&amp;#x9762;&amp;#x88AB;&amp;#x5212;&amp;#x6210;&amp;#x591A;&amp;#x4E2A;&amp;#x72ED;&amp;#x7A84;&amp;#x7684;&amp;#x540C;&amp;#x5FC3;&amp;#x5706;&amp;#x73AF;&amp;#xFF0C;&amp;#x8FD9;&amp;#x6837;&amp;#x7684;&amp;#x5706;&amp;#x73AF;&amp;#x53EB;&amp;#x505A;&amp;#x78C1;&amp;#x9053;&amp;#x3002;&lt;br&gt;&amp;#x6247;&amp;#x533A;&amp;#xFF1A;&amp;#x6BCF;&amp;#x4E2A;&amp;#x78C1;&amp;#x9053;&amp;#x7684;&amp;#x6BCF;&amp;#x6BB5;&amp;#x5706;&amp;#x5F27;&amp;#x53EB;&amp;#x505A;&amp;#x4E00;&amp;#x4E2A;&amp;#x6247;&amp;#x533A;&amp;#xFF0C;&amp;#x662F;&amp;#x8BFB;&amp;#x5199;&amp;#x7684;&amp;#x6700;&amp;#x5C0F;&amp;#x5355;&amp;#x4F4D;&amp;#x3002;&lt;br&gt;&amp;#x67F1;&amp;#x9762;&amp;#xFF1A;&amp;#x6240;&amp;#x6709;&amp;#x76D8;&amp;#x9762;&amp;#x4E0A;&amp;#x7684;&amp;#x540C;&amp;#x4E00;&amp;#x78C1;&amp;#x9053;&amp;#xFF0C;&amp;#x5728;&amp;#x7AD6;&amp;#x76F4;&amp;#x65B9;&amp;#x5411;&amp;#x6784;&amp;#x6210;&amp;#x4E00;&amp;#x4E2A;&amp;#x5706;&amp;#x67F1;&amp;#xFF0C;&amp;#x79F0;&amp;#x4E3A;&amp;#x67F1;&amp;#x9762;&amp;#x3002;&lt;br&gt;&amp;#x8BFB;&amp;#x5199;&amp;#x8FC7;&amp;#x7A0B;&amp;#xFF1A;&amp;#x786C;&amp;#x76D8;&amp;#x8BFB;&amp;#x53D6;&amp;#x6570;&amp;#x636E;&amp;#x65F6;&amp;#xFF0C;&amp;#x78C1;&amp;#x5934;&amp;#x5148;&amp;#x79FB;&amp;#x52A8;&amp;#x5230;&amp;#x8BFB;&amp;#x53D6;&amp;#x6247;&amp;#x533A;&amp;#x6240;&amp;#x5728;&amp;#x78C1;&amp;#x9053;&amp;#x7684;&amp;#x4E0A;&amp;#x65B9;&amp;#xFF0C;&amp;#x8FD9;&amp;#x4E2A;&amp;#x8FC7;&amp;#x7A0B;&amp;#x8017;&amp;#x65F6;&amp;#x53EB;&amp;#x505A;&amp;#x78C1;&amp;#x76D8;&amp;#x5BFB;&amp;#x9053;&amp;#x65F6;&amp;#x95F4;&amp;#xFF0C;&amp;#x5E73;&amp;#x5747;&amp;#x65F6;&amp;#x95F4;&amp;#x4E3A;10ms&amp;#x3002;&amp;#x4E4B;&amp;#x540E;&amp;#xFF0C;&amp;#x901A;&amp;#x8FC7;&amp;#x76D8;&amp;#x7247;&amp;#x7684;&amp;#x65CB;&amp;#x8F6C;&amp;#xFF0C;&amp;#x4F7F;&amp;#x5F97;&amp;#x6247;&amp;#x533A;&amp;#x8F6C;&amp;#x5230;&amp;#x78C1;&amp;#x5934;&amp;#x7684;&amp;#x4E0B;&amp;#x65B9;&amp;#xFF0C;&amp;#x8FD9;&amp;#x4E2A;&amp;#x8FC7;&amp;#x7A0B;&amp;#x8017;&amp;#x65F6;&amp;#x53EB;&amp;#x505A;&amp;#x65CB;&amp;#x8F6C;&amp;#x5EF6;&amp;#x8FDF;&amp;#x65F6;&amp;#x95F4;&amp;#xFF0C;&amp;#x5BF9;&amp;#x4E8E;7200&amp;#x8F6C;/min&amp;#x7684;&amp;#x786C;&amp;#x76D8;&amp;#x8F6C;&amp;#x4E00;&amp;#x5468;&amp;#x4E3A;60*1000/7200=8.33ms&amp;#xFF0C;&amp;#x5E73;&amp;#x5747;&amp;#x65CB;&amp;#x8F6C;&amp;#x5EF6;&amp;#x8FDF;&amp;#x4E3A;4.17ms&amp;#xFF08;&amp;#x534A;&amp;#x5708;&amp;#xFF09;&amp;#x3002;&lt;/p&gt;
 &lt;h2 id=&quot;2raid&amp;#x57FA;&amp;#x672C;&amp;#x77E5;&amp;#x8BC6;&quot;&gt;2.RAID&amp;#x57FA;&amp;#x672C;&amp;#x77E5;&amp;#x8BC6;&lt;/h2&gt;&lt;p&gt;RAID&amp;#xFF08;Redundant Array of Independent Disks&amp;#xFF09;&amp;#xFF0C;&amp;#x5373;&amp;#x7531;&amp;#x72EC;&amp;#x7ACB;&amp;#x7684;&amp;#x78C1;&amp;#x76D8;&amp;#x7EC4;&amp;#x6210;&amp;#x7684;&amp;#x5177;&amp;#x6709;&amp;#x5197;&amp;#x4F59;&amp;#x7279;&amp;#x6027;&amp;#x7684;&amp;#x9635;&amp;#x5217;&amp;#x3002;&amp;#x5176;&amp;#x57FA;&amp;#x672C;&amp;#x601D;&amp;#x60F3;&amp;#x5C31;&amp;#x662F;&amp;#x628A;&amp;#x591A;&amp;#x4E2A;&amp;#x76F8;&amp;#x5BF9;&amp;#x4FBF;&amp;#x5B9C;&amp;#x7684;&amp;#x786C;&amp;#x76D8;&amp;#x7EC4;&amp;#x5408;&amp;#x8D77;&amp;#x6765;&amp;#xFF0C;&amp;#x6210;&amp;#x4E3A;&amp;#x4E00;&amp;#x4E2A;&amp;#x786C;&amp;#x76D8;&amp;#x9635;&amp;#x5217;&amp;#x7EC4;&amp;#xFF0C;&amp;#x4F7F;&amp;#x6027;&amp;#x80FD;&amp;#x8FBE;&amp;#x5230;&amp;#x751A;&amp;#x81F3;&amp;#x8D85;&amp;#x8FC7;&amp;#x4E00;&amp;#x4E2A;&amp;#x4EF7;&amp;#x683C;&amp;#x6602;&amp;#x8D35;&amp;#x3001; &amp;#x5BB9;&amp;#x91CF;&amp;#x5DE8;&amp;#x5927;&amp;#x7684;&amp;#x786C;&amp;#x76D8;&amp;#x3002;&lt;br&gt;RAID 0&amp;#xFF0C;&amp;#x6761;&amp;#x5E26;&amp;#x5316;&amp;#x5B58;&amp;#x50A8;&amp;#xFF0C;&amp;#x5BB9;&amp;#x91CF;&amp;#x589E;&amp;#x52A0;&amp;#xFF0C;&amp;#x5E76;&amp;#x884C;&amp;#x5316;&amp;#xFF0C;&amp;#x4F46;&amp;#x65E0;&amp;#x5197;&amp;#x4F59;&amp;#xFF0C;&amp;#x5BB9;&amp;#x6613;&amp;#x5355;&amp;#x70B9;&amp;#x6545;&amp;#x969C;&amp;#x3002;&lt;/p&gt;
@@ -537,6 +549,10 @@
     
     </summary>
     
+      <category term="技术" scheme="http://leeboyue.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="存储" scheme="http://leeboyue.com/tags/%E5%AD%98%E5%82%A8/"/>
     
   </entry>
   
@@ -579,7 +595,7 @@
     <link href="http://leeboyue.com/2015/12/31/2015%E5%B9%B4%E6%80%BB%E7%BB%93/"/>
     <id>http://leeboyue.com/2015/12/31/2015年总结/</id>
     <published>2015-12-31T13:53:18.000Z</published>
-    <updated>2016-03-02T07:42:04.000Z</updated>
+    <updated>2016-03-09T07:52:06.000Z</updated>
     
     <content type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;&amp;#x8F6C;&amp;#x773C;&amp;#xFF0C;&amp;#x4E00;&amp;#x5E74;&amp;#x53C8;&amp;#x8FC7;&amp;#x53BB;&amp;#x4E86;&amp;#xFF0C;&amp;#x6BCF;&amp;#x5929;&amp;#x4E0A;&amp;#x73ED;&amp;#x5730;&amp;#x94C1;&amp;#x8DEF;&amp;#x4E0A;&amp;#x7684;&amp;#x4E00;&amp;#x5C0F;&amp;#x65F6;&amp;#x53EF;&amp;#x4EE5;&amp;#x6536;&amp;#x83B7;&amp;#x5F88;&amp;#x591A;&amp;#xFF0C;&amp;#x5217;&amp;#x4E00;&amp;#x4E0B;&amp;#x4ECA;&amp;#x5E74;&amp;#x7684;&amp;#x8BFB;&amp;#x4E66;&amp;#x6E05;&amp;#x5355;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -600,7 +616,7 @@
     
     </summary>
     
-      <category term="生活" scheme="http://leeboyue.com/categories/%E7%94%9F%E6%B4%BB/"/>
+      <category term="职业" scheme="http://leeboyue.com/categories/%E8%81%8C%E4%B8%9A/"/>
     
     
       <category term="技术" scheme="http://leeboyue.com/tags/%E6%8A%80%E6%9C%AF/"/>
@@ -612,7 +628,7 @@
     <link href="http://leeboyue.com/2015/12/13/2015%E5%BC%80%E6%BA%90%E4%B8%AD%E5%9B%BD%E5%B9%B4%E7%BB%88%E7%9B%9B%E5%85%B8/"/>
     <id>http://leeboyue.com/2015/12/13/2015开源中国年终盛典/</id>
     <published>2015-12-13T15:47:09.000Z</published>
-    <updated>2016-03-02T07:42:21.000Z</updated>
+    <updated>2016-03-09T07:51:58.000Z</updated>
     
     <content type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h1 id=&quot;osc&amp;#x5E74;&amp;#x7EC8;&amp;#x76DB;&amp;#x5178;&quot;&gt;OSC&amp;#x5E74;&amp;#x7EC8;&amp;#x76DB;&amp;#x5178;&lt;/h1&gt;&lt;p&gt;&amp;#x65E9;&amp;#x4E0A;&amp;#x4E0D;&amp;#x5230;6&amp;#x70B9;&amp;#x5C31;&amp;#x8D77;&amp;#x5E8A;&amp;#x51FA;&amp;#x53D1;&amp;#x6765;&amp;#x56FD;&amp;#x5BB6;&amp;#x4F1A;&amp;#x8BAE;&amp;#x4E2D;&amp;#x5FC3;&amp;#x4E86;&amp;#xFF0C;&amp;#x4ECA;&amp;#x5929;&amp;#x4E00;&amp;#x6574;&amp;#x5929;&amp;#x597D;&amp;#x5145;&amp;#x5B9E;&amp;#xFF0C;&amp;#x89C1;&amp;#x5230;&amp;#x4E86;&amp;#x6C88;&amp;#x8BAF;&amp;#xFF0C;&amp;#x8FD8;&amp;#x52A0;&amp;#x4E86;&amp;#x5FAE;&amp;#x4FE1;&amp;#x597D;&amp;#x53CB;&amp;#xFF0C;&amp;#x4E0D;&amp;#x865A;&amp;#x6B64;&amp;#x884C;&amp;#xFF01;&lt;br&gt;&lt;img src=&quot;/2015/12/13/2015&amp;#x5F00;&amp;#x6E90;&amp;#x4E2D;&amp;#x56FD;&amp;#x5E74;&amp;#x7EC8;&amp;#x76DB;&amp;#x5178;/osc_3.jpg&quot; alt=&quot;&amp;#x5F00;&amp;#x573A;&quot;&gt;&lt;br&gt;&lt;img src=&quot;/2015/12/13/2015&amp;#x5F00;&amp;#x6E90;&amp;#x4E2D;&amp;#x56FD;&amp;#x5E74;&amp;#x7EC8;&amp;#x76DB;&amp;#x5178;/osc_1.jpg&quot; alt=&quot;&amp;#x6C88;&amp;#x8BAF;&amp;#x8BB2;&amp;#x8BFE;&quot;&gt;&lt;br&gt;&lt;img src=&quot;/2015/12/13/2015&amp;#x5F00;&amp;#x6E90;&amp;#x4E2D;&amp;#x56FD;&amp;#x5E74;&amp;#x7EC8;&amp;#x76DB;&amp;#x5178;/osc_2.jpg&quot; alt=&quot;&amp;#x5408;&amp;#x5F71;&quot;&gt;&lt;/p&gt;
 </content>
@@ -623,7 +639,7 @@
     
     </summary>
     
-      <category term="活动" scheme="http://leeboyue.com/categories/%E6%B4%BB%E5%8A%A8/"/>
+      <category term="生活" scheme="http://leeboyue.com/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
       <category term="技术交流" scheme="http://leeboyue.com/tags/%E6%8A%80%E6%9C%AF%E4%BA%A4%E6%B5%81/"/>
@@ -635,7 +651,7 @@
     <link href="http://leeboyue.com/2015/09/12/%E5%A6%82%E4%BD%95%E8%AF%BB%E6%BA%90%E7%A0%81/"/>
     <id>http://leeboyue.com/2015/09/12/如何读源码/</id>
     <published>2015-09-12T15:51:25.000Z</published>
-    <updated>2016-03-06T10:22:29.000Z</updated>
+    <updated>2016-03-09T07:52:29.000Z</updated>
     
     <content type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h1 id=&quot;&amp;#x4E2A;&amp;#x4EBA;&amp;#x89C9;&amp;#x5F97;&amp;#x5B66;&amp;#x4E60;&amp;#x4E00;&amp;#x4E2A;&amp;#x4E1C;&amp;#x897F;&amp;#x7684;&amp;#x6B65;&amp;#x9AA4;&quot;&gt;&amp;#x4E2A;&amp;#x4EBA;&amp;#x89C9;&amp;#x5F97;&amp;#x5B66;&amp;#x4E60;&amp;#x4E00;&amp;#x4E2A;&amp;#x4E1C;&amp;#x897F;&amp;#x7684;&amp;#x6B65;&amp;#x9AA4;&lt;/h1&gt;&lt;ol&gt;
 &lt;li&gt;&amp;#x770B;&amp;#x4ECB;&amp;#x7ECD;&lt;/li&gt;
@@ -664,7 +680,7 @@
       <category term="技术" scheme="http://leeboyue.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="java" scheme="http://leeboyue.com/tags/java/"/>
+      <category term="心得" scheme="http://leeboyue.com/tags/%E5%BF%83%E5%BE%97/"/>
     
       <category term="随笔" scheme="http://leeboyue.com/tags/%E9%9A%8F%E7%AC%94/"/>
     
@@ -724,7 +740,7 @@
     <link href="http://leeboyue.com/2015/06/21/%E7%BA%A2%E7%83%A7%E9%B2%88%E9%B1%BC/"/>
     <id>http://leeboyue.com/2015/06/21/红烧鲈鱼/</id>
     <published>2015-06-21T14:28:38.000Z</published>
-    <updated>2016-03-02T07:41:55.000Z</updated>
+    <updated>2016-03-09T07:53:31.000Z</updated>
     
     <content type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;img src=&quot;/2015/06/21/&amp;#x7EA2;&amp;#x70E7;&amp;#x9C88;&amp;#x9C7C;/yu.jpg&quot; alt=&quot;&amp;#x7EA2;&amp;#x70E7;&amp;#x9C88;&amp;#x9C7C;&quot;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -758,7 +774,7 @@
     
     </summary>
     
-      <category term="菜谱" scheme="http://leeboyue.com/categories/%E8%8F%9C%E8%B0%B1/"/>
+      <category term="生活" scheme="http://leeboyue.com/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
       <category term="家常菜" scheme="http://leeboyue.com/tags/%E5%AE%B6%E5%B8%B8%E8%8F%9C/"/>
