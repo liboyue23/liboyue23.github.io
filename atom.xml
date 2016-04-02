@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://leeboyue.com/"/>
-  <updated>2016-03-31T12:25:31.000Z</updated>
+  <updated>2016-03-31T12:25:32.000Z</updated>
   <id>http://leeboyue.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://leeboyue.com/2016/03/31/Guava%E5%BA%93%E4%BB%8B%E7%BB%8D%E4%B9%8B%E9%9B%86%E5%90%88%E7%9B%B8%E5%85%B3%E7%9A%84API/"/>
     <id>http://leeboyue.com/2016/03/31/Guava库介绍之集合相关的API/</id>
     <published>2016-03-31T11:28:25.000Z</published>
-    <updated>2016-03-31T12:25:31.000Z</updated>
+    <updated>2016-03-31T12:25:32.000Z</updated>
     
     <content type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h1 id=&quot;1&amp;#x4E00;&amp;#x4E9B;&amp;#x5C0F;&amp;#x529F;&amp;#x80FD;&quot;&gt;1.&amp;#x4E00;&amp;#x4E9B;&amp;#x5C0F;&amp;#x529F;&amp;#x80FD;&lt;/h1&gt;&lt;h2 id=&quot;&amp;#x96C6;&amp;#x5408;&amp;#x58F0;&amp;#x660E;&amp;#x66F4;&amp;#x7B80;&amp;#x5355;&quot;&gt;&amp;#x96C6;&amp;#x5408;&amp;#x58F0;&amp;#x660E;&amp;#x66F4;&amp;#x7B80;&amp;#x5355;&lt;/h2&gt;&lt;p&gt;Java&amp;#x4E2D;&amp;#x540C;&amp;#x8D28;&amp;#x7684;&amp;#x8303;&amp;#x578B;&amp;#x96C6;&amp;#x5408;&amp;#x662F;&amp;#x4E00;&amp;#x4E2A;&amp;#x5F88;&amp;#x5927;&amp;#x7684;&amp;#x7279;&amp;#x8272;&amp;#xFF0C;&amp;#x4F46;&amp;#x662F;&amp;#x6709;&amp;#x4E9B;&amp;#x65F6;&amp;#x5019;&amp;#x4ED6;&amp;#x4EEC;&amp;#x7684;&amp;#x6784;&amp;#x9020;&amp;#x51FD;&amp;#x6570;&amp;#x6709;&amp;#x70B9;&amp;#x592A;&amp;#x5570;&amp;#x55E6;&amp;#x4E86;&amp;#xFF0C;&amp;#x6BD4;&amp;#x5982;&amp;#xFF1A;&lt;br&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Map&amp;lt;String, Map&amp;lt;String, Integer&amp;gt;&amp;gt; lookup = new HashMap&amp;lt;String, Map&amp;lt;String, Integer&amp;gt;&amp;gt;();&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;&amp;#x5728;Java 7&amp;#x4E2D;&amp;#x901A;&amp;#x8FC7;&amp;#x94BB;&amp;#x77F3;&amp;#x64CD;&amp;#x4F5C;&amp;#x7B26;&amp;lt;&amp;gt;&amp;#x6765;&amp;#x5141;&amp;#x8BB8;&amp;#x6709;&amp;#x9650;&amp;#x7684;&amp;#x975E;&amp;#x6B63;&amp;#x5F0F;&amp;#x7684;&amp;#x7C7B;&amp;#x578B;&amp;#x63A8;&amp;#x5BFC;&amp;#x3002;&amp;#x4E0A;&amp;#x9762;&amp;#x7684;&amp;#x4F8B;&amp;#x5B50;&amp;#x53EF;&amp;#x4EE5;&amp;#x8FD9;&amp;#x6837;&amp;#x5199;&amp;#xFF1A;&lt;br&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Map&amp;lt;String, Map&amp;lt;String, Integer&amp;gt;&amp;gt; lookup = new HashMap&amp;lt;&amp;gt;();&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
@@ -372,12 +372,12 @@
     <link href="http://leeboyue.com/2016/03/07/%E4%B8%80%E4%BA%9B%E6%8F%92%E4%BB%B6/"/>
     <id>http://leeboyue.com/2016/03/07/一些插件/</id>
     <published>2016-03-07T07:24:06.000Z</published>
-    <updated>2016-03-09T07:38:11.000Z</updated>
+    <updated>2016-04-02T15:21:28.000Z</updated>
     
-    <content type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h1 id=&quot;echart&quot;&gt;echart&lt;/h1&gt;&lt;div id=&quot;echarts9103&quot; style=&quot;width: 81%;height: 400px;margin: 0 auto&quot;&gt;&lt;/div&gt;
+    <content type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h1 id=&quot;echart&quot;&gt;echart&lt;/h1&gt;&lt;div id=&quot;echarts4037&quot; style=&quot;width: 81%;height: 400px;margin: 0 auto&quot;&gt;&lt;/div&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
         // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById(&#39;echarts9103&#39;));
+        var myChart = echarts.init(document.getElementById(&#39;echarts4037&#39;));
 
         // 指定图表的配置项和数据
         var option = {
@@ -468,6 +468,32 @@
 &lt;h1 id=&quot;转义字符&quot;&gt;转义字符&lt;/h1&gt;&lt;ruby&gt;Base&lt;rp&gt; (&lt;/rp&gt;&lt;rt&gt;top&lt;/rt&gt;&lt;rp&gt;) &lt;/rp&gt;&lt;/ruby&gt;
 &lt;ruby&gt;佐天泪子&lt;rp&gt; (&lt;/rp&gt;&lt;rt&gt;xiān qún kuáng mó&lt;/rt&gt;&lt;rp&gt;) &lt;/rp&gt;&lt;/ruby&gt;
 &lt;ruby&gt;超電磁砲&lt;rp&gt; (&lt;/rp&gt;&lt;rt&gt;レールガン&lt;/rt&gt;&lt;rp&gt;) &lt;/rp&gt;&lt;/ruby&gt;
+&lt;h1 id=&quot;表格&quot;&gt;表格&lt;/h1&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;ABCD&lt;/th&gt;
+&lt;th&gt;EFGH&lt;/th&gt;
+&lt;th&gt;IGKL&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;a&lt;/td&gt;
+&lt;td&gt;b&lt;/td&gt;
+&lt;td&gt;c&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;d&lt;/td&gt;
+&lt;td&gt;e&lt;/td&gt;
+&lt;td&gt;f&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;g&lt;/td&gt;
+&lt;td&gt;h&lt;/td&gt;
+&lt;td&gt;i&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 --&gt;</content>
     
     <summary type="html">
