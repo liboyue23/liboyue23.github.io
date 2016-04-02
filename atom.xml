@@ -372,12 +372,12 @@
     <link href="http://leeboyue.com/2016/03/07/%E4%B8%80%E4%BA%9B%E6%8F%92%E4%BB%B6/"/>
     <id>http://leeboyue.com/2016/03/07/一些插件/</id>
     <published>2016-03-07T07:24:06.000Z</published>
-    <updated>2016-04-02T15:21:28.000Z</updated>
+    <updated>2016-04-02T15:24:24.000Z</updated>
     
-    <content type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h1 id=&quot;echart&quot;&gt;echart&lt;/h1&gt;&lt;div id=&quot;echarts4037&quot; style=&quot;width: 81%;height: 400px;margin: 0 auto&quot;&gt;&lt;/div&gt;
+    <content type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h1 id=&quot;echart&quot;&gt;echart&lt;/h1&gt;&lt;div id=&quot;echarts5384&quot; style=&quot;width: 81%;height: 400px;margin: 0 auto&quot;&gt;&lt;/div&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
         // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById(&#39;echarts4037&#39;));
+        var myChart = echarts.init(document.getElementById(&#39;echarts5384&#39;));
 
         // 指定图表的配置项和数据
         var option = {
