@@ -372,91 +372,9 @@
     <link href="http://leeboyue.com/2016/03/07/%E4%B8%80%E4%BA%9B%E6%8F%92%E4%BB%B6/"/>
     <id>http://leeboyue.com/2016/03/07/一些插件/</id>
     <published>2016-03-07T07:24:06.000Z</published>
-    <updated>2016-04-02T15:24:24.000Z</updated>
+    <updated>2016-04-02T15:25:32.000Z</updated>
     
-    <content type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h1 id=&quot;echart&quot;&gt;echart&lt;/h1&gt;&lt;div id=&quot;echarts5384&quot; style=&quot;width: 81%;height: 400px;margin: 0 auto&quot;&gt;&lt;/div&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-        // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById(&#39;echarts5384&#39;));
-
-        // 指定图表的配置项和数据
-        var option = {
-    tooltip : {
-        trigger: &#39;axis&#39;,
-        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
-            type : &#39;shadow&#39;        // 默认为直线，可选为：&#39;line&#39; | &#39;shadow&#39;
-        }
-    },
-    legend: {
-        data:[&#39;利润&#39;, &#39;支出&#39;, &#39;收入&#39;]
-    },
-    grid: {
-        left: &#39;3%&#39;,
-        right: &#39;4%&#39;,
-        bottom: &#39;3%&#39;,
-        containLabel: true
-    },
-    xAxis : [
-        {
-            type : &#39;value&#39;
-        }
-    ],
-    yAxis : [
-        {
-            type : &#39;category&#39;,
-            axisTick : {show: false},
-            data : [&#39;周一&#39;,&#39;周二&#39;,&#39;周三&#39;,&#39;周四&#39;,&#39;周五&#39;,&#39;周六&#39;,&#39;周日&#39;]
-        }
-    ],
-    series : [
-        {
-            name:&#39;利润&#39;,
-            type:&#39;bar&#39;,
-            itemStyle : {
-                normal: {
-                    label: {show: true, position: &#39;inside&#39;}
-                }
-            },
-            data:[200, 170, 240, 244, 200, 220, 210]
-        },
-        {
-            name:&#39;收入&#39;,
-            type:&#39;bar&#39;,
-            stack: &#39;总量&#39;,
-            itemStyle: {
-                normal: {
-                    label : {show: true}
-                }
-            },
-            data:[320, 302, 341, 374, 390, 450, 420]
-        },
-        {
-            name:&#39;支出&#39;,
-            type:&#39;bar&#39;,
-            stack: &#39;总量&#39;,
-            itemStyle: {normal: {
-                label : {show: true, position: &#39;left&#39;}
-            }},
-            data:[-120, -132, -101, -134, -190, -230, -210]
-        }
-    ]
-};
-
-        // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
-&lt;/script&gt;
-&lt;h1 id=&quot;&amp;#x79D1;&amp;#x5B66;&amp;#x8BA1;&amp;#x7B97;&quot;&gt;&amp;#x79D1;&amp;#x5B66;&amp;#x8BA1;&amp;#x7B97;&lt;/h1&gt;&lt;!-- &lt;div id=&quot;badge-container-akfish-liboyue23.github.io
--b82e65&quot; class=&quot;hexo-github&quot; style=&quot;width: 100%&quot;&gt;&lt;/div&gt;
-&lt;script src=&quot;/hexo-github/badge.js&quot;&gt;&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-  loadStyle(&quot;/hexo-github/style.css&quot;);
-  loadStyle(&quot;/hexo-github/octicons/octicons.css&quot;);
-  new Badge(&quot;#badge-container-akfish-liboyue23.github.io
--b82e65&quot;, &quot;akfish&quot;, &quot;liboyue23.github.io
-&quot;, &quot;b82e65&quot;, false);
-&lt;/script&gt;
- —&amp;gt;
-&lt;h1 id=&quot;嵌入pdf&quot;&gt;嵌入pdf&lt;/h1&gt;
+    <content type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h1 id=&quot;&amp;#x5D4C;&amp;#x5165;pdf&quot;&gt;&amp;#x5D4C;&amp;#x5165;pdf&lt;/h1&gt;
 
 	&lt;div class=&quot;row&quot;&gt;
 	  &lt;iframe src=&quot;http://nagland.github.io/viewer/web/viewer.html?val=http://7xov2f.com1.z0.glb.clouddn.com/bash_freshman.pdf&quot; style=&quot;width:100%; height:550px&quot;&gt;&lt;/iframe&gt;
@@ -464,11 +382,11 @@
 
 
 
-&lt;h1 id=&quot;嵌入优酷视频&quot;&gt;嵌入优酷视频&lt;/h1&gt;&lt;iframe height=480 width=400 src=&quot;http://player.youku.com/embed/XMTQ2MjU2NTU2OA&quot; frameborder=0 allowfullscreen&gt;&lt;/iframe&gt;
-&lt;h1 id=&quot;转义字符&quot;&gt;转义字符&lt;/h1&gt;&lt;ruby&gt;Base&lt;rp&gt; (&lt;/rp&gt;&lt;rt&gt;top&lt;/rt&gt;&lt;rp&gt;) &lt;/rp&gt;&lt;/ruby&gt;
-&lt;ruby&gt;佐天泪子&lt;rp&gt; (&lt;/rp&gt;&lt;rt&gt;xiān qún kuáng mó&lt;/rt&gt;&lt;rp&gt;) &lt;/rp&gt;&lt;/ruby&gt;
-&lt;ruby&gt;超電磁砲&lt;rp&gt; (&lt;/rp&gt;&lt;rt&gt;レールガン&lt;/rt&gt;&lt;rp&gt;) &lt;/rp&gt;&lt;/ruby&gt;
-&lt;h1 id=&quot;表格&quot;&gt;表格&lt;/h1&gt;&lt;table&gt;
+&lt;h1 id=&quot;&amp;#x5D4C;&amp;#x5165;&amp;#x4F18;&amp;#x9177;&amp;#x89C6;&amp;#x9891;&quot;&gt;&amp;#x5D4C;&amp;#x5165;&amp;#x4F18;&amp;#x9177;&amp;#x89C6;&amp;#x9891;&lt;/h1&gt;&lt;iframe height=&quot;480&quot; width=&quot;400&quot; src=&quot;http://player.youku.com/embed/XMTQ2MjU2NTU2OA&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;h1 id=&quot;&amp;#x8F6C;&amp;#x4E49;&amp;#x5B57;&amp;#x7B26;&quot;&gt;&amp;#x8F6C;&amp;#x4E49;&amp;#x5B57;&amp;#x7B26;&lt;/h1&gt;&lt;ruby&gt;Base&lt;rp&gt; (&lt;/rp&gt;&lt;rt&gt;top&lt;/rt&gt;&lt;rp&gt;) &lt;/rp&gt;&lt;/ruby&gt;
+&lt;ruby&gt;&amp;#x4F50;&amp;#x5929;&amp;#x6CEA;&amp;#x5B50;&lt;rp&gt; (&lt;/rp&gt;&lt;rt&gt;xi&amp;#x101;n q&amp;#xFA;n ku&amp;#xE1;ng m&amp;#xF3;&lt;/rt&gt;&lt;rp&gt;) &lt;/rp&gt;&lt;/ruby&gt;
+&lt;ruby&gt;&amp;#x8D85;&amp;#x96FB;&amp;#x78C1;&amp;#x7832;&lt;rp&gt; (&lt;/rp&gt;&lt;rt&gt;&amp;#x30EC;&amp;#x30FC;&amp;#x30EB;&amp;#x30AC;&amp;#x30F3;&lt;/rt&gt;&lt;rp&gt;) &lt;/rp&gt;&lt;/ruby&gt;
+&lt;h1 id=&quot;&amp;#x8868;&amp;#x683C;&quot;&gt;&amp;#x8868;&amp;#x683C;&lt;/h1&gt;&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;ABCD&lt;/th&gt;
@@ -494,11 +412,11 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
---&gt;</content>
+</content>
     
     <summary type="html">
     
-      &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h1 id=&quot;echart&quot;&gt;
+      &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h1 id=&quot;&amp;#x5D4C;
     
     </summary>
     
