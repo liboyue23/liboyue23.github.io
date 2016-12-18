@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://leeboyue.com/"/>
-  <updated>2016-05-05T13:25:00.000Z</updated>
+  <updated>2016-08-31T04:44:47.000Z</updated>
   <id>http://leeboyue.com/</id>
   
   <author>
@@ -14,6 +14,79 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>apache 包使用</title>
+    <link href="http://leeboyue.com/2016/08/30/apache-%E5%8C%85%E4%BD%BF%E7%94%A8/"/>
+    <id>http://leeboyue.com/2016/08/30/apache-包使用/</id>
+    <published>2016-08-30T10:00:04.000Z</published>
+    <updated>2016-08-31T04:44:47.000Z</updated>
+    
+    <content type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;commons-lang&quot;&gt;commons-lang&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;java&amp;#x57FA;&amp;#x672C;&amp;#x5BF9;&amp;#x8C61;&amp;#x65B9;&amp;#x6CD5;&amp;#x7684;&amp;#x5DE5;&amp;#x5177;&amp;#x5305;&amp;#xFF0C;&amp;#x5BF9;&amp;#x5B57;&amp;#x7B26;&amp;#x4E32;&amp;#x3001;&amp;#x6570;&amp;#x7EC4;&amp;#x7B49;&amp;#x57FA;&amp;#x672C;&amp;#x5BF9;&amp;#x8C61;&amp;#x7684;&amp;#x64CD;&amp;#x4F5C;&amp;#xFF0C;&amp;#x5F25;&amp;#x8865;java.lang.api&amp;#x672C;&amp;#x8EAB;&amp;#x4E0D;&amp;#x8DB3;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;commons-beanutils&quot;&gt;commons-beanutils&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;bean&amp;#x7684;&amp;#x5305;&amp;#x88C5;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;BeanUtils.copyProperties(teacher,teacherForm);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;commons-cli&quot;&gt;commons-cli&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&amp;#x5904;&amp;#x7406;&amp;#x547D;&amp;#x4EE4;&amp;#x7684;&amp;#x5DE5;&amp;#x5177;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;commons-codec&quot;&gt;commons-codec&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&amp;#x7F16;&amp;#x7801;&amp;#x548C;&amp;#x89E3;&amp;#x7801;&amp;#x7528;&amp;#x7684;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;commons-collections&quot;&gt;commons-collections&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;java.util&amp;#x7684;&amp;#x6269;&amp;#x5C55;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;commons-configuration&quot;&gt;commons-configuration&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&amp;#x8FD9;&amp;#x4E2A;&amp;#x5DE5;&amp;#x5177;&amp;#x662F;&amp;#x7528;&amp;#x6765;&amp;#x5E2E;&amp;#x52A9;&amp;#x5904;&amp;#x7406;&amp;#x914D;&amp;#x7F6E;&amp;#x6587;&amp;#x4EF6;&amp;#x7684;&amp;#xFF0C;&amp;#x652F;&amp;#x6301;&amp;#x5F88;&amp;#x591A;&amp;#x79CD;&amp;#x5B58;&amp;#x50A8;&amp;#x65B9;&amp;#x5F0F;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;colors.background = &lt;span class=&quot;comment&quot;&gt;#FFFFFF&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;colors.foreground = &lt;span class=&quot;comment&quot;&gt;#000080&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;window.width = &lt;span class=&quot;number&quot;&gt;500&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;window.height = &lt;span class=&quot;number&quot;&gt;300&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;PropertiesConfiguration config = new PropertiesConfiguration(&lt;span class=&quot;string&quot;&gt;&amp;quot;usergui.properties&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;config.setProperty(&lt;span class=&quot;string&quot;&gt;&amp;quot;colors.background&amp;quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&amp;quot;#000000&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;config.save();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;config.save(&lt;span class=&quot;string&quot;&gt;&amp;quot;usergui.backup.properties&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Integer integer = config.getInteger(&lt;span class=&quot;string&quot;&gt;&amp;quot;window.width&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;commons-dbcp&quot;&gt;commons-dbcp&lt;/h2&gt;&lt;h2 id=&quot;commons-dbutils&quot;&gt;commons-dbutils&lt;/h2&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;QueryRunner run = new QueryRunner(dataSource);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;commons-httpclient&quot;&gt;commons-httpclient&lt;/h2&gt;&lt;h2 id=&quot;commons-io&quot;&gt;commons-io&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&amp;#x53EF;&amp;#x4EE5;&amp;#x770B;&amp;#x6210;&amp;#x662F;java.io&amp;#x7684;&amp;#x6269;&amp;#x5C55;&amp;#xFF0C;&amp;#x6211;&amp;#x89C9;&amp;#x5F97;&amp;#x7528;&amp;#x8D77;&amp;#x6765;&amp;#x975E;&amp;#x5E38;&amp;#x65B9;&amp;#x4FBF;&amp;#x3002;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;//&amp;#x8BFB;&amp;#x53D6;steam&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;IOUtils.toString(&lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt;) ;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;IOUtils.closeQuietly(&lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;//&amp;#x8BFB;&amp;#x53D6;&amp;#x6587;&amp;#x4EF6;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;FileUtils.readLines(file, &lt;span class=&quot;string&quot;&gt;&amp;quot;UTF-8&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;//&amp;#x67E5;&amp;#x770B;&amp;#x5269;&amp;#x4F59;&amp;#x7A7A;&amp;#x95F4;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;FileSystemUtils.freeSpace(&lt;span class=&quot;string&quot;&gt;&amp;quot;C:/&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;commons-lang&quot;&gt;commons-lang&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&amp;#x8FD9;&amp;#x4E2A;&amp;#x5DE5;&amp;#x5177;&amp;#x5305;&amp;#x53EF;&amp;#x4EE5;&amp;#x770B;&amp;#x6210;&amp;#x662F;&amp;#x5BF9;java.lang&amp;#x7684;&amp;#x6269;&amp;#x5C55;&amp;#x3002;&amp;#x63D0;&amp;#x4F9B;&amp;#x4E86;&amp;#x8BF8;&amp;#x5982;StringUtils, StringEscapeUtils, RandomStringUtils, Tokenizer, WordUtils&amp;#x7B49;&amp;#x5DE5;&amp;#x5177;&amp;#x7C7B;&amp;#x3002;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;commons-logging&quot;&gt;commons-logging&lt;/h2&gt;&lt;h2 id=&quot;commons-math&quot;&gt;commons-math&lt;/h2&gt;&lt;h2 id=&quot;commons-net&quot;&gt;commons-net&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&amp;#x5C01;&amp;#x88C5;&amp;#x4E86;&amp;#x5F88;&amp;#x591A;&amp;#x7F51;&amp;#x7EDC;&amp;#x534F;&amp;#x8BAE;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;FTP&lt;/li&gt;
+&lt;li&gt;NNTP&lt;/li&gt;
+&lt;li&gt;SMTP&lt;/li&gt;
+&lt;li&gt;POP3&lt;/li&gt;
+&lt;li&gt;Telnet&lt;/li&gt;
+&lt;li&gt;TFTP&lt;/li&gt;
+&lt;li&gt;Finger&lt;/li&gt;
+&lt;li&gt;Whois&lt;/li&gt;
+&lt;li&gt;rexec/rcmd/rlogin&lt;/li&gt;
+&lt;li&gt;Time (rdate) and Daytime&lt;/li&gt;
+&lt;li&gt;Echo&lt;/li&gt;
+&lt;li&gt;Discard&lt;/li&gt;
+&lt;li&gt;NTP/SNTP&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;commons-validator&quot;&gt;commons-validator&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&amp;#x7528;&amp;#x6765;&amp;#x5E2E;&amp;#x52A9;&amp;#x8FDB;&amp;#x884C;&amp;#x9A8C;&amp;#x8BC1;&amp;#x7684;&amp;#x5DE5;&amp;#x5177;&amp;#x3002;&amp;#x6BD4;&amp;#x5982;&amp;#x9A8C;&amp;#x8BC1;Email&amp;#x5B57;&amp;#x7B26;&amp;#x4E32;&amp;#xFF0C;&amp;#x65E5;&amp;#x671F;&amp;#x5B57;&amp;#x7B26;&amp;#x4E32;&amp;#x7B49;&amp;#x662F;&amp;#x5426;&amp;#x5408;&amp;#x6CD5;&amp;#x3002;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;commons-
+    
+    </summary>
+    
+      <category term="技术" scheme="http://leeboyue.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="commons" scheme="http://leeboyue.com/tags/commons/"/>
+    
+      <category term="java" scheme="http://leeboyue.com/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>7年老人谈些新人成长经验</title>

@@ -142,7 +142,7 @@ var _hmt = _hmt || [];
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/Guava/" style="font-size: 10px;">Guava</a> <a href="/tags/MySQL/" style="font-size: 10px;">MySQL</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/java/" style="font-size: 15px;">java</a> <a href="/tags/json/" style="font-size: 10px;">json</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/plugins/" style="font-size: 10px;">plugins</a> <a href="/tags/zookeeper/" style="font-size: 10px;">zookeeper</a> <a href="/tags/互联网金融/" style="font-size: 10px;">互联网金融</a> <a href="/tags/分布式/" style="font-size: 15px;">分布式</a> <a href="/tags/存储/" style="font-size: 10px;">存储</a> <a href="/tags/家常菜/" style="font-size: 10px;">家常菜</a> <a href="/tags/工具/" style="font-size: 10px;">工具</a> <a href="/tags/心得/" style="font-size: 10px;">心得</a> <a href="/tags/性能优化/" style="font-size: 10px;">性能优化</a> <a href="/tags/技术/" style="font-size: 15px;">技术</a> <a href="/tags/技术交流/" style="font-size: 10px;">技术交流</a> <a href="/tags/树/" style="font-size: 10px;">树</a> <a href="/tags/海鲜/" style="font-size: 10px;">海鲜</a> <a href="/tags/索引/" style="font-size: 10px;">索引</a> <a href="/tags/网络/" style="font-size: 10px;">网络</a> <a href="/tags/脑图/" style="font-size: 10px;">脑图</a> <a href="/tags/通讯/" style="font-size: 10px;">通讯</a> <a href="/tags/阿里巴巴/" style="font-size: 10px;">阿里巴巴</a> <a href="/tags/随笔/" style="font-size: 20px;">随笔</a>
+						<a href="/tags/Guava/" style="font-size: 10px;">Guava</a> <a href="/tags/MySQL/" style="font-size: 10px;">MySQL</a> <a href="/tags/commons/" style="font-size: 10px;">commons</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/json/" style="font-size: 10px;">json</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/plugins/" style="font-size: 10px;">plugins</a> <a href="/tags/zookeeper/" style="font-size: 10px;">zookeeper</a> <a href="/tags/互联网金融/" style="font-size: 10px;">互联网金融</a> <a href="/tags/分布式/" style="font-size: 15px;">分布式</a> <a href="/tags/存储/" style="font-size: 10px;">存储</a> <a href="/tags/家常菜/" style="font-size: 10px;">家常菜</a> <a href="/tags/工具/" style="font-size: 10px;">工具</a> <a href="/tags/心得/" style="font-size: 10px;">心得</a> <a href="/tags/性能优化/" style="font-size: 10px;">性能优化</a> <a href="/tags/技术/" style="font-size: 15px;">技术</a> <a href="/tags/技术交流/" style="font-size: 10px;">技术交流</a> <a href="/tags/树/" style="font-size: 10px;">树</a> <a href="/tags/海鲜/" style="font-size: 10px;">海鲜</a> <a href="/tags/索引/" style="font-size: 10px;">索引</a> <a href="/tags/网络/" style="font-size: 10px;">网络</a> <a href="/tags/脑图/" style="font-size: 10px;">脑图</a> <a href="/tags/通讯/" style="font-size: 10px;">通讯</a> <a href="/tags/阿里巴巴/" style="font-size: 10px;">阿里巴巴</a> <a href="/tags/随笔/" style="font-size: 20px;">随笔</a>
 					</div>
 				</section>
 				
@@ -215,6 +215,121 @@ var _hmt = _hmt || [];
 </nav>
 
       <div class="body-wrap">
+  
+    <article id="post-apache-包使用" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/08/30/apache-包使用/" class="article-date">
+  	<time datetime="2016-08-30T10:00:04.000Z" itemprop="datePublished">2016-08-30</time>
+</a>
+    </div>
+  
+
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/08/30/apache-包使用/">apache 包使用</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+         <!--02-->
+        <div id="toc" class="toc-article">
+    <div class="toc-title">目录</div>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#commons-lang"><span class="toc-text">commons-lang</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#commons-beanutils"><span class="toc-text">commons-beanutils</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#commons-cli"><span class="toc-text">commons-cli</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#commons-codec"><span class="toc-text">commons-codec</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#commons-collections"><span class="toc-text">commons-collections</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#commons-configuration"><span class="toc-text">commons-configuration</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#commons-dbcp"><span class="toc-text">commons-dbcp</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#commons-dbutils"><span class="toc-text">commons-dbutils</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#commons-httpclient"><span class="toc-text">commons-httpclient</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#commons-io"><span class="toc-text">commons-io</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#commons-lang"><span class="toc-text">commons-lang</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#commons-logging"><span class="toc-text">commons-logging</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#commons-math"><span class="toc-text">commons-math</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#commons-net"><span class="toc-text">commons-net</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#commons-validator"><span class="toc-text">commons-validator</span></a></li></ol>
+</div>
+      
+        <link rel="stylesheet" type="text/css" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js"> </script><h2 id="commons-lang">commons-lang</h2><ul>
+<li>java&#x57FA;&#x672C;&#x5BF9;&#x8C61;&#x65B9;&#x6CD5;&#x7684;&#x5DE5;&#x5177;&#x5305;&#xFF0C;&#x5BF9;&#x5B57;&#x7B26;&#x4E32;&#x3001;&#x6570;&#x7EC4;&#x7B49;&#x57FA;&#x672C;&#x5BF9;&#x8C61;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x5F25;&#x8865;java.lang.api&#x672C;&#x8EAB;&#x4E0D;&#x8DB3;</li>
+</ul>
+<h2 id="commons-beanutils">commons-beanutils</h2><ul>
+<li>bean&#x7684;&#x5305;&#x88C5;<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">BeanUtils.copyProperties(teacher,teacherForm);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="commons-cli">commons-cli</h2><ul>
+<li>&#x5904;&#x7406;&#x547D;&#x4EE4;&#x7684;&#x5DE5;&#x5177;</li>
+</ul>
+<h2 id="commons-codec">commons-codec</h2><ul>
+<li>&#x7F16;&#x7801;&#x548C;&#x89E3;&#x7801;&#x7528;&#x7684;</li>
+</ul>
+<h2 id="commons-collections">commons-collections</h2><ul>
+<li>java.util&#x7684;&#x6269;&#x5C55;</li>
+</ul>
+<h2 id="commons-configuration">commons-configuration</h2><ul>
+<li>&#x8FD9;&#x4E2A;&#x5DE5;&#x5177;&#x662F;&#x7528;&#x6765;&#x5E2E;&#x52A9;&#x5904;&#x7406;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#xFF0C;&#x652F;&#x6301;&#x5F88;&#x591A;&#x79CD;&#x5B58;&#x50A8;&#x65B9;&#x5F0F;<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">colors.background = <span class="comment">#FFFFFF</span></span><br><span class="line">colors.foreground = <span class="comment">#000080</span></span><br><span class="line">window.width = <span class="number">500</span></span><br><span class="line">window.height = <span class="number">300</span></span><br><span class="line">PropertiesConfiguration config = new PropertiesConfiguration(<span class="string">&quot;usergui.properties&quot;</span>);</span><br><span class="line">config.setProperty(<span class="string">&quot;colors.background&quot;</span>, <span class="string">&quot;#000000&quot;</span>);</span><br><span class="line">config.save();</span><br><span class="line">config.save(<span class="string">&quot;usergui.backup.properties&quot;</span>);</span><br><span class="line">Integer integer = config.getInteger(<span class="string">&quot;window.width&quot;</span>);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="commons-dbcp">commons-dbcp</h2><h2 id="commons-dbutils">commons-dbutils</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">QueryRunner run = new QueryRunner(dataSource);</span><br></pre></td></tr></table></figure>
+<h2 id="commons-httpclient">commons-httpclient</h2><h2 id="commons-io">commons-io</h2><ul>
+<li>&#x53EF;&#x4EE5;&#x770B;&#x6210;&#x662F;java.io&#x7684;&#x6269;&#x5C55;&#xFF0C;&#x6211;&#x89C9;&#x5F97;&#x7528;&#x8D77;&#x6765;&#x975E;&#x5E38;&#x65B9;&#x4FBF;&#x3002;<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">//&#x8BFB;&#x53D6;steam</span><br><span class="line">IOUtils.toString(<span class="keyword">in</span>) ;</span><br><span class="line">IOUtils.closeQuietly(<span class="keyword">in</span>);</span><br><span class="line">//&#x8BFB;&#x53D6;&#x6587;&#x4EF6;</span><br><span class="line">FileUtils.readLines(file, <span class="string">&quot;UTF-8&quot;</span>);</span><br><span class="line">//&#x67E5;&#x770B;&#x5269;&#x4F59;&#x7A7A;&#x95F4;</span><br><span class="line">FileSystemUtils.freeSpace(<span class="string">&quot;C:/&quot;</span>);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="commons-lang">commons-lang</h2><ul>
+<li>&#x8FD9;&#x4E2A;&#x5DE5;&#x5177;&#x5305;&#x53EF;&#x4EE5;&#x770B;&#x6210;&#x662F;&#x5BF9;java.lang&#x7684;&#x6269;&#x5C55;&#x3002;&#x63D0;&#x4F9B;&#x4E86;&#x8BF8;&#x5982;StringUtils, StringEscapeUtils, RandomStringUtils, Tokenizer, WordUtils&#x7B49;&#x5DE5;&#x5177;&#x7C7B;&#x3002;</li>
+</ul>
+<h2 id="commons-logging">commons-logging</h2><h2 id="commons-math">commons-math</h2><h2 id="commons-net">commons-net</h2><ul>
+<li>&#x5C01;&#x88C5;&#x4E86;&#x5F88;&#x591A;&#x7F51;&#x7EDC;&#x534F;&#x8BAE;</li>
+</ul>
+<ol>
+<li>FTP</li>
+<li>NNTP</li>
+<li>SMTP</li>
+<li>POP3</li>
+<li>Telnet</li>
+<li>TFTP</li>
+<li>Finger</li>
+<li>Whois</li>
+<li>rexec/rcmd/rlogin</li>
+<li>Time (rdate) and Daytime</li>
+<li>Echo</li>
+<li>Discard</li>
+<li>NTP/SNTP</li>
+</ol>
+<h2 id="commons-validator">commons-validator</h2><ul>
+<li>&#x7528;&#x6765;&#x5E2E;&#x52A9;&#x8FDB;&#x884C;&#x9A8C;&#x8BC1;&#x7684;&#x5DE5;&#x5177;&#x3002;&#x6BD4;&#x5982;&#x9A8C;&#x8BC1;Email&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x65E5;&#x671F;&#x5B57;&#x7B26;&#x4E32;&#x7B49;&#x662F;&#x5426;&#x5408;&#x6CD5;&#x3002;</li>
+</ul>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/commons/">commons</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/技术/">技术</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-7年老人谈些新人成长经验" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -474,110 +589,6 @@ var _hmt = _hmt || [];
         <p class="article-more-link">
           <a  href="/2016/03/09/索引结构以及加锁理解/#more">more >></a>
         </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-一些插件" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/03/07/一些插件/" class="article-date">
-  	<time datetime="2016-03-07T07:24:06.000Z" itemprop="datePublished">2016-03-07</time>
-</a>
-    </div>
-  
-
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/07/一些插件/">一些插件</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-         <!--02-->
-        <div id="toc" class="toc-article">
-    <div class="toc-title">目录</div>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#嵌入pdf"><span class="toc-text">嵌入pdf</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#嵌入优酷视频"><span class="toc-text">嵌入优酷视频</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#转义字符"><span class="toc-text">转义字符</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#表格"><span class="toc-text">表格</span></a></li></ol>
-</div>
-      
-        <link rel="stylesheet" type="text/css" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js"> </script><h1 id="&#x5D4C;&#x5165;pdf">&#x5D4C;&#x5165;pdf</h1>
-
-	<div class="row">
-	  <iframe src="http://nagland.github.io/viewer/web/viewer.html?val=http://7xov2f.com1.z0.glb.clouddn.com/bash_freshman.pdf" style="width:100%; height:550px"></iframe>
-	</div>
-
-
-
-<h1 id="&#x5D4C;&#x5165;&#x4F18;&#x9177;&#x89C6;&#x9891;">&#x5D4C;&#x5165;&#x4F18;&#x9177;&#x89C6;&#x9891;</h1><iframe height="480" width="400" src="http://player.youku.com/embed/XMTQ2MjU2NTU2OA" frameborder="0" allowfullscreen></iframe>
-<h1 id="&#x8F6C;&#x4E49;&#x5B57;&#x7B26;">&#x8F6C;&#x4E49;&#x5B57;&#x7B26;</h1><ruby>Base<rp> (</rp><rt>top</rt><rp>) </rp></ruby>
-<ruby>&#x4F50;&#x5929;&#x6CEA;&#x5B50;<rp> (</rp><rt>xi&#x101;n q&#xFA;n ku&#xE1;ng m&#xF3;</rt><rp>) </rp></ruby>
-<ruby>&#x8D85;&#x96FB;&#x78C1;&#x7832;<rp> (</rp><rt>&#x30EC;&#x30FC;&#x30EB;&#x30AC;&#x30F3;</rt><rp>) </rp></ruby>
-<h1 id="&#x8868;&#x683C;">&#x8868;&#x683C;</h1><table>
-<thead>
-<tr>
-<th>ABCD</th>
-<th>EFGH</th>
-<th>IGKL</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>a</td>
-<td>b</td>
-<td>c</td>
-</tr>
-<tr>
-<td>d</td>
-<td>e</td>
-<td>f</td>
-</tr>
-<tr>
-<td>g</td>
-<td>h</td>
-<td>i</td>
-</tr>
-</tbody>
-</table>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/plugins/">plugins</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/技术/">技术</a>
-	</div>
-
-
       
       <div class="clearfix"></div>
     </div>
